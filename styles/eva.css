@@ -6,13 +6,14 @@
     background-color:yellowgreen;
     text-align: justify;
     font-family: Calibri;
-    text-indent: 15px;
+    text-indent: 25px;
     font-size: medium;
     font-style: oblique;
     margin-right: 3%;
     margin-top: 5%;
     padding-left: 2%;
     padding-right:3%;
+    border-radius: 5px;
 }
 .charakter{
     height: 40%;
@@ -21,19 +22,19 @@
     float: left;
     text-align: justify;
     font-family: Calibri;
-    text-indent: 15px;
+    text-indent: 25px;
     font-size: medium;
     font-style: oblique;
     margin-left: 3%;
     margin-top: 5%;
     padding-left: 3%;
     padding-right: 2%;
+    border-radius: 5px;
 
 }
 .nagłówek{
     font-size: 30px;
     text-align: center;
 }
-#eva{
-    background-color: yellow;
-}
+
+
