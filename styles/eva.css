@@ -35,4 +35,9 @@
     height: 250px;
     width: 450px;
 }
-
+.left{
+    background-image: url("../images/gdansk.jpg");
+    height: 250px;
+    width: 450px;
+    opacity: .7;
+}
