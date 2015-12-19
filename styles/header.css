@@ -1,32 +1,38 @@
-#naglow {
+body header {
     background-color:blanchedalmond;
     width:auto;
     height: 180px;
     border:6px solid saddlebrown;
     border-radius: 15px;
     padding-right:2%;
+    margin: 40px ;
+
 
 }
-img{
+body header img{
     height: 180px;
     width: auto;
-    border-radius:7px;
+    border-bottom-left-radius:7px;
+    border-top-left-radius:7px;
     float:left;
-    margin-left: 0%;
+    margin-left: 0px;
+
 
 }
-#guzik {
+body header div {
 
     height: auto;
     width: auto;
     align-items: center;
     margin-right: 4%;
     float: right;
-    margin-top: 10%;
+    margin-top: 150px;
     margin-right: 6%;
     font-family: Vivaldi;
-    font-size: 35px;
+    font-size: 25px;
 }
 body{
     width: 1200px;
+    font-size: medium;
+    font-family:sans-serif;
 }

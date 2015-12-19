@@ -5,7 +5,7 @@
     float: right;
     background-color:yellowgreen;
     text-align: justify;
-    font-family: Calibri;
+    /*font-family: Calibri;*/
     text-indent: 25px;
     font-size: medium;
     font-style: oblique;
@@ -21,7 +21,7 @@
     background-color: yellowgreen;
     float: left;
     text-align: justify;
-    font-family: Calibri;
+    /*font-family: Calibri;*/
     text-indent: 25px;
     font-size: medium;
     font-style: oblique;
