@@ -1,7 +1,7 @@
 
-.free{
-    height: 40%;
-    width: 40%;
+.right{
+    height: 250px;
+    width: 450px;
     float: right;
     background-color:yellowgreen;
     text-align: justify;
@@ -15,9 +15,9 @@
     padding-right:3%;
     border-radius: 5px;
 }
-.charakter{
-    height: 40%;
-    width: 40%;
+.left{
+    height: 250px;
+    width: 450px;
     background-color: yellowgreen;
     float: left;
     text-align: justify;
