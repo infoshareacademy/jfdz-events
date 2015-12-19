@@ -6,6 +6,7 @@ body header {
     border-radius: 15px;
     padding-right:2%;
     margin: 40px ;
+    position: relative;
 
 
 }
@@ -19,20 +20,27 @@ body header img{
 
 
 }
-body header div {
+#header_low{
 
     height: auto;
     width: auto;
     align-items: center;
-    margin-right: 4%;
-    float: right;
-    margin-top: 150px;
-    margin-right: 6%;
-    font-family: Vivaldi;
+    position: absolute;bottom: 1px; right: 40px;
+    font-style: italic;
+    font-family: Vivaldi, Serif;
     font-size: 25px;
+    color: rgba(0,0,0,0.5);
 }
 body{
     width: 1200px;
     font-size: medium;
     font-family:sans-serif;
+}
+
+.lewa{
+    float: left;
+    margin-left:10px;
+    font-size: 60px;
+    color: darkslategray;
+
 }
