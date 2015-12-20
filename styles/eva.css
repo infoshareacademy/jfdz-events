@@ -3,7 +3,7 @@
     height: 250px;
     width: 450px;
     float: right;
-    background-color:yellowgreen;
+    background-color:lightgrey;
     text-align: justify;
     text-indent: 25px;
     margin-right: 3%;
@@ -15,7 +15,7 @@
 .left{
     height: 250px;
     width: 450px;
-    background-color: yellowgreen;
+    background-color:lightgray;
     float: left;
     text-align: justify;
     text-indent: 25px;
@@ -30,14 +30,17 @@
     font-size: 25px;
     text-align: center;
 }
-.right{
-    background-image: url("../images/spacer.jpg");
-    height: 250px;
-    width: 450px;
-}
-.left{
-    background-image: url("../images/gdansk.jpg");
-    height: 250px;
-    width: 450px;
-    opacity: .7;
+/*.right{*/
+    /*background-image: url("../images/spacer.jpg");*/
+    /*height: 250px;*/
+    /*width: 450px;*/
+/*}*/
+/*.left{*/
+    /*background-image: url("../images/gdansk.jpg");*/
+    /*height: 250px;*/
+    /*width: 450px;*/
+    /*opacity: .7;*/
+/*}*/
+.clear{
+    clear: both;
 }
