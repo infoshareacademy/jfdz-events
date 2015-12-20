@@ -1,9 +1,9 @@
-h3{
+footer h3{
     color: darkblue;
 }
-p {
+footer p {
     font-family: Courier;
 }
-span {
+footer span {
     background-color: yellow;
 }
