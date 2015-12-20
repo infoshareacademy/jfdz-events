@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/eva.css" type="text/css">
     <link rel="stylesheet" href="styles/header.css" type="text/css">
+    <link rel="stylesheet" href="styles/form.css" type="text/css">
+
     <title>Title</title>
 </head>
 <body>
@@ -11,7 +13,8 @@
 <!--Hania-->
     <header>
         <img src="https://images.unsplash.com/photo-1443916568596-df5a58c445e9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e851025869fe3b9e41e499ad8173e542">
-        <div class="lewa">Co?<br>Gdzie?</div>
+        <div >Co?</div>
+        <div >Gdzie?</div>
         <div class="lewa">Kiedy?</div>
         <div id="header_low">Catch the moment in 3city...</div>
     </header>
@@ -47,19 +50,42 @@
 
 </main>
 
-<!--Wojtek-->
-<article>
+    <!--Wojtek-->
+    <article>
 
 
-</article>
+    </article>
 
-<footer>
-    <footer id="footer">
-        <h3> Arabica Copyright 2015-2016 </h3>
-        <p> Weszelkie prawa zastrzeżone</p>
-        <p> Regulamin | Polityka Prywatności </p>
+
+    <div class="formularz">
+        <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
+            <input type="text" name="myField" class="prawo">
+            <input type="text" value="Jeśli jesteś zainteresowany daj nam znać" class="pole-tekstowe">
+            <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
+            <input type="submit" value="Send" class="form-wyslij">
+        </form>
+
+
+
+        <!--<form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">-->
+            <!--<input type="label" value="Jeśli jesteś zainteresowany daj nam znać" class="pole-tekstowe">-->
+            <!--<input type="text" name="myField" value="Podaj imię" class="prawo">-->
+            <!--<br>-->
+            <!--<input type="label" value="Podaj adres kontaktowy e-mail" class="pole-tekstowe">-->
+            <!--<input type="text" name="myPoczta" value="e-mail" class="prawo">-->
+            <!--<br>-->
+            <!--<input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">-->
+            <!--<input type="submit" value="Wyślij" class="form-wyslij">-->
+        <!--</form>-->
+    </div>
+
+    <footer>
+        <footer id="footer">
+            <h3> Arabica Copyright 2015-2016 </h3>
+            <p> Weszelkie prawa zastrzeżone</p>
+            <p> Regulamin | Polityka Prywatności </p>
+        </footer>
     </footer>
-</footer>
 
 </body>
 

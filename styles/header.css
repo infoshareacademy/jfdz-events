@@ -40,7 +40,20 @@ body{
 .lewa{
     float: left;
     margin-left:10px;
-    font-size: 60px;
-    color: darkslategray;
+    display: inline-block;
 
+    font-size: 70px;
+    font-family:Serif;
+    color: darkslategray;
+}
+header div{
+
+    margin-left:10px;
+
+    font-size: 70px;
+    font-family:Serif;
+    color: darkslategray;
+}
+.clear{
+    clear: both;
 }
