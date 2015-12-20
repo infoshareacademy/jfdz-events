@@ -1,46 +1,60 @@
-.formularz{
-
-    clear: both;
-    margin: 10px;
-    border: 10px;
-    padding:15px;
-
+.clear{
+    clear:both;
 }
 
-form{
-    /*display:        inline;*/
-    /*margin-top:     20px;*/
-    margin-left:    10px;
-    margin-right:   10px;
+
+.formularz{
+    margin: 18px;
+    border: 10px;
+    padding:15px;
+}
+
+fieldset{
+    border-radius: 15px 15px;
+    padding:10px;
+    border-color: saddlebrown;
+    border-width: 6px;
+    text-align: center;
+}
+
+legend{
+    text-align: left;
+
 }
 
 input{
-    /*padding:5px;*/
-    /*margin:10px;*/
+    border-radius: 5px;
+    background-color: aquamarine;
+    height: 30px;
+    padding:5px;
+    font-size:14px;
 }
 
-.prawo{
+.formularz-mail, .formularz-imie {
+    margin-top: 15px;
+    /*margin-left:200px;*/
+    /*display:inline-block;*/
+}
+.pole-formularz-mail{
+    width:233px;
+    }
 
-    display: inline;
-    float:right;
-    /*margin-top:5px;*/
+.pole-formularz-imie{
+    width: 240px;
 
 }
 
-.pole-tekstowe{
-
-    display: inline;
-    float:left;
-    border: none;
-    width:300px;
-    /*padding:10px;*/
-
+.plec {
+    text-align:center;
 }
 
 .form-wyslij{
+    background-color: white;
+    margin:10px;
+    width:340px;
+    height:40px;
+ }
 
-    clear:both;
-    display:block;
-
+.formularz-wysylka {
+    text-align:center;
 }
-

@@ -67,29 +67,27 @@
 </article>
 
 
-<div class="formularz">
+    <div class="formularz">
 
 
     <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
         <fieldset>
             <legend>Jesteś zainteresowany?</legend>
 
-            <label for="formularz1">Podaj imię: </label>
-            <input type="text" name="imie" class="prawo" id="formularz1" placeholder="Imię">
+                <label for="formularz1">Podaj imię: </label>
+                <input type="text" name="imie" class="prawo" id="formularz1" placeholder="Imię">
 
-            <label for="formularz2">Oraz e-mail: </label>
-            <input type="email" name="imie" class="prawo" id="formularz2" placeholder="E-mail">
+                <label for="formularz2">Oraz e-mail: </label>
+                <input type="email" name="imie" class="prawo" id="formularz2" placeholder="E-mail">
+                <div class="plec">
+                    <label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>
+                    <label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">
 
-            <div class="plec">
-                <label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M"
-                                                                    checked>
-                <label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">
-
-                <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
-                <input type="submit" value="Send" class="form-wyslij">
-            </div>
-        </fieldset>
-    </form>
+                    <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
+                    <input type="submit" value="Send" class="form-wyslij">
+                </div>
+            </fieldset>
+        </form>
 
 </div>
 
