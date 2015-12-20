@@ -1,30 +1,24 @@
 
-.free{
-    height: 40%;
-    width: 40%;
+.right{
+    height: 250px;
+    width: 450px;
     float: right;
     background-color:yellowgreen;
     text-align: justify;
-    /*font-family: Calibri;*/
     text-indent: 25px;
-    font-size: medium;
-    font-style: oblique;
     margin-right: 3%;
     margin-top: 5%;
     padding-left: 2%;
     padding-right:3%;
     border-radius: 5px;
 }
-.charakter{
-    height: 40%;
-    width: 40%;
+.left{
+    height: 250px;
+    width: 450px;
     background-color: yellowgreen;
     float: left;
     text-align: justify;
-    /*font-family: Calibri;*/
     text-indent: 25px;
-    font-size: medium;
-    font-style: oblique;
     margin-left: 3%;
     margin-top: 5%;
     padding-left: 3%;
@@ -32,9 +26,18 @@
     border-radius: 5px;
 
 }
-.nagłówek{
-    font-size: 30px;
+.tytul{
+    font-size: 25px;
     text-align: center;
 }
-
-
+.right{
+    background-image: url("../images/spacer.jpg");
+    height: 250px;
+    width: 450px;
+}
+.left{
+    background-image: url("../images/gdansk.jpg");
+    height: 250px;
+    width: 450px;
+    opacity: .7;
+}
