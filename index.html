@@ -29,7 +29,7 @@
             <p>Oferta za darmo skierowana jest do wszytskich osób które bez nakładu finansowego chcą spędzić miło czas w
                 Trójmieście.Nasza wyszukiwarka
                 w ciągu kilku sekund wyszuka wszestkie darmowe wydarzenia w najblizszym czasie.</p>
-            <input type="button" value="wiecej">
+            <input type="button" value="wiecej" class="function-more">
         </div>
         <div class="left">
             <p class="tytul">Ale co ja właściwie che robić....</p>
@@ -37,7 +37,7 @@
             <p>Chciałbyś zrobic cos fajnego, ale nie wiesz co?Nasza wyszukiwarka wyswietli Ci wszystkie imprezy z
                 podzialem na ich charakter.
                 Koncerty,wystawy,imprezt-wszystko w zasiegu Teojej reki.</p>
-            <input type="button" value="wiecej">
+            <input type="button" value="wiecej" class="function-more">
         </div>
     </div>
 
@@ -47,14 +47,14 @@
 
             <p>Ta zakładka pozwoli Ci w ciągu krótkiej chwili namierzyć wydarzenia jakie mają miejsce w ciągu
                 najlbliższych dni, miesięcy a nawet roku.</p>
-            <input type="button" value="wiecej">
+            <input type="button" value="wiecej" class="function-more">
         </div>
         <div class="left">
             <p class="tytul">Lokalizacja</p>
 
             <p>Wyszukiwarka Co?Gdzie?Kiedy? specjalnie dla Ciebie wyszuka imprezy z podziałem na Gdańsk, Gdynię, Sopot,
                 a nawet na poszczególne dzielince tych miast. </p>
-            <input type="button" value="wiecej">
+            <input type="button" value="wiecej" class="function-more">
         </div>
     </div>
     <div class="clear"></div>
@@ -66,7 +66,7 @@
 
 </article>
 
-
+    <div class="clear"> </div>
     <div class="formularz">
 
 
@@ -74,18 +74,23 @@
         <fieldset>
             <legend>Jesteś zainteresowany?</legend>
 
-                <label for="formularz1">Podaj imię: </label>
-                <input type="text" name="imie" class="prawo" id="formularz1" placeholder="Imię">
-
-                <label for="formularz2">Oraz e-mail: </label>
-                <input type="email" name="imie" class="prawo" id="formularz2" placeholder="E-mail">
-                <div class="plec">
+                <div class="form-line">
+                    <label for="formularz1">Podaj imię: </label>
+                    <input type="text" name="imie" id="formularz1" placeholder="Imię" class="form-input-text pole-formularz-imie">
+                </div>
+                <div class="form-line">
+                    <label for="formularz2">Oraz e-mail: </label>
+                    <input type="email" name="imie" id="formularz2" placeholder="E-mail" class="form-input-text  pole-formularz-mail">
+                </div>
+                <div class="form-line plec">
                     <label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>
                     <label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">
-
-                    <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
-                    <input type="submit" value="Send" class="form-wyslij">
                 </div>
+                <div class="form-line formularz-wysylka">
+                    <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
+                    <input type="submit" value="Wyślij nam" class="form-wyslij">
+                </div>
+
             </fieldset>
         </form>
 

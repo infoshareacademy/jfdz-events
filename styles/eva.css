@@ -44,7 +44,8 @@
 .clear{
     clear: both;
 }
-input{
+
+.function-more{
     float: right;
 }
 
