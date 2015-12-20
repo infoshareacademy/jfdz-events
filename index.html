@@ -57,7 +57,7 @@
 
     </article>
 
-
+    <div class="clear"> </div>
     <div class="formularz">
 
 
@@ -65,18 +65,23 @@
             <fieldset>
                 <legend>Jesteś zainteresowany?</legend>
 
-                <label for="formularz1">Podaj imię: </label>
-                <input type="text" name="imie" class="prawo" id="formularz1" placeholder="Imię">
-
-                <label for="formularz2">Oraz e-mail: </label>
-                <input type="email" name="imie" class="prawo" id="formularz2" placeholder="E-mail">
-                <div class="plec">
+                <div class="form-line">
+                    <label for="formularz1">Podaj imię: </label>
+                    <input type="text" name="imie" id="formularz1" placeholder="Imię" class="form-input-text pole-formularz-imie">
+                </div>
+                <div class="form-line">
+                    <label for="formularz2">Oraz e-mail: </label>
+                    <input type="email" name="imie" id="formularz2" placeholder="E-mail" class="form-input-text  pole-formularz-mail">
+                </div>
+                <div class="form-line plec">
                     <label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>
                     <label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">
-
-                    <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
-                    <input type="submit" value="Send" class="form-wyslij">
                 </div>
+                <div class="form-line formularz-wysylka">
+                    <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
+                    <input type="submit" value="Wyślij nam" class="form-wyslij">
+                </div>
+
             </fieldset>
         </form>
 
