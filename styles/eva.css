@@ -1,6 +1,6 @@
 
 .right{
-    height: 250px;
+    height: 200px;
     width: 450px;
     float: right;
     background-color:lightgrey;
@@ -13,7 +13,7 @@
     border-radius: 5px;
 }
 .left{
-    height: 250px;
+    height: 200px;
     width: 450px;
     background-color:lightgray;
     float: left;
@@ -43,4 +43,7 @@
 /*}*/
 .clear{
     clear: both;
+}
+input{
+    float: right;
 }
