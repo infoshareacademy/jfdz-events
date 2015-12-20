@@ -54,25 +54,27 @@
 
 
     <div class="formularz">
+
+
         <form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
-            <input type="text" name="myField" class="prawo">
-            <input type="text" value="Jeśli jesteś zainteresowany daj nam znać" class="pole-tekstowe">
-            <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
-            <input type="submit" value="Send" class="form-wyslij">
+            <fieldset>
+                <legend>Jesteś zainteresowany?</legend>
+
+                <label for="formularz1">Podaj imię: </label>
+                <input type="text" name="imie" class="prawo" id="formularz1" placeholder="Imię">
+
+                <label for="formularz2">Oraz e-mail: </label>
+                <input type="email" name="imie" class="prawo" id="formularz2" placeholder="E-mail">
+                <div class="plec">
+                    <label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>
+                    <label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">
+
+                    <input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">
+                    <input type="submit" value="Send" class="form-wyslij">
+                </div>
+            </fieldset>
         </form>
 
-
-
-        <!--<form action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">-->
-            <!--<input type="label" value="Jeśli jesteś zainteresowany daj nam znać" class="pole-tekstowe">-->
-            <!--<input type="text" name="myField" value="Podaj imię" class="prawo">-->
-            <!--<br>-->
-            <!--<input type="label" value="Podaj adres kontaktowy e-mail" class="pole-tekstowe">-->
-            <!--<input type="text" name="myPoczta" value="e-mail" class="prawo">-->
-            <!--<br>-->
-            <!--<input type="hidden" name="receiver" value="wojciech.makurat@infoshareacademy.com">-->
-            <!--<input type="submit" value="Wyślij" class="form-wyslij">-->
-        <!--</form>-->
     </div>
 
     <footer>
