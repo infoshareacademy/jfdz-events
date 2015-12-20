@@ -47,3 +47,25 @@
 input{
     float: right;
 }
+
+/*footer{*/
+    /*margin-left: auto;*/
+    /*display: block;*/
+/*}*/
+
+
+footer{
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.pra{
+ float: right;
+ }
+.lew{
+    float: left;
+}
+.cen{
+    float: right;
+    margin-right: 250px;
+}
