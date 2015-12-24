@@ -1,30 +1,33 @@
+/*Przywrócenie hierarchii renderingu elementów strony*/
 .clear{
     clear:both;
 }
 
-
+/*Kontener formularza*/
 .formularz{
-    margin: 18px;
-    border: 10px;
+    margin: 35px;
     padding:15px;
+    background-color: aquamarine;
+    border-radius: 5px;
 }
-
-fieldset{
-    border-radius: 15px 15px;
+/*Elementy pola zawierającego formularz*/
+.formularz .fieldset-napis{
+    border-radius: 5px;
     padding:10px;
     border-color: saddlebrown;
-    border-width: 6px;
+    /*border-width: 6px;*/
     text-align: center;
+    box-shadow:0 0 10px #666;
 }
 
 legend{
     text-align: left;
-
+    background-color: aquamarine;
 }
+/*##########################################################*/
 
 input{
     border-radius: 5px;
-    background-color: aquamarine;
     height: 30px;
     padding:5px;
     font-size:14px;
@@ -37,10 +40,22 @@ input{
 }
 .pole-formularz-mail{
     width:233px;
+    background-color: white;
+    background-image: url('../images/e-mail_ikona.png');
+    background-position: 2px 5px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 30px 30px;
     }
 
 .pole-formularz-imie{
     width: 240px;
+    background-color: white;
+    background-image: url('../images/imie_ikona.png');
+    background-position: 2px 5px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 30px 30px;
 
 }
 
@@ -50,11 +65,14 @@ input{
 
 .form-wyslij{
     background-color: white;
-    margin:10px;
-    width:340px;
-    height:40px;
+    width:100%;
+    height:35px;
+    margin-top: 10px;
+    margin-bottom: 6px;
  }
 
 .formularz-wysylka {
     text-align:center;
+    margin-left: 6px;
+    margin-right: 6px;
 }
