@@ -1,13 +1,13 @@
-/*body header {*/
-/*background-color: blanchedalmond;*/
-/*width: auto;*/
-/*height: 180px;*/
-/*border: 6px solid saddlebrown;*/
-/*border-radius: 15px;*/
+body header {
+background-color: blanchedalmond;
+width: auto;
+height: 180px;
+border: 6px solid saddlebrown;
+border-radius: 15px;
 /*padding-right: 2%;*/
 /*margin: 40px;*/
 /*position: relative;*/
-/*}*/
+}
 /*#header_low {*/
 
 /*!*height: auto;*!*/
@@ -78,12 +78,12 @@ body {
 
 
 .naglowek-strony {
-    padding-left: 20px;
-    padding-right: 340px;
-    background-image: url('../images/skaczaca-pani.jpg');
+    padding-left: 340px;
+    padding-right: 20px;
+    background-image: url('../images/spacer.jpg');
     background-repeat: no-repeat;
     background-size: 320px 180px;
-    background-position: right 0;
+    background-position: left;
 }
 
 .naglowek-strony .tytul-duzy {
@@ -99,23 +99,29 @@ body {
     font-family: Vivaldi, serif;
     font-size: 25px;
     color: gray;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 
 .naglowek-strony nav {
-    padding-top: 5px;
+    padding-top: 25px;
     text-align: right;
+    padding-right: 15px;
 }
 
 .naglowek-strony ul {
     margin: 0;
-    padding: 0;
+    padding: 10;
     list-style-type: none;
 }
 
 .naglowek-strony li {
-    display: inline;
+    display: inline-block;
+    text-align: center;
+    /*padding-right: 35px;*/
+    /*padding-left: 35px;*/
+    width: 120px;
+    border: 2px solid rosybrown;
 }
 
 
