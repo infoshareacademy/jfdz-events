@@ -1,32 +1,30 @@
 
 .right{
-    height: 280px;
-    width: 500px;
+    height: 437px;
+    width: 537px;
     float: right;
     background-color:lightgrey;
     text-align: justify;
     text-indent: 25px;
     /*margin-right: 3%;*/
-    margin-top: 5%;
-    padding-left: 2%;
-    padding-right:3%;
+    margin-top: 5px;
+    padding-left: 3%;
+    padding-right:2%;
     /*border-radius: 5px;*/
 }
+
 #eva2>right{
     border-bottom-right-radius: 15px;
 }
-#eva>left{
-    border-bottom-left-radius: 15px;
-}
 .left{
-    height: 280px;
-    width: 500px;
+    height: 437px;
+    width: 537px;
     background-color:lightgray;
     float: left;
     text-align: justify;
     text-indent: 25px;
     /*margin-left: 3%;*/
-    margin-top: 5%;
+    margin-top: 5px;
     padding-left: 3%;
     padding-right: 2%;
     /*border-radius: 5px;*/
