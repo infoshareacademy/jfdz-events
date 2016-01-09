@@ -21,7 +21,7 @@
 }
 legend{
     text-align: left;
-    background-color: white;
+    background-color: brown;
     margin-left:5px;
 }
 /*##########################################################
@@ -52,6 +52,7 @@ legend{
     border-radius: 25px;
     height: 35px;
     font-size:18px;
+    border: 0px;
 }
 .pole-formularz-imie{
     background-image: url('../images/imie_ikona.png');
@@ -66,4 +67,5 @@ legend{
     margin-bottom: 6px;
     border-radius: 25px;
     font-size: 18px;
+    border: 0px;
  }
