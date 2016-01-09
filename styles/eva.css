@@ -1,4 +1,3 @@
-
 .right{
     height: 437px;
     width: 537px;
@@ -10,18 +9,22 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right:2%;
-    /*border-radius: 5px;*/
 }
-#eva2 .right{
+#dol .right{
     border-bottom-right-radius: 15px;
 }
-#eva2 .left{
+#dol .left{
     border-bottom-left-radius: 15px;
 }
-#eva .left .foto{
-    padding-right:100px;
-
-
+#gora .left .foto {
+    background-image: url(../images/co.jpg);
+    margin-left: 15px;
+    width: 500px;
+    height: 300px;
+    background-size: contain;
+}
+#gora .left .foto:hover{
+    color: #3B0E45;
 }
 /*#eva .left.foto{*/
     /*!*width: 100px;*!*/
