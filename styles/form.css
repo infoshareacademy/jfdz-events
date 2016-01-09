@@ -4,13 +4,16 @@
 }
 /*Kontener formularza*/
 .formularz{
-    margin: 35px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align:center;
     padding:15px;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     border-radius: 5px;
 }
 /*Elementy pola zawierającego formularz*/
 .formularz .fieldset-napis{
+
     border-radius: 5px;
     padding:10px;
     border-color: saddlebrown;
@@ -18,7 +21,7 @@
 }
 legend{
     text-align: left;
-    background-color: aquamarine;
+    background-color: white;
     margin-left:5px;
 }
 /*##########################################################
@@ -57,7 +60,7 @@ legend{
     background-image: url('../images/e-mail_ikona.png');
 }
 .form-wyslij{
-    width:104%;
+    width:109%;
     height:35px;
     margin-top: 10px;
     margin-bottom: 6px;
