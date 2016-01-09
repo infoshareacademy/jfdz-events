@@ -1,9 +1,10 @@
 body header {
 background-color: blanchedalmond;
 width: auto;
-height: 180px;
-border: 6px solid saddlebrown;
-border-radius: 15px;
+height: 280px;
+/*border: 6px solid saddlebrown;*/
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
 /*padding-right: 2%;*/
 /*margin: 40px;*/
 /*position: relative;*/
@@ -28,6 +29,7 @@ body {
     width: 1200px;
     font-size: medium;
     font-family: sans-serif;
+    background-color: brown;
 }
 /*header .lewa {*/
     /*float: left;*/
@@ -104,9 +106,10 @@ body {
 
 
 .naglowek-strony nav {
-    padding-top: 13px;
+    padding-top: 5px;
     text-align: right;
     padding-right: 15px;
+    z-index: -1;
 }
 
 .naglowek-strony ul {
