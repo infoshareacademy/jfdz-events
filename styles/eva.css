@@ -30,11 +30,12 @@
     border-bottom-left-radius: 15px;
 }
 #gora .left .foto{
-    background-image: url(../images/party2.jpg);
+    background-image: url(../images/people-festival-party-dancing.jpg);
     margin-left: 12px;
     width: 500px;
     height: 300px;
     background-position: right;
+    background-size: 500px;
 }
 #gora .left .foto:hover{
     opacity: 0.5;
@@ -43,17 +44,18 @@
     /*visibility: hidden;*/
 /*}*/
 #dol .left .foto4 {
-    background-image: url(../images/gdansk.jpg);
+    background-image: url(../images/mapa.jpg);
     margin-left: 12px;
     width: 500px;
     height: 300px;
     background-position: right;
+    background-size: 600px;
 }
 #dol .left .foto4:hover{
     opacity: 0.5;
 }
 #gora .right .foto2{
-    background-image: url(../images/friko.jpg);
+    background-image: url(../images/money-plant.jpg);
     margin-left: 12px;
     width: 500px;
     height: 300px;
