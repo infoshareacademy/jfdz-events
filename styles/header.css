@@ -1,14 +1,15 @@
 body header {
-background-color: #CAA8D1;
-width: auto;
-height: 280px;
-/*border: 6px solid saddlebrown;*/
-border-top-left-radius: 15px;
-border-top-right-radius: 15px;
-/*padding-right: 2%;*/
-/*margin: 40px;*/
-/*position: relative;*/
+    background-color: #CAA8D1;
+    width: auto;
+    height: 280px;
+    /*border: 6px solid saddlebrown;*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /*padding-right: 2%;*/
+    /*margin: 40px;*/
+    /*position: relative;*/
 }
+
 /*#header_low {*/
 
 /*!*height: auto;*!*/
@@ -31,82 +32,92 @@ body {
     font-family: sans-serif;
     background-color: #3B0E45;
 }
+
 /*header .lewa {*/
-    /*float: left;*/
-    /*margin-left: 10px;*/
-    /*display: inline-block;*/
+/*float: left;*/
+/*margin-left: 10px;*/
+/*display: inline-block;*/
 /*}*/
 
 /*header .prawa {*/
-    /*float: right;*/
+/*float: right;*/
 /*}*/
 /*header .tytul{*/
-    /*display: inline-block;*/
-    /*margin-left: 10px;*/
-    /*margin-top: 15px;*/
-    /*font-size: 70px;*/
-    /*font-family: Serif;*/
-    /*color: darkslategray;*/
+/*display: inline-block;*/
+/*margin-left: 10px;*/
+/*margin-top: 15px;*/
+/*font-size: 70px;*/
+/*font-family: Serif;*/
+/*color: darkslategray;*/
 /*}*/
 /*header .clear {*/
-    /*clear: both;*/
+/*clear: both;*/
 /*}*/
 /*header .funkcja_obrazek{*/
-    /*height: 180px;*/
-    /*width: 320px;*/
-    /*background-image: url('https://images.unsplash.com/photo-1443916568596-df5a58c445e9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e851025869fe3b9e41e499ad8173e542');*/
-    /*!*border-bottom-left-radius: 8px;*!*/
-    /*!*border-top-left-radius: 8px;*!*/
-    /*float: left;*/
-    /*margin-left: 0px;*/
-    /*background-size: contain;*/
+/*height: 180px;*/
+/*width: 320px;*/
+/*background-image: url('https://images.unsplash.com/photo-1443916568596-df5a58c445e9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e851025869fe3b9e41e499ad8173e542');*/
+/*!*border-bottom-left-radius: 8px;*!*/
+/*!*border-top-left-radius: 8px;*!*/
+/*float: left;*/
+/*margin-left: 0px;*/
+/*background-size: contain;*/
 /*}*/
 /*.ramka{*/
-    /*border: 2px dotted black;*/
+/*border: 2px dotted black;*/
 /*}*/
 /*header .menu_nawigacyjne{*/
-    /*text-align: center;*/
-    /*width: 500px;*/
+/*text-align: center;*/
+/*width: 500px;*/
 
 /*}*/
 /*header .nawigator{*/
-    /*display: inline-block;*/
-    /*width: 100px;*/
+/*display: inline-block;*/
+/*width: 100px;*/
 /*}*/
-
-
-
-
-
 
 .naglowek-strony {
     /*padding-left: 340px;*/
-    padding-right: 20px;
+    /*padding-right: 20px;*/
+    /*background-image: url('../images/logo.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 320px 250px;*/
+    /*background-position: bottom;*/
+}
+
+header .funkcja_obrazek {
+    height: 200px;
+    width: 330px;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
-    background-size: 320px 180px;
-    background-position: bottom;
+    float: left;
+    /*display: inline;*/
+    margin-left: 20px;
+    background-size: contain;
+    text-align: center;
+
 }
 
 .naglowek-strony .tytul-duzy {
-    text-align: left;
-    font-size: 70px;
-    font-family:  serif;
+    font-size: 80px;
+    font-family: sans-serif;
     color: darkslategray;
-}
-
-.naglowek-strony .tytul-maly {
     text-align: right;
-    font-style: italic;
-    font-family: Vivaldi, serif;
-    font-size: 25px;
-    color: gray;
-    padding-top: 15px;
+    padding-right: 100px;
+    /*padding-top: 50px;*/
 }
 
+/*.naglowek-strony .tytul-maly {*/
+    /*text-align: right;*/
+    /*font-style: italic;*/
+    /*font-family: Vivaldi, serif;*/
+    /*font-size: 25px;*/
+    /*color: gray;*/
+    /*padding-top: 15px;*/
+}
 
 .naglowek-strony nav {
-    /*padding-top: 5px;*/
+    padding-top: 5px;
     /*text-align: right;*/
     /*padding-right: 15px;*/
 
@@ -118,19 +129,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    position: relative;
+    display: table;
 }
 
 .naglowek-strony li {
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
-    /*padding-right: 35px;*/
-    /*padding-left: 35px;*/
     height: 30px;
     width: 220px;
-
-    /*border: 2px solid rosybrown;*/
     background-color: white;
     border-radius: 15px;
+
 }
 
 
