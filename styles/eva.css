@@ -16,20 +16,48 @@
 #dol .left{
     border-bottom-left-radius: 15px;
 }
-#gora .left .foto {
+#gora .left .foto{
     background-image: url(../images/co.jpg);
-    margin-left: 15px;
+    margin-left: 12px;
     width: 500px;
     height: 300px;
-    background-size: contain;
+    /*background-size: contain;*/
+    background-position: right;
 }
 #gora .left .foto:hover{
-    color: #3B0E45;
+
+    background-image: none;
 }
-/*#eva .left.foto{*/
-    /*!*width: 100px;*!*/
-    /*!*height: 50px;*!*/
-/*!*}*!*/
+#gora .left .proba{
+    /*visibility: hidden;*/
+}
+#gora .left .proba:hover{
+    visibility: hidden;
+}
+#dol .left .foto4 {
+    background-image: url(../images/gdansk.jpg);
+    margin-left: 12px;
+    width: 500px;
+    height: 300px;
+    /*background-size: contain;*/
+    background-position: right;
+}
+#gora .right .foto2{
+    background-image: url(../images/friko.jpg);
+    margin-left: 12px;
+    width: 500px;
+    height: 300px;
+    /*background-size: contain;*/
+    background-position: right;
+}
+#dol .right .foto3{
+    background-image: url(../images/kiedy.jpg);
+    margin-left: 12px;
+    width: 500px;
+    height: 300px;
+    /*background-size: contain;*/
+    background-position: right;
+}
 .left{
     height: 437px;
     width: 537px;
@@ -52,14 +80,6 @@
 .clear{
     clear: both;
 }
-
-
-
-/*footer{*/
-    /*margin-left: auto;*/
-    /*display: block;*/
-/*}*/
-
 
 footer{
     margin-left: 40px;
