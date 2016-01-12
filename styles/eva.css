@@ -3,37 +3,17 @@
     width: 537px;
     float: right;
     background-color:lightgrey;
-    text-align: justify;
+    text-align: center;
     text-indent: 25px;
     /*margin-right: 3%;*/
     margin-top: 5px;
     padding-left: 3%;
     padding-right:2%;
 }
-#dol .right{
-    border-bottom-right-radius: 15px;
-}
-#dol .left{
-    border-bottom-left-radius: 15px;
-}
-#gora .left .foto {
-    background-image: url(../images/co.jpg);
-    margin-left: 15px;
-    width: 500px;
-    height: 300px;
-    background-size: contain;
-}
-#gora .left .foto:hover{
-    color: #3B0E45;
-}
-/*#eva .left.foto{*/
-    /*!*width: 100px;*!*/
-    /*!*height: 50px;*!*/
-/*!*}*!*/
-.left{
+.left {
     height: 437px;
     width: 537px;
-    background-color:lightgray;
+    background-color: lightgray;
     float: left;
     text-align: justify;
     text-indent: 25px;
@@ -42,8 +22,112 @@
     padding-left: 3%;
     padding-right: 2%;
     /*border-radius: 5px;*/
-
 }
+#gora .right .tytul{
+    margin-right: 50px;
+}
+#gora .left .tytul{
+    margin-right: 50px;
+}
+#dol .right .tytul{
+    margin-right: 50px;
+}
+#dol .left .tytul{
+    margin-right: 50px;
+}
+#dol .right{
+    border-bottom-right-radius: 15px;
+}
+#dol .left{
+    border-bottom-left-radius: 15px;
+}
+#gora .left .foto{
+    background-image: url(../images/wystawa.jpg);
+    margin-left: 12px;
+    width: 500px;
+    height: 300px;
+    background-position: right;
+    background-size: 570px;
+}
+/*#gora .left .foto:hover{*/
+    /*opacity: 0.3;*/
+/*}*/
+#gora .left .foto div{
+    font-size: 20px;
+    color: white;
+    height: 35px;
+    width: 500px;
+    background-color:blueviolet;
+    display: block;
+    float: right;
+    /*margin-right: 100px;*/
+    margin-top: 270px;
+    align-content: center;
+}
+#gora .left .foto div:hover{
+    background-color: grey;
+    transition-duration: 5s;
+    height: 230px;
+    transform: translateY(-200px);
+    opacity: 0.9;
+}
+/*#gora .left .proba:hover{*/
+    /*visibility: hidden;*/
+/*}*/
+#dol .left .foto4 {
+    background-image: url(../images/mapa2.jpg);
+    margin-left: 12px;
+    width: 500px;
+    height: 300px;
+    background-position: right;
+    background-size: 600px;
+}
+#dol .left .foto4 div {
+    font-size: 20px;
+    color: white;
+    height: 35px;
+    width: 500px;
+    background-color: blueviolet;
+    display: block;
+    float: right;
+    /*margin-right: 100px;*/
+    margin-top: 270px;
+    align-content: center;
+}
+#dol .left .foto4 div:hover {
+    background-color: grey;
+    transition-duration: 5s;
+    height: 130px;
+    transform: translateY(-200px);
+    opacity: 0.8;
+}
+/*#dol .left .foto4:hover{*/
+    /*opacity: 0.3;*/
+/*}*/
+#gora .right .foto2{
+    background-image: url(../images/money2.jpg);
+    margin-left: 12px;
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    background-size: 480px;
+}
+#gora .right .foto2:hover{
+    opacity: 0.3;
+}
+#dol .right .foto3{
+    background-image: url(../images/time.jpg);
+    margin-left: 12px;
+    width: 500px;
+    height: 300px;
+    /*background-position:inherit;*/
+    background-size: 610px;
+}
+#dol .right .foto3:hover{
+    opacity: 0.3;
+}
+
+
 .tytul{
     font-size: 25px;
     text-align: center;
@@ -52,14 +136,6 @@
 .clear{
     clear: both;
 }
-
-
-
-/*footer{*/
-    /*margin-left: auto;*/
-    /*display: block;*/
-/*}*/
-
 
 footer{
     margin-left: 40px;

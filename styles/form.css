@@ -21,7 +21,7 @@
 }
 legend{
     text-align: left;
-    background-color: white;
+    background-color: #3B0E45;
     margin-left:5px;
 }
 /*##########################################################
@@ -41,7 +41,7 @@ legend{
 }
 .form-input-text:focus {
     outline: none;
-    background-color: lightblue;
+    background-color: #CAA8D1;
 }
 .form-input-text{
     width:100%;
@@ -52,6 +52,7 @@ legend{
     border-radius: 25px;
     height: 35px;
     font-size:18px;
+    border: 0px;
 }
 .pole-formularz-imie{
     background-image: url('../images/imie_ikona.png');
@@ -59,11 +60,21 @@ legend{
 .pole-formularz-mail {
     background-image: url('../images/e-mail_ikona.png');
 }
-.form-wyslij{
-    width:109%;
-    height:35px;
+.form-wyslij {
+    width: 109%;
+    height: 35px;
     margin-top: 10px;
     margin-bottom: 6px;
     border-radius: 25px;
     font-size: 18px;
+    border: 0px;
+}
+
+.form-wyslij:hover {
+    background: lightgray;
+    background: -webkit-linear-gradient(top, #c3abd3, #4d2767);
+    background: -moz-linear-gradient(top, #c3abd3, #4d2767);
+    background: -o-linear-gradient(top, #c3abd3, #4d2767);
+    background: -ms-linear-gradient(top, #c3abd3, #4d2767);
+    background: linear-gradient(top, #c3abd3, #4d2767);
  }
