@@ -29,6 +29,18 @@
     /*border-radius: 5px;*/
     /*font-family: Bandy;*/
 }
+#gora .right .tytul{
+    margin-right: 50px;
+}
+#gora .left .tytul{
+    margin-right: 50px;
+}
+#dol .right .tytul{
+    margin-right: 50px;
+}
+#dol .left .tytul{
+    margin-right: 50px;
+}
 #dol .right{
     border-bottom-right-radius: 15px;
 }
@@ -36,40 +48,78 @@
     border-bottom-left-radius: 15px;
 }
 #gora .left .foto{
-    background-image: url(../images/people-festival-party-dancing.jpg);
+    background-image: url(../images/wystawa.jpg);
     margin-left: 12px;
     width: 500px;
     height: 300px;
     background-position: right;
-    background-size: 500px;
+    background-size: 570px;
 }
-#gora .left .foto:hover{
-    opacity: 0.5;
+/*#gora .left .foto:hover{*/
+    /*opacity: 0.3;*/
+/*}*/
+#gora .left .foto div{
+    font-size: 20px;
+    color: white;
+    height: 35px;
+    width: 500px;
+    background-color:blueviolet;
+    display: block;
+    float: right;
+    /*margin-right: 100px;*/
+    margin-top: 270px;
+    align-content: center;
+}
+#gora .left .foto div:hover{
+    background-color: grey;
+    transition-duration: 5s;
+    height: 230px;
+    transform: translateY(-200px);
+    opacity: 0.9;
 }
 /*#gora .left .proba:hover{*/
     /*visibility: hidden;*/
 /*}*/
 #dol .left .foto4 {
-    background-image: url(../images/mapa.jpg);
+    background-image: url(../images/mapa2.jpg);
     margin-left: 12px;
     width: 500px;
     height: 300px;
     background-position: right;
     background-size: 600px;
 }
-#dol .left .foto4:hover{
-    opacity: 0.5;
+#dol .left .foto4 div {
+    font-size: 20px;
+    color: white;
+    height: 35px;
+    width: 500px;
+    background-color: blueviolet;
+    display: block;
+    float: right;
+    /*margin-right: 100px;*/
+    margin-top: 270px;
+    align-content: center;
 }
+#dol .left .foto4 div:hover {
+    background-color: grey;
+    transition-duration: 5s;
+    height: 180px;
+    transform: translateY(-200px);
+    opacity: 0.8;
+}
+/*#dol .left .foto4:hover{*/
+    /*opacity: 0.3;*/
+/*}*/
 #gora .right .foto2{
-    background-image: url(../images/money-plant.jpg);
+    background-image: url(../images/money2.jpg);
     margin-left: 12px;
     width: 500px;
     height: 300px;
-    /*background-position: right;*/
-    background-size: 500px;
+    background-position: center;
+    background-size: 480px;
 }
 #gora .right .foto2:hover{
-    opacity: 0.5;
+    opacity: 0.3;
 }
 #dol .right .foto3{
     background-image: url(../images/time.jpg);
@@ -80,7 +130,7 @@
     background-size: 610px;
 }
 #dol .right .foto3:hover{
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 
