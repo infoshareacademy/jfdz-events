@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Bandy;
+    src:url(CW_BANDY.TTF);
+}
 .right{
     height: 437px;
     width: 537px;
@@ -9,6 +13,7 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right:2%;
+    font-family: Bandy;
 }
 .left {
     height: 437px;
@@ -22,6 +27,7 @@
     padding-left: 3%;
     padding-right: 2%;
     /*border-radius: 5px;*/
+    /*font-family: Bandy;*/
 }
 #gora .right .tytul{
     margin-right: 50px;
@@ -97,7 +103,7 @@
 #dol .left .foto4 div:hover {
     background-color: grey;
     transition-duration: 5s;
-    height: 130px;
+    height: 180px;
     transform: translateY(-200px);
     opacity: 0.8;
 }
