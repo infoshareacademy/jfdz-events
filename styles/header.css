@@ -1,3 +1,11 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    font-size: medium;
+    font-family: sans-serif;
+    background-color: #3B0E45;
+}
 body header {
     background-color: #CAA8D1;
     width: auto;
@@ -5,6 +13,9 @@ body header {
     /*border: 6px solid saddlebrown;*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    background-image: url('../images/people-festival-party-dancing.jpg');
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
     /*padding-right: 2%;*/
     /*margin: 40px;*/
     /*position: relative;*/
@@ -24,14 +35,7 @@ body header {
 /*color: gray;*/
 /*!*color: rgba(0, 0, 0, 0.5);*!*/
 /*}*/
-body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    font-size: medium;
-    font-family: sans-serif;
-    background-color: #3B0E45;
-}
+
 
 /*header .lewa {*/
 /*float: left;*/
@@ -85,25 +89,28 @@ body {
     /*background-position: bottom;*/
 /*}*/
 
-header .funkcja_obrazek {
-    height: 200px;
-    width: 330px;
+.naglowek-strony .funkcja_obrazek {
+    width: 390px;
+    height: 130px;
     background-image: url('../images/trojmiasto.png');
     background-repeat: no-repeat;
-    float: left;
+    /*float: left;*/
     /*display: inline;*/
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     background-size: contain;
     text-align: center;
-
+    display: block;
 }
 
 .naglowek-strony .tytul-duzy {
-    font-size: 80px;
-    font-family: sans-serif;
-    color: darkslategray;
-    text-align: right;
-    padding-right: 100px;
+    width: 1200px;
+    font-size: 130px;
+    font-family: Bandy;
+    color: white;
+    text-align: center;
+    display: block;
+    /*padding-right: 100px;*/
     /*padding-top: 50px;*/
 }
 
@@ -141,7 +148,7 @@ header .funkcja_obrazek {
     width: 220px;
     background-color: white;
     border-radius: 15px;
-
+    font-family: Bandy;
 }
 
 
