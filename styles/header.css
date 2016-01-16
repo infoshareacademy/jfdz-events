@@ -105,9 +105,10 @@ body header {
 
 .naglowek-strony .tytul-duzy {
     width: 1200px;
-    font-size: 130px;
+    font-size: 150px;
     font-family: Bandy;
-    color: white;
+    font-weight: bold;
+    color: rgba(0,0,0,0.3);
     text-align: center;
     display: block;
     /*padding-right: 100px;*/
@@ -137,18 +138,22 @@ body header {
     margin-right: auto;
     text-align: center;
     position: relative;
-    display: table;
+    vertical-align: middle;
+    /*display: table;*/
 }
 
 .naglowek-strony li {
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     text-align: center;
     height: 30px;
     width: 220px;
-    background-color: white;
+    background-color: rgba(256,256,256,0.9);
     border-radius: 15px;
     font-family: Bandy;
+    font-weight: bold;
+    color: red;
+
 }
 
 
