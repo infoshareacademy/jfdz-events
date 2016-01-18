@@ -78,7 +78,7 @@
 #gora .left .foto div:hover {
     background-color: lightgray;
     transition-duration: 5s;
-    height: 150px;
+    height: 180px;
     transform: translateY(-200px);
     opacity: 0.9;
     color: black;
@@ -113,7 +113,7 @@
 #dol .left .foto4 div:hover {
     background-color: lightgray;
     transition-duration: 5s;
-    height: 150px;
+    height: 180px;
     transform: translateY(-200px);
     opacity: 0.9;
     color: black;
@@ -127,7 +127,31 @@
     background-position: center;
     background-size: 480px;
 }
-
+#gora .right .foto2 div {
+    font-size: 20px;
+    color: white;
+    height: 35px;
+    width: 500px;
+    background-color: blueviolet;
+    display: block;
+    float: left;
+    /*margin-right: 100px;*/
+    margin-top: 270px;
+    align-content: center;
+    overflow: hidden;
+}
+#gora .right .foto2 div p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#gora .right .foto2 div:hover {
+    background-color: lightgray;
+    transition-duration: 5s;
+    height: 180px;
+    transform: translateY(-200px);
+    opacity: 0.9;
+    color: black;
+}
 /*#gora .right .foto2:hover{*/
     /*opacity: 0.3;*/
 /*}*/
@@ -139,9 +163,34 @@
     /*background-position:inherit;*/
     background-size: 610px;
 }
-#dol .right .foto3:hover{
-    opacity: 0.3;
+#dol .right .foto3 div {
+    font-size: 20px;
+    color: white;
+    height: 35px;
+    width: 500px;
+    background-color: blueviolet;
+    display: block;
+    float: left;
+    /*margin-right: 100px;*/
+    margin-top: 270px;
+    align-content: center;
+    overflow: hidden;
 }
+#dol .right .foto3 div p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#dol .right .foto3 div:hover {
+    background-color: lightgray;
+    transition-duration: 5s;
+    height: 180px;
+    transform: translateY(-200px);
+    opacity: 0.9;
+    color: black;
+}
+/*#dol .right .foto3:hover{*/
+    /*opacity: 0.3;*/
+/*}*/
 
 
 .tytul{
