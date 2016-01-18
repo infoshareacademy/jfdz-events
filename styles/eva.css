@@ -55,31 +55,34 @@
     background-position: right;
     background-size: 570px;
 }
-/*#gora .left .foto:hover{*/
-    /*opacity: 0.3;*/
-/*}*/
-#gora .left .foto div{
+
+#gora .left .foto div {
     font-size: 20px;
     color: white;
     height: 35px;
     width: 500px;
-    background-color:blueviolet;
+    background-color: blueviolet;
     display: block;
     float: right;
     /*margin-right: 100px;*/
     margin-top: 270px;
     align-content: center;
+    overflow: hidden;
+
 }
-#gora .left .foto div:hover{
-    background-color: grey;
+#gora .left .foto div p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#gora .left .foto div:hover {
+    background-color: lightgray;
     transition-duration: 5s;
-    height: 230px;
+    height: 150px;
     transform: translateY(-200px);
     opacity: 0.9;
+    color: black;
 }
-/*#gora .left .proba:hover{*/
-    /*visibility: hidden;*/
-/*}*/
 #dol .left .foto4 {
     background-image: url(../images/mapa2.jpg);
     margin-left: 12px;
@@ -99,18 +102,24 @@
     /*margin-right: 100px;*/
     margin-top: 270px;
     align-content: center;
+    overflow: hidden;
+
 }
+#dol .left .foto4 div p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #dol .left .foto4 div:hover {
-    background-color: grey;
+    background-color: lightgray;
     transition-duration: 5s;
-    height: 180px;
+    height: 150px;
     transform: translateY(-200px);
-    opacity: 0.8;
+    opacity: 0.9;
+    color: black;
 }
-/*#dol .left .foto4:hover{*/
-    /*opacity: 0.3;*/
-/*}*/
-#gora .right .foto2{
+
+#gora .right .foto2 {
     background-image: url(../images/money2.jpg);
     margin-left: 12px;
     width: 500px;
@@ -118,9 +127,10 @@
     background-position: center;
     background-size: 480px;
 }
-#gora .right .foto2:hover{
-    opacity: 0.3;
-}
+
+/*#gora .right .foto2:hover{*/
+    /*opacity: 0.3;*/
+/*}*/
 #dol .right .foto3{
     background-image: url(../images/time.jpg);
     margin-left: 12px;
