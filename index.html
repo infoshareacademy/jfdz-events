@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/eva.css" type="text/css">
     <link rel="stylesheet" href="styles/header.css" type="text/css">
     <link rel="stylesheet" href="styles/form.css" type="text/css">
+    <link rel="stylesheet" href="styles/footer.css" type="text/css">
     <title>Co, gdzie, kiedy - trójmiasto</title>
 </head>
 <body>
@@ -94,13 +95,13 @@
 
     <div class="clear"></div>
 </main>
-
+<footer>
     <div class="formularz">
 
         <form action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
             <fieldset  class="fieldset-napis">
-                <legend>Jesteś zainteresowany?</legend>
-
+                <!--<legend>Jesteś zainteresowany?</legend>-->
+ 
                 <div class="form-line">
                     <label for="formularz1" class="opis-pola">Podaj imię: </label>
                     <br>
@@ -115,9 +116,10 @@
                     <label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>
                     <label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">
                 </div>
-                <div class="form-line">
+                <!--<div class="form-line">-->
+                <div class="form-wyslij-pole">
                     <input type="hidden" name="receiver" value="witek_gesse@poczta.onet.pl">
-                    <input type="submit" value="Wyślij nam" class="form-wyslij">
+                    <input type="submit" value="Jesteś zainteresowany? Wyślij" class="form-wyslij">
                 </div>
 
             </fieldset>
@@ -125,8 +127,7 @@
 
     </div>
 
-<hr>
-<footer>
+
     <div class="pra"> 2015-2016 Copyright Arabica </div>
     <div class="cen"> Weszelkie prawa zastrzeżone</div>
     <div class="lew"> Regulamin | Polityka Prywatności</div>

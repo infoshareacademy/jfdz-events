@@ -13,7 +13,7 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right:2%;
-    font-family: Bandy;
+    /*font-family: Bandy;*/
 }
 .left {
     height: 437px;
@@ -27,7 +27,7 @@
     padding-left: 3%;
     padding-right: 2%;
     /*border-radius: 5px;*/
-    font-family: Bandy;
+    /*font-family: Bandy;*/
 }
 #gora .right .tytul{
     margin-right: 50px;
@@ -42,10 +42,10 @@
     margin-right: 50px;
 }
 #dol .right{
-    border-bottom-right-radius: 15px;
+    /*border-bottom-right-radius: 15px;*/
 }
 #dol .left{
-    border-bottom-left-radius: 15px;
+    /*border-bottom-left-radius: 15px;*/
 }
 #gora .left .foto{
     background-image: url(../images/wystawa.jpg);
@@ -188,9 +188,6 @@
     opacity: 0.9;
     color: black;
 }
-/*#dol .right .foto3:hover{*/
-    /*opacity: 0.3;*/
-/*}*/
 
 
 .tytul{
@@ -200,27 +197,4 @@
 
 .clear{
     clear: both;
-}
-
-footer{
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size: smaller;
-    /*display: block;*/
-}
-footer>div {
-    display: inline-block;
-    margin: 0 auto;
-    opacity: 0.5;
-}
-
-.pra{
- float: left;
- }
-.lew {
-    float: right;
-    margin-right: 270px;
-}
-.cen{
-    float: right;
 }
