@@ -6,14 +6,14 @@
 .formularz{
     margin-left: 300px;
     margin-right: 300px;
-    height:320px;
+    height:300px;
     text-align:center;
     padding:15px;
-    background-color:rgb(255, 255, 255);
+    /*background-color:rgb(255, 255, 255);*/
     border-radius: 5px;
-    background-image: url("../images/Womans-finger-pointing.jpg");
-    background-repeat: no-repeat;
-    background-position: left bottom;
+    /*background-image: url("../images/Womans-finger-pointing.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left bottom;*/
 ;
 }
 /*Elementy pola zawierającego formularz*/
@@ -23,7 +23,7 @@
     padding:10px;
     border-color: saddlebrown;
     box-shadow:0 0 10px #666;
-    height: 290px;
+    height: 270px;
 }
 /*legend{
     text-align: left;
@@ -33,7 +33,7 @@
 /*##########################################################
 ####################Pola formularza#########################*/
 .form-line{
-    margin: 5px 40px 5px 200px;
+    margin: 5px 110px 5px 70px;
 }
 .opis-pola{
     margin-left:16px;
@@ -66,6 +66,10 @@
 .pole-formularz-mail {
     background-image: url('../images/e-mail_ikona.png');
 }
+.pole-formularz-tel {
+    background-image: url('../images/telefon_ikona.png');
+}
+
 .form-wyslij {
     width: 200px;
     height: 35px;
@@ -75,14 +79,14 @@
     font-size: 18px;
     border: 0px;
     transition-property: background,color,width;
-    transition-duration: 2s;
+    transition-duration: 1s;
     background: transparent;
 }
 
 .form-wyslij:hover {
     background: lightgray;
     color:white;
-    width: 300px;
+    width: 400px;
  }
 
 .form-wyslij-pole{
