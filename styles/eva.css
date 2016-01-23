@@ -6,7 +6,7 @@
     height: 437px;
     width: 537px;
     float: right;
-    background-color:lightgray;
+    background-color:#F4EDA5;
     text-align: center;
     text-indent: 25px;
     margin-top: 5px;
@@ -17,7 +17,7 @@
 .left {
     height: 437px;
     width: 537px;
-    background-color: lightgray;
+    background-color: #F4EDA5;
     float: left;
     text-align: center;
     text-indent: 25px;
@@ -28,15 +28,19 @@
 }
 #gora .right .tytul{
     margin-right: 50px;
+    color:#AD093A;
 }
 #gora .left .tytul{
     margin-right: 50px;
+    color:#AD093A;
 }
 #dol .right .tytul{
     margin-right: 50px;
+    color:#AD093A;
 }
 #dol .left .tytul{
     margin-right: 50px;
+    color:#AD093A;
 }
 
 #gora .left .foto{
@@ -50,10 +54,10 @@
 
 #gora .left .foto div {
     font-size: 20px;
-    color: white;
+    color:#F4EDA5;
     height: 35px;
     width: 500px;
-    background-color: #3B0E45;;
+    background-color: #2C163B;
     display: block;
     float: right;
     margin-top: 270px;
@@ -67,12 +71,12 @@
 }
 
 #gora .left .foto div:hover {
-    background-color: lightgray;
+    background-color:  #F4EDA5;
     transition-duration: 1s;
     height: 130px;
     transform: translateY(-100px);
     opacity: 0.9;
-    color: black;
+    color: #AD093A;
 }
 #dol .left .foto4 {
     background-image: url(../images/mapa2.jpg);
@@ -84,10 +88,10 @@
 }
 #dol .left .foto4 div {
     font-size: 20px;
-    color: white;
+    color: #F4EDA5;
     height: 35px;
     width: 500px;
-    background-color: #3B0E45;
+    background-color: #2C163B;
     display: block;
     float: right;
     margin-top: 270px;
@@ -101,12 +105,12 @@
 }
 
 #dol .left .foto4 div:hover {
-    background-color: lightgray;
+    background-color: #F4EDA5;
     transition-duration: 1s;
     height: 130px;
     transform: translateY(-100px);
     opacity: 0.9;
-    color: black;
+    color:#AD093A;
 }
 
 #gora .right .foto2 {
@@ -119,10 +123,10 @@
 }
 #gora .right .foto2 div {
     font-size: 20px;
-    color: white;
+    color:#F4EDA5;
     height: 35px;
     width: 500px;
-    background-color:#3B0E45;;
+    background-color: #2C163B;
     display: block;
     float: left;
     margin-top: 270px;
@@ -134,12 +138,12 @@
     margin-right: 10px;
 }
 #gora .right .foto2 div:hover {
-    background-color: lightgray;
+    background-color: #F4EDA5;
     transition-duration: 1s;
     height: 130px;
     transform: translateY(-100px);
     opacity: 0.9;
-    color: black;
+    color:#AD093A;
 }
 
 #dol .right .foto3{
@@ -151,10 +155,10 @@
 }
 #dol .right .foto3 div {
     font-size: 20px;
-    color: white;
+    color: #F4EDA5;
     height: 35px;
     width: 500px;
-    background-color: #3B0E45;
+    background-color:#2C163B;
     display: block;
     float: left;
     margin-top: 270px;
@@ -166,12 +170,12 @@
     margin-right: 10px;
 }
 #dol .right .foto3 div:hover {
-    background-color: lightgray;
+    background-color: #F4EDA5;
     transition-duration: 1s;
     height: 130px;
     transform: translateY(-100px);
     opacity: 0.9;
-    color: black;
+    color:#AD093A;
 }
 
 
