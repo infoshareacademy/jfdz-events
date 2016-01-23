@@ -10,7 +10,7 @@ body header {
     /*background-color: #FFCB4E;*/
     background-color: #E76F3B;
     width: auto;
-    height: 430px;
+    height: 450px;
     /*border: 6px solid saddlebrown;*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -106,6 +106,7 @@ body header {
 
 .naglowek-strony .tytul-duzy {
     width: 1200px;
+    height: 180px;
     font-size: 150px;
     font-family: Bandy;
     font-weight: bold;
@@ -116,6 +117,12 @@ body header {
 
 .naglowek-strony nav {
     padding-top: 5px;
+}
+.naglowek-strony .tytul_maly {
+    text-align: center;
+    font-size: 23px;
+    font-family: Bandy;
+    font-weight: lighter;
 }
 
 .naglowek-strony ul {
