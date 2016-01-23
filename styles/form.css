@@ -21,7 +21,7 @@
     margin-top: 5px;
     border-radius: 5px;
     padding:10px;
-    border-color: saddlebrown;
+    border-color: #2C163B;
     box-shadow:0 0 10px #666;
     height: 270px;
 }
@@ -47,7 +47,7 @@
 }
 .form-input-text:focus {
     outline: none;
-    background-color: #CAA8D1;
+    background-color: #FFCB50;
 }
 .form-input-text{
     width:100%;
@@ -84,7 +84,7 @@
 }
 
 .form-wyslij:hover {
-    background: lightgray;
+    background: #2C163B;
     color:white;
     width: 400px;
  }
