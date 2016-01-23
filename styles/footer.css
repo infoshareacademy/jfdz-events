@@ -1,21 +1,37 @@
 
 footer{
     background-color: #CAA8D1;
-    height: 430px;
+    height: 380px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-top: 5px;
     padding-top: 5px;
-    font-size: smaller;
+    font-size: 11px;
 }
 
-/*.pra{*/
-    /*float: left;*/
-/*}*/
-/*.lew {*/
-    /*float: right;*/
-    /*margin-right: 270px;*/
-/*}*/
-/*.cen{*/
-    /*float: right;*/
-/*}*/
+.pra{
+    display: inline-block;
+    float:right;
+    margin-right:20px;
+    width:470px;
+    text-align: right;
+}
+
+.cen{
+
+    display: inline-block;
+    margin-top: 20px;
+    width:220px;
+    text-align: center;
+
+}
+
+.lew{
+
+    display: inline-block;
+    float:left;
+    margin-left:20px;
+    margin-top: 20px;
+    width:470px;
+
+}
