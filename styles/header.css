@@ -88,7 +88,7 @@ body {
 header .funkcja_obrazek {
     height: 200px;
     width: 330px;
-    background-image: url('../images/logo.png');
+    background-image: url('../images/ikonki_zakladka/android-icon-192x192.png');
     background-repeat: no-repeat;
     float: left;
     /*display: inline;*/
