@@ -6,28 +6,34 @@
 .formularz{
     margin-left: 300px;
     margin-right: 300px;
+    height:320px;
     text-align:center;
     padding:15px;
-    /*background-color: aquamarine;*/
+    background-color:rgb(255, 255, 255);
     border-radius: 5px;
+    background-image: url("../images/Womans-finger-pointing.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+;
 }
 /*Elementy pola zawierającego formularz*/
 .formularz .fieldset-napis{
-
+    margin-top: 5px;
     border-radius: 5px;
     padding:10px;
     border-color: saddlebrown;
     box-shadow:0 0 10px #666;
+    height: 290px;
 }
-legend{
+/*legend{
     text-align: left;
     background-color: #3B0E45;
     margin-left:5px;
-}
+}*/
 /*##########################################################
 ####################Pola formularza#########################*/
 .form-line{
-    margin: 5px 45px 5px 5px;
+    margin: 5px 40px 5px 200px;
 }
 .opis-pola{
     margin-left:16px;
@@ -47,7 +53,7 @@ legend{
     width:100%;
     background-position: 2px 2px;
     background-repeat: no-repeat;
-    padding: 0px 0px 0px 40px;
+    padding-left: 40px;
     background-size: 30px 30px;
     border-radius: 25px;
     height: 35px;
@@ -61,20 +67,24 @@ legend{
     background-image: url('../images/e-mail_ikona.png');
 }
 .form-wyslij {
-    width: 109%;
+    width: 200px;
     height: 35px;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 6px;
     border-radius: 25px;
     font-size: 18px;
     border: 0px;
+    transition-property: background,color,width;
+    transition-duration: 2s;
+    background: transparent;
 }
 
 .form-wyslij:hover {
     background: lightgray;
-    background: -webkit-linear-gradient(top, #c3abd3, #4d2767);
-    background: -moz-linear-gradient(top, #c3abd3, #4d2767);
-    background: -o-linear-gradient(top, #c3abd3, #4d2767);
-    background: -ms-linear-gradient(top, #c3abd3, #4d2767);
-    background: linear-gradient(top, #c3abd3, #4d2767);
+    color:white;
+    width: 300px;
  }
+
+.form-wyslij-pole{
+    margin-top: -15px;
+}
