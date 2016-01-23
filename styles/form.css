@@ -51,7 +51,8 @@
 }
 .form-input-text{
     width:100%;
-    background-position: 2px 2px;
+    font-family: 'Inder', sans-serif;
+    background-position: 2px 3px;
     background-repeat: no-repeat;
     padding-left: 40px;
     background-size: 30px 30px;
@@ -67,7 +68,7 @@
     background-image: url('../images/e-mail_ikona.png');
 }
 .pole-formularz-tel {
-    background-image: url('../images/telefon_ikona.png');
+    background-image: url('../images/phone_ikona.png');
 }
 
 .form-wyslij {
