@@ -22,23 +22,24 @@
     <link rel="stylesheet" href="styles/eva.css" type="text/css">
     <link rel="stylesheet" href="styles/header.css" type="text/css">
     <link rel="stylesheet" href="styles/form.css" type="text/css">
+    <link rel="stylesheet" href="styles/footer.css" type="text/css">
     <title>Co, gdzie, kiedy - trójmiasto</title>
 </head>
 <body>
 
 <!--Hania-->
 <header class="naglowek-strony">
-
     <nav>
         <ul>
-            <li>Co</li>
-            <li>Gdzie</li>
-            <li>Kiedy</li>
-            <li>Za friko</li>
+            <li>CO</li>
+            <li>GDZIE</li>
+            <li>KIEDY</li>
+            <li>ZA FRIKO</li>
         </ul>
-        <div class="funkcja_obrazek"></div>
+
     </nav>
-    <div class="tytul-duzy">Wydarzenia 3miasto</div>
+    <div class="tytul-duzy">Wydarzenia</div>
+    <div class="funkcja_obrazek"></div>
     <!--<div class="tytul-maly">catch the moment in 3city!</div>-->
 
 
@@ -74,35 +75,33 @@
     <div id="gora">
         <div class="right">
             <p class="tytul">Za friko</p>
-            <div class="foto2"></div>
+            <div class="foto2"><div>Koncert, lekcje jogi a może ciekawy wykład?<p>Dowiedz sie które imprezy w Twojej ulicy sa całkiem za darmo.</p></div></div>
         </div>
         <div class="left">
             <p class="tytul">Co</p>
-            <div class="foto"></div>
-            <div class="proba"></div>
+            <div class="foto"><div>Koncert, wystawa a może tańce....<p>Zakładka "Co" pozwoli posortować wszystkie wydarzenia tematycznie.</p></div></div>
         </div>
         </div>
-
     <div id="dol">
         <div class="right">
             <p class="tytul">Kiedy</p>
-            <div class="foto3"></div>
+            <div class="foto3"><div>Dziś, jutro, za rok...<p>dowiedz się o ciekawych imprezach z wyprzedzeniem tak aby niczego nie przegapić!</p></div></div>
         </div>
         <div class="left">
             <p class="tytul">Gdzie</p>
-            <div class="foto4"></div>
-
+            <div class="foto4"><div>Gdańs , Gdynia , Sopot....<p>Dzięki zakładce "Gdzie"szybko dowiesz się co ciekawego dzieje sie w Twoim mieście.</p></div></div>
         </div>
-    </div>
+        </div>
+
     <div class="clear"></div>
 </main>
-
+<footer>
     <div class="formularz">
 
         <form action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
             <fieldset  class="fieldset-napis">
-                <legend>Jesteś zainteresowany?</legend>
-
+                <!--<legend>Jesteś zainteresowany?</legend>-->
+ 
                 <div class="form-line">
                     <label for="formularz1" class="opis-pola">Podaj imię: </label>
                     <br>
@@ -117,9 +116,10 @@
                     <label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>
                     <label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">
                 </div>
-                <div class="form-line">
+                <!--<div class="form-line">-->
+                <div class="form-wyslij-pole">
                     <input type="hidden" name="receiver" value="witek_gesse@poczta.onet.pl">
-                    <input type="submit" value="Wyślij nam" class="form-wyslij">
+                    <input type="submit" value="Jesteś zainteresowany? Wyślij" class="form-wyslij">
                 </div>
 
             </fieldset>
@@ -127,8 +127,7 @@
 
     </div>
 
-<hr>
-<footer>
+
     <div class="pra"> 2015-2016 Copyright Arabica </div>
     <div class="cen"> Weszelkie prawa zastrzeżone</div>
     <div class="lew"> Regulamin | Polityka Prywatności</div>
