@@ -67,8 +67,9 @@ body header {
     vertical-align: middle;
 }
 
-#naglowek-strony nav ul li{
+#naglowek-strony nav ul li {
 
+    text-decoration: none;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
