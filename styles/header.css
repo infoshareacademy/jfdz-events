@@ -8,6 +8,13 @@ body {
     background-color: #2C163B;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
 body header {
 
     background-color: #E76F3B;
@@ -69,7 +76,6 @@ body header {
 
 #naglowek-strony nav ul li {
 
-    text-decoration: none;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
