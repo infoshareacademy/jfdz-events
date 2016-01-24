@@ -11,6 +11,7 @@
     padding:15px;
     /*background-color:rgb(255, 255, 255);*/
     border-radius: 5px;
+    font-family: 'Inder', sans-serif;
     /*background-image: url("../images/Womans-finger-pointing.jpg");*/
     /*background-repeat: no-repeat;*/
     /*background-position: left bottom;*/
@@ -39,6 +40,7 @@
     margin-left:16px;
     margin-bottom: -15px;
     display: block;
+    font-family: 'Inder', sans-serif;
 
 }
 .plec {
