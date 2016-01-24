@@ -29,10 +29,14 @@
 #gora .right .tytul{
     margin-right: 50px;
     color:#AD093A;
+
+
+
 }
 #gora .left .tytul{
     margin-right: 50px;
     color:#AD093A;
+
 }
 #dol .right .tytul{
     margin-right: 50px;
@@ -63,18 +67,22 @@
     margin-top: 270px;
     align-content: center;
     overflow: hidden;
+    font-family: 'Inder', sans-serif;
+    padding-top: 10px;
 
 }
 #gora .left .foto div p {
     margin-left: 10px;
     margin-right: 10px;
+    font-family: 'Inder', sans-serif;
+
 }
 
 #gora .left .foto div:hover {
     background-color:  #F4EDA5;
     transition-duration: 1s;
-    height: 130px;
-    transform: translateY(-100px);
+    height: 120px;
+    transform: translateY(-90px);
     opacity: 0.9;
     color: #AD093A;
 }
@@ -97,18 +105,21 @@
     margin-top: 270px;
     align-content: center;
     overflow: hidden;
+    font-family: 'Inder', sans-serif;
+    padding-top: 10px;
 
 }
 #dol .left .foto4 div p {
     margin-left: 10px;
     margin-right: 10px;
+    font-family: 'Inder', sans-serif;
 }
 
 #dol .left .foto4 div:hover {
     background-color: #F4EDA5;
     transition-duration: 1s;
-    height: 130px;
-    transform: translateY(-100px);
+    height: 120px;
+    transform: translateY(-90px);
     opacity: 0.9;
     color:#AD093A;
 }
@@ -132,16 +143,19 @@
     margin-top: 270px;
     align-content: center;
     overflow: hidden;
+    font-family: 'Inder', sans-serif;
+    padding-top: 10px;
 }
 #gora .right .foto2 div p {
     margin-left: 10px;
     margin-right: 10px;
+    font-family: 'Inder', sans-serif;
 }
 #gora .right .foto2 div:hover {
     background-color: #F4EDA5;
     transition-duration: 1s;
-    height: 130px;
-    transform: translateY(-100px);
+    height: 120px;
+    transform: translateY(-90px);
     opacity: 0.9;
     color:#AD093A;
 }
@@ -164,20 +178,22 @@
     margin-top: 270px;
     align-content: center;
     overflow: hidden;
+    font-family: 'Inder', sans-serif;
+    padding-top: 10px;
 }
 #dol .right .foto3 div p {
     margin-left: 10px;
     margin-right: 10px;
+    font-family: 'Inder', sans-serif;
 }
 #dol .right .foto3 div:hover {
     background-color: #F4EDA5;
     transition-duration: 1s;
-    height: 130px;
-    transform: translateY(-100px);
+    height: 120px;
+    transform: translateY(-90px);
     opacity: 0.9;
     color:#AD093A;
 }
-
 
 .tytul{
     font-size: 25px;
