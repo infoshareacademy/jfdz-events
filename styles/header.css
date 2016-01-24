@@ -1,4 +1,5 @@
 body {
+
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -6,97 +7,24 @@ body {
     font-family: bandy, sans-serif;
     background-color: #2C163B;
 }
+
 body header {
-    /*background-color: #FFCB4E;*/
+
     background-color: #E76F3B;
     width: auto;
     height: 450px;
-    /*border: 6px solid saddlebrown;*/
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    /*background-image: url('../images/people-festival-party-dancing.jpg');*/
-    /*background-size: contain;*/
     background-repeat: no-repeat;
-    /*padding-right: 2%;*/
-    /*margin: 40px;*/
     position: relative;
 }
 
-/*#header_low {*/
+#naglowek-strony .funkcja_obrazek {
 
-/*!*height: auto;*!*/
-/*!*width: auto;*!*/
-/*align-items: center;*/
-/*position: absolute;*/
-/*bottom: 35px;*/
-/*right: 40px;*/
-/*font-style: italic;*/
-/*font-family: Vivaldi, Serif;*/
-/*font-size: 25px;*/
-/*color: gray;*/
-/*!*color: rgba(0, 0, 0, 0.5);*!*/
-/*}*/
-
-
-/*header .lewa {*/
-/*float: left;*/
-/*margin-left: 10px;*/
-/*display: inline-block;*/
-/*}*/
-
-/*header .prawa {*/
-/*float: right;*/
-/*}*/
-/*header .tytul{*/
-/*display: inline-block;*/
-/*margin-left: 10px;*/
-/*margin-top: 15px;*/
-/*font-size: 70px;*/
-/*font-family: Serif;*/
-/*color: darkslategray;*/
-/*}*/
-/*header .clear {*/
-/*clear: both;*/
-/*}*/
-/*header .funkcja_obrazek{*/
-/*height: 180px;*/
-/*width: 320px;*/
-/*background-image: url('https://images.unsplash.com/photo-1443916568596-df5a58c445e9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e851025869fe3b9e41e499ad8173e542');*/
-/*!*border-bottom-left-radius: 8px;*!*/
-/*!*border-top-left-radius: 8px;*!*/
-/*float: left;*/
-/*margin-left: 0px;*/
-/*background-size: contain;*/
-/*}*/
-/*.ramka{*/
-/*border: 2px dotted black;*/
-/*}*/
-/*header .menu_nawigacyjne{*/
-/*text-align: center;*/
-/*width: 500px;*/
-
-/*}*/
-/*header .nawigator{*/
-/*display: inline-block;*/
-/*width: 100px;*/
-/*}*/
-
-/*.naglowek-strony {*/
-    /*padding-left: 340px;*/
-    /*padding-right: 20px;*/
-    /*background-image: url('../images/logo.png');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 320px 250px;*/
-    /*background-position: bottom;*/
-/*}*/
-
-.naglowek-strony .funkcja_obrazek {
     width: 390px;
     height: 130px;
     background-image: url('../images/trojmiasto.png');
     background-repeat: no-repeat;
-    /*float: left;*/
-    /*display: inline;*/
     margin-left: auto;
     margin-right: auto;
     background-size: contain;
@@ -104,7 +32,8 @@ body header {
     display: block;
 }
 
-.naglowek-strony .tytul-duzy {
+#naglowek-strony .tytul-duzy {
+
     width: 1200px;
     height: 180px;
     font-size: 150px;
@@ -115,17 +44,20 @@ body header {
     display: block;
 }
 
-.naglowek-strony nav {
+#naglowek-strony nav {
+
     padding-top: 5px;
 }
-.naglowek-strony .tytul_maly {
+
+#naglowek-strony .tytul_maly {
+
     text-align: center;
     font-size: 23px;
     font-family: Bandy;
     font-weight: lighter;
 }
 
-.naglowek-strony ul {
+#naglowek-strony ul {
 
     padding: 10px;
     margin-left: auto;
@@ -133,9 +65,10 @@ body header {
     text-align: center;
     position: relative;
     vertical-align: middle;
- }
+}
 
-.naglowek-strony li {
+#naglowek-strony nav ul li{
+
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -146,8 +79,5 @@ body header {
     font-family: Bandy;
     font-weight: bold;
     line-height: 30px;
+    color: black;
 }
-
-
-
-
