@@ -5,9 +5,9 @@
 $(document).ready(
     function(){
 
-        var regImie=/^[A-Za-ząśżźćńółęĄŻŹĆŃŁÓĘŚ]*$/;
-        var regPoczta=/^([A-Za-z0-9_.]*)@{1}([A-Za-z0-9_.]*)$/;
-        var regTel=/^\+?\d{0,2} ?\d{9}$/;
+        var regImie=/^[A-Za-ząśżźćńółęĄŻŹĆŃŁÓĘŚ]*/;
+        var regPoczta=/^([A-Za-z0-9_.]*)@{1}([A-Za-z0-9_.]*)/;
+        var regTel=/^\+?\d{0,2} ?\d{9}/;
 
         $('input').change(
 
@@ -24,8 +24,8 @@ $(document).ready(
                 if (evalImie==null) {
                     alert('Musisz poprawnie wpisać imię!');
                 }
-                if (evalImie==null) alert('Musisz poprawnie wpisać E-mail!');
-                if (evalImie==null) alert('Musisz poprawnie wpisać numer telefonu!');
+                if (evalPoczta==null) alert('Musisz poprawnie wpisać E-mail!');
+                if (evalTel==null) alert('Musisz poprawnie wpisać numer telefonu!');
 
         }
         )

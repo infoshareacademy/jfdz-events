@@ -34,7 +34,7 @@
 /*##########################################################
 ####################Pola formularza#########################*/
 .form-line{
-    margin: 5px 110px 5px 70px;
+    margin: 5px 90px 5px 70px;
 }
 .opis-pola{
     margin-left:16px;
@@ -87,14 +87,71 @@
     transition-duration: 1s;
     background: transparent;
     cursor: pointer;
+    margin-left: 15px;
 }
 
-.form-wyslij:hover {
+.form-wyslij:hover,.form-wyslij:focus {
     background: #2C163B;
     color:white;
-    width: 430px;
+    width: 450px;
+    outline: none;
  }
 
 .form-wyslij-pole{
     margin-top: -15px;
+}
+
+/* checkbox */
+.input-styled  {
+    width:35px;
+    height:35px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+    /*border:1px solid #333;*/
+    /*box-shadow:inset 0 2px 2px rgba(0,0,0,0.3);*/
+    display:inline-block;
+    background-color: #fff;
+}
+.input-styled  input {
+    width:35px;
+    height:35px;
+    opacity:0;
+    position: absolute;
+    top:0; left:0;
+    z-index: 2;
+    cursor:pointer;
+}
+.input-styled  input + span {
+    display:block;
+    position: relative;
+    z-index: 1;
+    width:29px;
+    height:29px;
+    /*background: black;*/
+    background-image: url("../images/ok_ikona.png");
+    background-size: 29px 29px;
+    left:-35px;
+    top: 3px;
+    transition:0.2s; -webkit-transition:0.2s; -moz-transition:0.2s;
+    /*border-radius:25px;*/
+}
+.input-styled  input:checked + span {left:3px;}
+
+.cBoxLabel{
+
+    font-size: 18px;
+}
+.text{
+    display: inline;
+    position: relative;
+    bottom: 12px;
+}
+.form-line .cBox {
+
+    text-align: left;
+    position: relative;
+    width:400px !important;
+    /*display: inline-block;*/
+
 }

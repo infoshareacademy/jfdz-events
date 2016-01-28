@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/ikonki_zakladka/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="images/ikonki_zakladka/apple-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/ikonki_zakladka/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/home/ewag/Desktop/Untitled Folder/Kurs JavaScript od Podstaw/ikonki_zakladka/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/ikonki_zakladka/apple-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="images/ikonki_zakladka/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/ikonki_zakladka/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/ikonki_zakladka/apple-icon-180x180.png">
@@ -115,16 +115,21 @@
                 <div class="form-line">
                     <!--<label for="formularz2" class="opis-pola">E-mail: </label>-->
                     <br>
-                    <input type="email" name="email" id="formularz2" placeholder="E-mail" class="form-input-text  pole-formularz-mail">
+                    <input type="email" name="email" data-clear-btn="true" id="formularz2" placeholder="E-mail" class="form-input-text  pole-formularz-mail">
                 </div>
                 <div class="form-line">
                     <!--<label for="formularz3" class="opis-pola">Oraz nr telefonu: </label>-->
                     <br>
                     <input type="tel" name="phone" id="formularz3" placeholder="Telefon" class="form-input-text  pole-formularz-tel">
                 </div>
-                <div class="form-line plec">
-                    <label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>
-                    <label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">
+                <div class="form-line cbox">
+                    <br>
+                    <input type="checkbox" name="agre" id="cbox1" class="" value="Zgoda na">
+                    <div class="text">
+                        <label for="cbox1" class="cBoxLabel">Wyrażam zgodę na działania marketingowe</label>
+                        <!--<label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>-->
+                        <!--<label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">-->
+                    </div>
                 </div>
                 <!--<div class="form-line">-->
                 <div class="form-wyslij-pole">
@@ -139,7 +144,7 @@
 
     <div>
         <div class="lew"> 2015-2016 &copy; Copyright Arabica | Weszelkie prawa zastrzeżone</div>
-        <div class="cen"> Regulamin | Polityka Prywatności</div>
+        <!--<div class="cen"> Regulamin | Polityka Prywatności</div>-->
 
         <div class="pra">
             <i class="fa fa-facebook-square" style="font-size:36px"></i>
@@ -151,8 +156,16 @@
 
 </footer>
 
-<script src="script/jquery-2.1.4.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="script/walidacjaForm.js"></script>
 
+<script>
+    $(function() {
+        $(':checkbox').each(function() {
+            $(this).wrap('<span class="input-styled "></span>');
+            $(this).after('<span></span>');
+        })
+    });
+</script>
 </body>
 </html>
