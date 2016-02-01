@@ -4,55 +4,62 @@
 
 $(document).ready(
     function(){
+        $('.monit').hide();
+        $('input[type=submit]').attr('disabled','disabled');
+        //Powyżej blokowanie przycisku submit
 
-        var regImie=/^[A-Za-ząśżźćńółęĄŻŹĆŃŁÓĘŚ]*/;
+        var regImie=/^[A-Za-ząśżźćńółęĄŻŹĆŃŁÓĘŚ][^\s0-9]{2,30}/;
         var regPoczta=/^([A-Za-z0-9_.]*)@{1}([A-Za-z0-9_.]*)/;
         var regTel=/^\+?\d{0,2} ?\d{9}/;
 
-        $('input').change(
-
+        $('#formularz1').change(
             function(){
 
-                var doSprImie=$('#formularz1').val();
-                var doSprPoczta=$('#formularz2').val();
-                var doSprTel=$('#formularz3').val();
-
-                var evalImie= doSprImie.match(regImie);
-                var evalPoczta= doSprPoczta.match(regPoczta);
-                var evalTel= doSprTel.match(regTel);
-
-                if (evalImie==null) {
-                    alert('Musisz poprawnie wpisać imię!');
+                var evalImie= $('#formularz1').val().match(regImie);
+                if (evalImie==null){
+                        //alert('Musisz poprawnie wpisać imię!');
+                        $('#formularz1').next().show(500);
+                        $('#formularz1').css('background-color','red');
+                        $('#formularz1').focus();
                 }
-                if (evalPoczta==null) alert('Musisz poprawnie wpisać E-mail!');
-                if (evalTel==null) alert('Musisz poprawnie wpisać numer telefonu!');
+                    else {
+                        $('#formularz1').next().hide(500);
+                        $('#formularz1').css('background-color','');
+                        $('input[type=submit]').removeAttr('disabled');
+                }
+            }
+        );
 
-        }
+        $('#formularz2').change(
+            function(){
+
+                var evalPoczta= $('#formularz2').val().match(regPoczta);
+                if (evalPoczta==null){
+                    $('#formularz2').next().show(500);
+                    $('#formularz2').css('background-color','red');
+                    $('#formularz2').focus();
+                }
+                else {
+                    $('#formularz2').next().hide(500);
+                    $('#formularz2').css('background-color','');
+                    $('input[type=submit]').removeAttr('disabled');
+                }
+            }
+        );
+
+        $('#formularz3').change(
+            function(){
+                var evalTel= $('#formularz3').val().match(regTel);
+                if (evalTel==null){
+                    $('#formularz3').next().show(500);
+                    $('#formularz3').css('background-color','red');
+                    $('#formularz3').focus();
+                }
+                else {
+                    $('#formularz3').next().hide(500);
+                    $('#formularz3').css('background-color','');
+                    $('input[type=submit]').removeAttr('disabled');
+                }
+            }
         )
-
-
-    }
-);
-
-//
-
-
-//function sprMail(adresMail){
-//
-//    //var adresMail = document.getElementById('formularz2').value;
-//
-//    //Wyrażenie regularne
-
-//
-//    var porownaj=testMail.match(adresMail);
-//
-//    if (porownaj==null){
-//
-//        alert('Musisz poprawić adres poczty elektronicznej!');
-//        document.getElementById('formularz2').value='';
-//        document.getElementById('formularz2').onfocus;
-//        return false;
-//
-//    }
-//
-//}
+    });

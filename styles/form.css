@@ -76,9 +76,9 @@
 
 .form-wyslij {
     color:#AD093A;
-    width: 200px;
+    width: 73px;
     height: 35px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 6px;
     border-radius: 25px;
     font-size: 18px;
@@ -98,7 +98,7 @@
  }
 
 .form-wyslij-pole{
-    margin-top: -15px;
+    margin-top: -10px;
 }
 
 /* checkbox */
@@ -133,6 +133,7 @@
     background-size: 29px 29px;
     left:-35px;
     top: 3px;
+    /*margin-top: 3px;*/
     transition:0.2s; -webkit-transition:0.2s; -moz-transition:0.2s;
     /*border-radius:25px;*/
 }
@@ -154,4 +155,10 @@
     width:400px !important;
     /*display: inline-block;*/
 
+}
+
+.monit{
+    /*visibility: hidden;*/
+    text-align: right;
+    color: white;
 }
