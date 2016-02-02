@@ -8,9 +8,9 @@ $(document).ready(
         $('input[type=submit]').attr('disabled','disabled');
         //Powyżej blokowanie przycisku submit
 
-        var regImie=/^[A-Za-ząśżźćńółęĄŻŹĆŃŁÓĘŚ][^\s0-9]{2,30}/;
-        var regPoczta=/^([A-Za-z0-9_.]*)@{1}([A-Za-z0-9_.]*)/;
-        var regTel=/^\+?\d{0,2} ?\d{9}/;
+        var regImie=/^[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśźż]{2,}$/;
+        var regPoczta=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var regTel=/^\+?\d?\d? ?\d{9}/;
 
         $('#formularz1').change(
             function(){
@@ -58,8 +58,15 @@ $(document).ready(
                 else {
                     $('#formularz3').next().hide(500);
                     $('#formularz3').css('background-color','');
-                    $('input[type=submit]').removeAttr('disabled');
+                    $('input[type=submit]').removeAttr('disabled')
                 }
+            }
+        );
+
+        $("input[type='submit']").click(
+            function(){
+                $('body').css('opacity','0.2').css('background-color','#F4EDA5')
+
             }
         )
     });
