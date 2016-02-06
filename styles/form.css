@@ -136,12 +136,14 @@
     font-size: 18px;
 }
 
-.text{
+/*Komunikat po kliknięciu pola wyślij*/
+
+.formularz .text{
     display: inline;
     position: relative;
     bottom: 12px;
 }
-.form-line .cBox {
+.formularz .form-line .cBox {
 
     text-align: left;
     position: relative;
