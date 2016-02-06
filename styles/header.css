@@ -7,6 +7,42 @@ body {
     font-family: bandy, sans-serif;
     background-color: #2C163B;
 }
+.naglowek-menu {
+    width: 1200px;
+    height: 40px;
+
+}
+.naglowek-menu a {
+    color: black;
+    text-decoration: none;
+}
+.naglowek-menu ul {
+
+    text-align: center;
+    position: fixed;
+    width: 1200px;
+    display: inline-block;
+    vertical-align: middle;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.naglowek-menu ul li {
+
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    height: 30px;
+    width: 250px;
+    background-color: #AD093A;
+    border-radius: 15px;
+    font-family: Bandy;
+    font-weight: bold;
+    line-height: 30px;
+    color: black;
+}
+
 
 body header {
 
@@ -32,10 +68,6 @@ body header {
     display: block;
 }
 
-#naglowek-strony a {
-    color: black;
-    text-decoration: none;
-}
 #naglowek-strony .tytul-duzy {
 
     /*width: 1200px;*/
@@ -48,11 +80,6 @@ body header {
     display: block;
 }
 
-#naglowek-strony nav {
-
-    padding-top: 5px;
-}
-
 #naglowek-strony .tytul_maly {
 
     text-align: center;
@@ -61,27 +88,3 @@ body header {
     font-weight: lighter;
 }
 
-#naglowek-strony ul {
-
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    position: relative;
-    vertical-align: middle;
-}
-
-#naglowek-strony nav ul li {
-
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    height: 30px;
-    width: 250px;
-    background-color: #AD093A;
-    border-radius: 15px;
-    font-family: Bandy;
-    font-weight: bold;
-    line-height: 30px;
-    color: black;
-}
