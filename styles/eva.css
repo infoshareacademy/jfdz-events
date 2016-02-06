@@ -2,6 +2,11 @@
     font-family: Bandy;
     src:url(CW_BANDY.TTF);
 }
+#funkcja{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .right{
     height: 437px;
     width: 537px;
@@ -12,6 +17,7 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right:2%;
+    /*margin-right: 3%;*/
 
 }
 .left {
@@ -24,6 +30,7 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right: 2%;
+    /*margin-left: 3%;*/
 
 }
 #gora .right .tytul{

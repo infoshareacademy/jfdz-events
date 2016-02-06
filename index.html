@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/ikonki_zakladka/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/ikonki_zakladka/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/ikonki_zakladka/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/ikonki_zakladka/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/ikonki_zakladka/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/ikonki_zakladka/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/ikonki_zakladka/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/ikonki_zakladka/favicon-16x16.png">
@@ -48,30 +48,47 @@
 </header>
 
 
-
 <main>
-    <div id="gora">
-        <div class="right">
-            <p class="tytul">Za friko</p>
-            <div class="foto2"><div>Koncert, lekcje jogi a może ciekawy wykład?<p>Dowiedz sie które imprezy w Twojej ulicy sa całkiem za darmo.</p></div></div>
-        </div>
-        <div class="left">
-            <p class="tytul">Co</p>
-            <div class="foto"><div>Koncert, wystawa a może tańce....<p>Zakładka "Co" pozwoli posortować wszystkie wydarzenia tematycznie.</p></div></div>
-        </div>
-        </div>
-    <div id="dol">
-        <div class="right">
-            <p class="tytul">Kiedy</p>
-            <div class="foto3"><div>Dziś, jutro, za rok...<p>Dowiedz się o ciekawych imprezach z wyprzedzeniem tak aby niczego nie przegapić!</p></div></div>
-        </div>
-        <div class="left">
-            <p class="tytul">Gdzie</p>
-            <div class="foto4"><div>Gdańsk , Gdynia , Sopot....<p>Dzięki zakładce "Gdzie"szybko dowiesz się co ciekawego dzieje sie w Twoim mieście.</p></div></div>
-        </div>
-        </div>
+    <div id="funkcja">
+        <div id="gora">
+            <div class="right">
+                <p class="tytul">Za friko</p>
 
-    <div class="clear"></div>
+                <div class="foto2">
+                    <div>Koncert, lekcje jogi a może ciekawy wykład?<p>Dowiedz sie które imprezy w Twojej ulicy sa
+                        całkiem za darmo.</p></div>
+                </div>
+            </div>
+            <div class="left">
+                <p class="tytul">Co</p>
+
+                <div class="foto">
+                    <div>Koncert, wystawa a może tańce....<p>Zakładka "Co" pozwoli posortować wszystkie wydarzenia
+                        tematycznie.</p></div>
+                </div>
+            </div>
+        </div>
+        <div id="dol">
+            <div class="right">
+                <p class="tytul">Kiedy</p>
+
+                <div class="foto3">
+                    <div>Dziś, jutro, za rok...<p>Dowiedz się o ciekawych imprezach z wyprzedzeniem tak aby niczego nie
+                        przegapić!</p></div>
+                </div>
+            </div>
+            <div class="left">
+                <p class="tytul">Gdzie</p>
+
+                <div class="foto4">
+                    <div>Gdańsk , Gdynia , Sopot....<p>Dzięki zakładce "Gdzie"szybko dowiesz się co ciekawego dzieje sie
+                        w Twoim mieście.</p></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
 </main>
 <footer>
 
@@ -79,49 +96,56 @@
 
         <form action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
             <!--<fieldset  class="fieldset-napis">-->
-                <!--<legend>Jesteś zainteresowany?</legend>-->
- 
-                <div class="form-line">
-                    <!--<label for="formularz1" class="opis-pola">Podaj imię: </label>-->
-                    <br>
-                    <input type="text" name="imie" id="formularz1" placeholder="Imię" class="form-input-text pole-formularz-imie">
-                    <div class="monit">
-                        Musisz poprawne wypełnić to pole.
-                    </div>
+            <!--<legend>Jesteś zainteresowany?</legend>-->
+
+            <div class="form-line">
+                <!--<label for="formularz1" class="opis-pola">Podaj imię: </label>-->
+                <br>
+                <input type="text" name="imie" id="formularz1" placeholder="Imię"
+                       class="form-input-text pole-formularz-imie">
+
+                <div class="monit">
+                    Musisz poprawne wypełnić to pole.
                 </div>
-                <div class="form-line">
-                    <!--<label for="formularz2" class="opis-pola">E-mail: </label>-->
-                    <br>
-                    <input type="email" name="email" data-clear-btn="true" id="formularz2" placeholder="E-mail" class="form-input-text  pole-formularz-mail">
-                    <div class="monit">
-                        Musisz poprawne wypełnić to pole.
-                    </div>
+            </div>
+            <div class="form-line">
+                <!--<label for="formularz2" class="opis-pola">E-mail: </label>-->
+                <br>
+                <input type="email" name="email" data-clear-btn="true" id="formularz2" placeholder="E-mail"
+                       class="form-input-text  pole-formularz-mail">
+
+                <div class="monit">
+                    Musisz poprawne wypełnić to pole.
                 </div>
-                <div class="form-line">
-                    <!--<label for="formularz3" class="opis-pola">Oraz nr telefonu: </label>-->
-                    <br>
-                    <input type="tel" name="phone" id="formularz3" placeholder="Telefon" class="form-input-text  pole-formularz-tel">
-                    <div class="monit">
-                        Musisz poprawne wypełnić to pole.
-                    </div>
+            </div>
+            <div class="form-line">
+                <!--<label for="formularz3" class="opis-pola">Oraz nr telefonu: </label>-->
+                <br>
+                <input type="tel" name="phone" id="formularz3" placeholder="Telefon"
+                       class="form-input-text  pole-formularz-tel">
+
+                <div class="monit">
+                    Musisz poprawne wypełnić to pole.
                 </div>
-                <div class="form-line cbox">
-                    <br>
-                    <input type="checkbox" name="agre" id="cbox1" class="" value="Zgoda na">
-                    <div class="text">
-                        <label for="cbox1" class="cBoxLabel">Wyrażam zgodę na działania marketingowe</label>
-                        <!--<div class="monit">-->
-                            <!--Musisz wyrazić zgodę.-->
-                        <!--</div>-->
-                        <!--<label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>-->
-                        <!--<label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">-->
-                    </div>
+            </div>
+            <div class="form-line cbox">
+                <br>
+                <input type="checkbox" name="agre" id="cbox1" class="" value="Zgoda na">
+
+                <div class="text">
+                    <label for="cbox1" class="cBoxLabel">Wyrażam zgodę na działania marketingowe</label>
+                    <!--<div class="monit">-->
+                    <!--Musisz wyrazić zgodę.-->
+                    <!--</div>-->
+                    <!--<label for="plec_M">Mężczyzna/chłopak</label><input type="radio" name="plec" id="plec_M" value="M" checked>-->
+                    <!--<label for="plec_K">Kobieta/dziewczyna</label><input type="radio" name="plec" id="plec_K" value="K">-->
                 </div>
-                <!--<div class="form-line">-->
-                <div class="form-wyslij-pole">
-                    <input type="hidden" name="receiver" value="witek_gesse@poczta.onet.pl">
-                    <input type="submit" value="Tędy ślij, swoje zainteresowanie!" class="form-wyslij">
-                </div>
+            </div>
+            <!--<div class="form-line">-->
+            <div class="form-wyslij-pole">
+                <input type="hidden" name="receiver" value="witek_gesse@poczta.onet.pl">
+                <input type="submit" value="Tędy ślij, swoje zainteresowanie!" class="form-wyslij">
+            </div>
 
             <!--</fieldset>-->
         </form>
@@ -134,7 +158,7 @@
 
         <div class="pra">
             <!--<div class="social">-->
-                <i class="fa fa-facebook-square" style="font-size:36px;"></i>
+            <i class="fa fa-facebook-square" style="font-size:36px;"></i>
             <!--</div>-->
             <i class="fa fa-google-plus-square" style="font-size:36px"></i>
             <i class="fa fa-linkedin-square" style="font-size:36px"></i>
@@ -148,8 +172,8 @@
 <script src="script/walidacjaForm.js"></script>
 
 <script>
-    $(function() {
-        $(':checkbox').each(function() {
+    $(function () {
+        $(':checkbox').each(function () {
             $(this).wrap('<span class="input-styled "></span>');
             $(this).after('<span></span>');
         })
