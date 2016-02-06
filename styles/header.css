@@ -71,13 +71,16 @@ body header {
 #naglowek-strony .tytul-duzy {
 
     /*width: 1200px;*/
-    height: 180px;
+    height: 220px;
     font-size: 150px;
     font-family: Bandy;
     font-weight: bold;
     color: rgba(0,0,0,0.3);
     text-align: center;
     display: block;
+    background-image: url(../images/calendar.jpg);
+    background-size:contain;
+    margin-top: 20px;
 }
 
 #naglowek-strony .tytul_maly {
