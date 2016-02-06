@@ -4,8 +4,9 @@
 }
 /*Kontener formularza*/
 #formularz{
-    margin-left: 300px;
-    margin-right: 300px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     height:300px;
     text-align:center;
     padding:15px;
