@@ -30,8 +30,6 @@
     margin-right: 50px;
     color:#AD093A;
 
-
-
 }
 #gora .left .tytul{
     margin-right: 50px;
@@ -75,11 +73,11 @@
     margin-left: 10px;
     margin-right: 10px;
     font-family: 'Inder', sans-serif;
-    /*text-align: right;*/
+
 
 }
 
-#gora .left .foto div:hover {
+#gora .left .foto:hover div {
     background-color:  #F4EDA5;
     transition-duration: 1s;
     height: 120px;
@@ -116,7 +114,7 @@
     font-family: 'Inder', sans-serif;
 }
 
-#dol .left .foto4 div:hover {
+#dol .left .foto4:hover div {
     background-color: #F4EDA5;
     transition-duration: 1s;
     height: 120px;
@@ -152,7 +150,7 @@
     margin-right: 10px;
     font-family: 'Inder', sans-serif;
 }
-#gora .right .foto2 div:hover {
+#gora .right .foto2:hover div {
     background-color: #F4EDA5;
     transition-duration: 1s;
     height: 120px;
@@ -187,7 +185,7 @@
     margin-right: 10px;
     font-family: 'Inder', sans-serif;
 }
-#dol .right .foto3 div:hover {
+#dol .right .foto3:hover div {
     background-color: #F4EDA5;
     transition-duration: 1s;
     height: 120px;
