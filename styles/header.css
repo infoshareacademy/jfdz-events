@@ -8,8 +8,9 @@ body {
     background-color: #2C163B;
 }
 .naglowek-menu {
-    width: 1200px;
-    height: 40px;
+    width: auto;
+    height: 50px;
+    background-color: #E76F3B;
 
 }
 .naglowek-menu a {
@@ -20,12 +21,15 @@ body {
 
     text-align: center;
     position: fixed;
-    width: 1200px;
+    width: auto;
+    height: 50px;
     display: inline-block;
     vertical-align: middle;
     left: 0px;
     right: 0px;
     z-index: 1;
+    background-color: #E76F3B;
+    line-height: 50px;
 }
 
 .naglowek-menu ul li {
@@ -49,8 +53,8 @@ body header {
     background-color: #E76F3B;
     width: auto;
     height: 450px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    /*border-top-left-radius: 15px;*/
+    /*border-top-right-radius: 15px;*/
     background-repeat: no-repeat;
     position: relative;
 }
