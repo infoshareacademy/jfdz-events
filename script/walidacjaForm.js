@@ -8,14 +8,14 @@ $(document).ready(
         $('input[type=submit]').attr('disabled','disabled');
         //Powyżej blokowanie przycisku submit
 
-        var regImie=/^[A-Za-ząśżźćńółęĄŻŹĆŃŁÓĘŚ][^\s0-9]{2,30}/;
-        var regPoczta=/^([A-Za-z0-9_.]*)@{1}([A-Za-z0-9_.]*)/;
-        var regTel=/^\+?\d{0,2} ?\d{9}/;
+        var wyrRegImie=/^[A-Za-ząśżźćńółęĄŻŹĆŃŁÓĘŚ][^\s0-9]{2,30}/;
+        var wyrRegPoczta=/^([A-Za-z0-9_.]*)@{1}([A-Za-z0-9_.]*)/;
+        var wyrRegTel=/^\+?\d{0,2} ?\d{9}/;
 
         $('#formularz1').change(
             function(){
 
-                var evalImie= $('#formularz1').val().match(regImie);
+                var evalImie= $('#formularz1').val().match(wyrRegImie);
                 if (evalImie==null){
                         //alert('Musisz poprawnie wpisać imię!');
                         $('#formularz1').next().show(500);
@@ -33,7 +33,7 @@ $(document).ready(
         $('#formularz2').change(
             function(){
 
-                var evalPoczta= $('#formularz2').val().match(regPoczta);
+                var evalPoczta= $('#formularz2').val().match(wyrRegPoczta);
                 if (evalPoczta==null){
                     $('#formularz2').next().show(500);
                     $('#formularz2').css('background-color','red');
@@ -49,7 +49,7 @@ $(document).ready(
 
         $('#formularz3').change(
             function(){
-                var evalTel= $('#formularz3').val().match(regTel);
+                var evalTel= $('#formularz3').val().match(wyrRegTel);
                 if (evalTel==null){
                     $('#formularz3').next().show(500);
                     $('#formularz3').css('background-color','red');
