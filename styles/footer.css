@@ -36,3 +36,17 @@ footer{
     width:470px;
 
 }
+.social{
+
+
+}
+.fa{
+    cursor: pointer;
+    color:#2C163B;
+    text-align: center;
+    transition: color 0.5s;
+}
+.fa:hover{
+    color:#F4EDA5;
+    text-align: center;
+}
