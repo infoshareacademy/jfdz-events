@@ -58,6 +58,13 @@
     height: 300px;
     background-position: right;
     background-size: 570px;
+    opacity: 0.0;
+    animation: wyjscie 3s;
+
+}
+@keyframes wyjscie {
+    50% {opacity: 0.5}
+    100% {opacity: 1.0}
 }
 
 #gora .left .foto div {
