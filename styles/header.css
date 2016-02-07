@@ -84,9 +84,9 @@ body header {
     color: rgba(0, 0, 0, 0.3);
     text-align: center;
     display: block;
-    background-image: url(../images/calendar.jpg);
-    background-size:contain;
-    margin-top: 20px;
+    /*background-image: url(../images/calendar.jpg);*/
+    /*background-size:contain;*/
+    /*margin-top: 20px;*/
 }
 
 
