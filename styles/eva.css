@@ -1,3 +1,5 @@
+
+/*ustawienia ogolne*/
 @font-face {
     font-family: Bandy;
     src:url(CW_BANDY.TTF);
@@ -51,6 +53,7 @@
     color:#AD093A;
 }
 
+/*lewa strona*/
 #gora .left .foto{
     background-image: url(../images/wystawa.jpg);
     margin-left: 12px;
@@ -129,6 +132,7 @@
     color:#AD093A;
 }
 
+/*prawa strona*/
 #gora .right .foto2 {
     background-image: url(../images/money2.jpg);
     margin-left: 12px;
