@@ -34,26 +34,22 @@
 }*/
 /*##########################################################
 ####################Pola formularza#########################*/
-.form-line{
+.formularz .form-line{
     margin: 5px 90px 5px 70px;
 }
-.opis-pola{
+.formularz .opis-pola{
     margin-left:16px;
     margin-bottom: -15px;
     display: block;
     font-family: 'Inder', sans-serif;
 
 }
-.plec {
-    text-align:center;
-    margin-top: 15px;
-    margin-left: 112px;
-}
-.form-input-text:focus {
+
+.formularz .form-input-text:focus {
     outline: none;
     background-color: #FFCB50;
 }
-.form-input-text{
+.formularz .form-input-text{
     width:100%;
     font-family: 'Inder', sans-serif;
     background-position: 2px 3px;
@@ -65,17 +61,17 @@
     font-size:18px;
     border: 0px;
 }
-.pole-formularz-imie{
+.formularz .pole-formularz-imie{
     background-image: url('../images/imie_ikona.png');
 }
-.pole-formularz-mail {
+.formularz .pole-formularz-mail {
     background-image: url('../images/e-mail_ikona.png');
 }
-.pole-formularz-tel {
+.formularz .pole-formularz-tel {
     background-image: url('../images/phone_ikona.png');
 }
 
-.form-wyslij {
+.formularz .form-wyslij {
     color:#AD093A;
     width: 73px;
     height: 35px;
@@ -91,14 +87,14 @@
     margin-left: 15px;
 }
 
-.form-wyslij:hover,.form-wyslij:focus {
+.formularz .form-wyslij:hover,.form-wyslij:focus {
     background: #2C163B;
     color:white;
     width: 450px;
     outline: none;
  }
 
-.form-wyslij-pole{
+.formularz .form-wyslij-pole{
     margin-top: -10px;
 }
 
@@ -109,8 +105,6 @@
     overflow: hidden;
     position: relative;
     border-radius: 25px;
-    /*border:1px solid #333;*/
-    /*box-shadow:inset 0 2px 2px rgba(0,0,0,0.3);*/
     display:inline-block;
     background-color: #fff;
 }
@@ -129,37 +123,34 @@
     z-index: 1;
     width:29px;
     height:29px;
-    /*background: black;*/
     background-image: url("../images/ok_ikona.png");
     background-size: 29px 29px;
     left:-35px;
     top: 3px;
-    /*margin-top: 3px;*/
     transition:0.2s; -webkit-transition:0.2s; -moz-transition:0.2s;
-    /*border-radius:25px;*/
 }
+
 .input-styled  input:checked + span {left:3px;}
 
 .cBoxLabel{
-
     font-size: 18px;
 }
-.text{
+
+/*Komunikat po kliknięciu pola wyślij*/
+
+.formularz .text{
     display: inline;
     position: relative;
     bottom: 12px;
 }
-.form-line .cBox {
+.formularz .form-line .cBox {
 
     text-align: left;
     position: relative;
     width:400px !important;
-    /*display: inline-block;*/
-
 }
 
-.monit{
-    /*visibility: hidden;*/
+.formularz .monit{
     text-align: right;
     color: white;
 }
