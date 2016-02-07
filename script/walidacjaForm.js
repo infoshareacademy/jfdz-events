@@ -17,7 +17,6 @@ $(document).ready(
 
                 var evalImie= $('#formularz1').val().match(regImie);
                 if (evalImie==null){
-                        //alert('Musisz poprawnie wpisać imię!');
                         $('#formularz1').next().show(500);
                         $('#formularz1').css('background-color','red');
                         $('#formularz1').focus();
