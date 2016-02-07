@@ -3,62 +3,97 @@
  */
 
 $(document).ready(
-    function(){
+    function() {
+
+        //$(".mask").css('display','none');
         $('.monit').hide();
-        $('input[type=submit]').attr('disabled','disabled');
+        $('input[type=submit]').attr('disabled', 'disabled');
         //Powyżej blokowanie przycisku submit
 
-        var wyrRegImie=/^[A-Za-ząśżźćńółęĄŻŹĆŃŁÓĘŚ][^\s0-9]{2,30}/;
-        var wyrRegPoczta=/^([A-Za-z0-9_.]*)@{1}([A-Za-z0-9_.]*)/;
-        var wyrRegTel=/^\+?\d{0,2} ?\d{9}/;
+        var regImie = /^[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśźż]{2,}$/;
+        var regPoczta = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var regTel = /^\+?\d?\d? ?\d{9}/;
 
         $('#formularz1').change(
-            function(){
+            function () {
 
-                var evalImie= $('#formularz1').val().match(wyrRegImie);
-                if (evalImie==null){
-                        $('#formularz1').next().show(500);
-                        $('#formularz1').css('background-color','red');
-                        $('#formularz1').focus();
+                var evalImie = $('#formularz1').val().match(regImie);
+                if (evalImie == null) {
+                    //alert('Musisz poprawnie wpisać imię!');
+                    $('#formularz1').next().show(500);
+                    $('#formularz1').css('background-color', 'red');
+                    $('#formularz1').focus();
                 }
-                    else {
-                        $('#formularz1').next().hide(500);
-                        $('#formularz1').css('background-color','');
-                        $('input[type=submit]').removeAttr('disabled');
+                else {
+                    $('#formularz1').next().hide(500);
+                    $('#formularz1').css('background-color', '');
+                    $('input[type=submit]').removeAttr('disabled');
                 }
             }
         );
 
         $('#formularz2').change(
-            function(){
+            function () {
 
-                var evalPoczta= $('#formularz2').val().match(wyrRegPoczta);
-                if (evalPoczta==null){
+                var evalPoczta = $('#formularz2').val().match(regPoczta);
+                if (evalPoczta == null) {
                     $('#formularz2').next().show(500);
-                    $('#formularz2').css('background-color','red');
+                    $('#formularz2').css('background-color', 'red');
                     $('#formularz2').focus();
                 }
                 else {
                     $('#formularz2').next().hide(500);
-                    $('#formularz2').css('background-color','');
+                    $('#formularz2').css('background-color', '');
                     $('input[type=submit]').removeAttr('disabled');
                 }
             }
         );
 
         $('#formularz3').change(
-            function(){
-                var evalTel= $('#formularz3').val().match(wyrRegTel);
-                if (evalTel==null){
+            function () {
+                var evalTel = $('#formularz3').val().match(regTel);
+                if (evalTel == null) {
                     $('#formularz3').next().show(500);
-                    $('#formularz3').css('background-color','red');
+                    $('#formularz3').css('background-color', 'red');
                     $('#formularz3').focus();
                 }
                 else {
                     $('#formularz3').next().hide(500);
-                    $('#formularz3').css('background-color','');
-                    $('input[type=submit]').removeAttr('disabled');
+                    $('#formularz3').css('background-color', '');
+                    $('input[type=submit]').removeAttr('disabled')
                 }
             }
-        )
+        );
+
+        //$("input[type=submit]").click(
+        //    function () {
+        //        //$(this).delay(5000);
+        //        $('body').css({
+        //            opacity: 0.2,
+        //            background: '#F4EDA5',
+        //
+        //        });
+        //        //var text='Dziękujemy za wysłanie nam informacji';
+        //        //$('.message').html(text);
+        //
+        //    }
+        //);
+
+        //$("form").submit(function() {
+        //    $(".mask").css('display','block');
+        //    var timer = 5;
+        //    $('.time').html(timer);
+        //    setInterval(function() {
+        //        if(timer > 0) {
+        //            //$('.odliczanie').addClass('time');
+        //            $('.time').html(--timer).show(1000);
+        //        }
+        //        else{
+        //
+        //        }
+        //
+        //    }, 1000);
+        //
+        //});
     });
+

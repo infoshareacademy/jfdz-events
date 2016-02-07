@@ -4,19 +4,14 @@
 }
 /*Kontener formularza*/
 #formularz{
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 300px;
+    margin-right: 300px;
     height:300px;
     text-align:center;
     padding:15px;
     /*background-color:rgb(255, 255, 255);*/
     border-radius: 5px;
     font-family: 'Inder', sans-serif;
-    /*background-image: url("../images/Womans-finger-pointing.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: left bottom;*/
-;
 }
 /*Elementy pola zawierającego formularz*/
 #formularz .fieldset-napis{
@@ -35,7 +30,7 @@
 /*##########################################################
 ####################Pola formularza#########################*/
 .formularz .form-line{
-    margin: 5px 90px 5px 70px;
+    margin: 5px 165px 5px 145px;
 }
 .formularz .opis-pola{
     margin-left:16px;
@@ -104,7 +99,10 @@
     height:35px;
     overflow: hidden;
     position: relative;
-    border-radius: 25px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    /*border:1px solid #333;*/
+    /*box-shadow:inset 0 2px 2px rgba(0,0,0,0.3);*/
     display:inline-block;
     background-color: #fff;
 }
@@ -116,6 +114,7 @@
     top:0; left:0;
     z-index: 2;
     cursor:pointer;
+    margin: 0px;
 }
 .input-styled  input + span {
     display:block;
@@ -129,7 +128,6 @@
     top: 3px;
     transition:0.2s; -webkit-transition:0.2s; -moz-transition:0.2s;
 }
-
 .input-styled  input:checked + span {left:3px;}
 
 .cBoxLabel{
@@ -150,7 +148,60 @@
     width:400px !important;
 }
 
+.mask .thanks{
+    /*z-index: 10000;*/
+    background-color: #E7713F;
+    position: relative;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+    top: -302px;
+    height:195px;
+    padding-top: 100px;
+    line-height: 32px;
+    -webkit-transition: font-size 3s,
+        background-color 3s linear,
+        line-height 3s,
+        padding-top 3s,
+        color 3s,
+        text-shadow 3s;
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+}
+.mask .thanks:hover{
+    -webkit-transition: font-size 3s,
+        background-color 3s linear,
+        line-height 3s,
+        padding-top 3s,
+        color 3s,
+        text-shadow 3s;
+    font-size: 2px;
+    background-color: transparent;
+    line-height:2px;
+    padding-top: 130px;
+    color: transparent;
+    text-shadow: 1px 1px 1px transparent;
+    /*font-weight: bold;*/
+    /*text-shadow: 1px 1px 1px white;*/
+    /*text-align: center;*/
+}
 .formularz .monit{
     text-align: right;
     color: white;
 }
+
+/*.mask .time{*/
+    /*font-size: 80px;*/
+    /*margin-top: 54px;*/
+    /*!*-webkit-transition-duration: 1s;*!*/
+    /*!*-webkit-transition: font-size;*!*/
+    /*!*transition: font-size;*!*/
+    /*-webkit-transition-timing-function: linear;*/
+/*}*/
+
+/*.mask .time{*/
+    /*font-size: 80px;*/
+    /*margin-top: 1px;*/
+/*}*/
