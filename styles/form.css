@@ -12,10 +12,6 @@
     /*background-color:rgb(255, 255, 255);*/
     border-radius: 5px;
     font-family: 'Inder', sans-serif;
-    /*background-image: url("../images/Womans-finger-pointing.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: left bottom;*/
-;
 }
 /*Elementy pola zawierającego formularz*/
 #formularz .fieldset-napis{
@@ -34,7 +30,7 @@
 /*##########################################################
 ####################Pola formularza#########################*/
 .formularz .form-line{
-    margin: 5px 90px 5px 70px;
+    margin: 5px 165px 5px 145px;
 }
 .formularz .opis-pola{
     margin-left:16px;
@@ -152,34 +148,34 @@
     width:400px !important;
 }
 
-.mask {
-    z-index: 10000;
-    background-color: rgba(255, 203, 80, 0.9);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+/*.mask {*/
+    /*z-index: 10000;*/
+    /*background-color: rgba(255, 203, 80, 0.9);*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+/*}*/
 .formularz .monit{
     text-align: right;
     color: white;
 }
-.mask .thanks, .time{
-    font-size: x-large;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px white;
-    text-align: center;
-    margin-top: 100px;
-}
-.mask .time{
-    font-size: 80px;
-    margin-top: 54px;
-    /*-webkit-transition-duration: 1s;*/
-    /*-webkit-transition: font-size;*/
-    /*transition: font-size;*/
+/*.mask .thanks, .time{*/
+    /*font-size: x-large;*/
+    /*font-weight: bold;*/
+    /*text-shadow: 1px 1px 1px white;*/
+    /*text-align: center;*/
+    /*margin-top: 100px;*/
+/*}*/
+/*.mask .time{*/
+    /*font-size: 80px;*/
+    /*margin-top: 54px;*/
+    /*!*-webkit-transition-duration: 1s;*!*/
+    /*!*-webkit-transition: font-size;*!*/
+    /*!*transition: font-size;*!*/
     /*-webkit-transition-timing-function: linear;*/
-}
+/*}*/
 
 /*.mask .time{*/
     /*font-size: 80px;*/
