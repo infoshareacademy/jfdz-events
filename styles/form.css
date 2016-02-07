@@ -148,26 +148,38 @@
     width:400px !important;
 }
 
-/*.mask {*/
+.mask .thanks{
     /*z-index: 10000;*/
-    /*background-color: rgba(255, 203, 80, 0.9);*/
-    /*position: fixed;*/
-    /*top: 0;*/
+    background-color: #E7713F;
+    position: relative;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+    top: -302px;
+    height:195px;
+    padding-top: 100px;
+    line-height: 32px;
+    -webkit-transition: font-size 3s, background-color 3s linear, line-height 3s, padding-top 3s;
     /*bottom: 0;*/
     /*left: 0;*/
     /*right: 0;*/
-/*}*/
+}
+.mask .thanks:hover{
+    -webkit-transition: font-size 3s, background-color 3s linear, line-height 3s, padding-top 3s;
+    font-size: 2px;
+    background-color: transparent;
+    line-height:2px;
+    padding-top: 130px;
+    /*font-weight: bold;*/
+    /*text-shadow: 1px 1px 1px white;*/
+    /*text-align: center;*/
+}
 .formularz .monit{
     text-align: right;
     color: white;
 }
-/*.mask .thanks, .time{*/
-    /*font-size: x-large;*/
-    /*font-weight: bold;*/
-    /*text-shadow: 1px 1px 1px white;*/
-    /*text-align: center;*/
-    /*margin-top: 100px;*/
-/*}*/
+
 /*.mask .time{*/
     /*font-size: 80px;*/
     /*margin-top: 54px;*/
