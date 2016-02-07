@@ -147,6 +147,9 @@
     height: 300px;
     background-position: center;
     background-size: 480px;
+    opacity: 0.0;
+    animation: wyjscie 5s  ;
+    animation-fill-mode: forwards;
 
 }
 #gora .right .foto2 div {
@@ -183,6 +186,9 @@
     width: 500px;
     height: 300px;
     background-size: 610px;
+    opacity: 0.0;
+    animation: wyjscie 5s  ;
+    animation-fill-mode: forwards;
 }
 #dol .right .foto3 div {
     font-size: 20px;
