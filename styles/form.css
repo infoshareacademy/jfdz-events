@@ -160,17 +160,29 @@
     height:195px;
     padding-top: 100px;
     line-height: 32px;
-    -webkit-transition: font-size 3s, background-color 3s linear, line-height 3s, padding-top 3s;
+    -webkit-transition: font-size 3s,
+        background-color 3s linear,
+        line-height 3s,
+        padding-top 3s,
+        color 3s,
+        text-shadow 3s;
     /*bottom: 0;*/
     /*left: 0;*/
     /*right: 0;*/
 }
 .mask .thanks:hover{
-    -webkit-transition: font-size 3s, background-color 3s linear, line-height 3s, padding-top 3s;
+    -webkit-transition: font-size 3s,
+        background-color 3s linear,
+        line-height 3s,
+        padding-top 3s,
+        color 3s,
+        text-shadow 3s;
     font-size: 2px;
     background-color: transparent;
     line-height:2px;
     padding-top: 130px;
+    color: transparent;
+    text-shadow: 1px 1px 1px transparent;
     /*font-weight: bold;*/
     /*text-shadow: 1px 1px 1px white;*/
     /*text-align: center;*/
