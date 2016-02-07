@@ -68,6 +68,9 @@ header {
     background-size: contain;
     text-align: center;
     display: block;
+    opacity: 0.0;
+    animation: wyjscie 5s  ;
+    animation-fill-mode: forwards;
 }
 
 #naglowek-strony .tytul-duzy {
@@ -85,5 +88,11 @@ header {
     font-size: 23px;
     font-family: 'Inder', sans-serif;
     font-weight: lighter;
+    opacity: 0.0;
+    animation: wyjscie 5s  ;
+    animation-fill-mode: forwards;
 }
-
+@keyframes wyjscie {
+    /*50% {opacity: 0.5}*/
+    100% {opacity: 1.0;}
+}
