@@ -4,16 +4,12 @@
 
 $(document).ready(
     function() {
-
-        //$(".mask").css('display','none');
         $('.monit').hide();
         $('input[type=submit]').attr('disabled', 'disabled');
         //Powyżej blokowanie przycisku submit
-
         var regImie = /^[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśźż]{2,}$/;
         var regPoczta = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         var regTel = /^\+?\d?\d? ?\d{9}/;
-
         $('#formularz1').change(
             function () {
 
@@ -34,7 +30,6 @@ $(document).ready(
 
         $('#formularz2').change(
             function () {
-
                 var evalPoczta = $('#formularz2').val().match(regPoczta);
                 if (evalPoczta == null) {
                     $('#formularz2').next().show(500);
