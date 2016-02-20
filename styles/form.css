@@ -2,6 +2,7 @@
 .clear{
     clear:both;
 }
+
 /*Kontener formularza*/
 #formularz{
     margin-left: 300px;
@@ -9,14 +10,10 @@
     height:300px;
     text-align:center;
     padding:15px;
-    /*background-color:rgb(255, 255, 255);*/
     border-radius: 5px;
     font-family: 'Inder', sans-serif;
-    /*background-image: url("../images/Womans-finger-pointing.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: left bottom;*/
-;
 }
+
 /*Elementy pola zawierającego formularz*/
 #formularz .fieldset-napis{
     margin-top: 5px;
@@ -26,33 +23,25 @@
     box-shadow:0 0 10px #666;
     height: 270px;
 }
-/*legend{
-    text-align: left;
-    background-color: #3B0E45;
-    margin-left:5px;
-}*/
+
 /*##########################################################
 ####################Pola formularza#########################*/
-.form-line{
-    margin: 5px 90px 5px 70px;
+.formularz .form-line{
+    margin: 5px 165px 5px 145px;
 }
-.opis-pola{
+
+.formularz .opis-pola{
     margin-left:16px;
     margin-bottom: -15px;
     display: block;
     font-family: 'Inder', sans-serif;
+}
 
-}
-.plec {
-    text-align:center;
-    margin-top: 15px;
-    margin-left: 112px;
-}
-.form-input-text:focus {
+.formularz .form-input-text:focus {
     outline: none;
     background-color: #FFCB50;
 }
-.form-input-text{
+.formularz .form-input-text{
     width:100%;
     font-family: 'Inder', sans-serif;
     background-position: 2px 3px;
@@ -64,17 +53,17 @@
     font-size:18px;
     border: 0px;
 }
-.pole-formularz-imie{
+.formularz .pole-formularz-imie{
     background-image: url('../images/imie_ikona.png');
 }
-.pole-formularz-mail {
+.formularz .pole-formularz-mail {
     background-image: url('../images/e-mail_ikona.png');
 }
-.pole-formularz-tel {
+.formularz .pole-formularz-tel {
     background-image: url('../images/phone_ikona.png');
 }
 
-.form-wyslij {
+.formularz .form-wyslij {
     color:#AD093A;
     width: 73px;
     height: 35px;
@@ -90,14 +79,14 @@
     margin-left: 15px;
 }
 
-.form-wyslij:hover,.form-wyslij:focus {
+.formularz .form-wyslij:hover,.form-wyslij:focus {
     background: #2C163B;
     color:white;
     width: 450px;
     outline: none;
- }
+}
 
-.form-wyslij-pole{
+.formularz .form-wyslij-pole{
     margin-top: -10px;
 }
 
@@ -109,11 +98,10 @@
     position: relative;
     border-radius: 50%;
     background-repeat: no-repeat;
-    /*border:1px solid #333;*/
-    /*box-shadow:inset 0 2px 2px rgba(0,0,0,0.3);*/
     display:inline-block;
     background-color: #fff;
 }
+
 .input-styled  input {
     width:35px;
     height:35px;
@@ -124,67 +112,77 @@
     cursor:pointer;
     margin: 0px;
 }
+
 .input-styled  input + span {
     display:block;
     position: relative;
     z-index: 1;
     width:29px;
     height:29px;
-    /*background: black;*/
     background-image: url("../images/ok_ikona.png");
     background-size: 29px 29px;
     left:-35px;
     top: 3px;
-    /*margin-top: 3px;*/
     transition:0.2s; -webkit-transition:0.2s; -moz-transition:0.2s;
-    /*border-radius:25px;*/
 }
-.input-styled  input:checked + span {left:3px;}
+
+.input-styled  input:checked + span {
+    left:3px;
+}
 
 .cBoxLabel{
-
     font-size: 18px;
 }
-.text{
+
+/*Komunikat po kliknięciu pola wyślij*/
+.formularz .text{
     display: inline;
     position: relative;
     bottom: 12px;
 }
-.form-line .cBox {
 
+.formularz .form-line .cBox {
     text-align: left;
     position: relative;
     width:400px !important;
-    /*display: inline-block;*/
-
 }
 
-.mask {
-    z-index: 10000;
-    background-color: rgba(255,203,80,0.9);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.mask .thanks, .time{
+.mask .thanks{
+    /*z-index: 10000;*/
+    background-color: #E7713F;
+    position: relative;
     font-size: x-large;
     font-weight: bold;
     text-shadow: 1px 1px 1px white;
     text-align: center;
-    margin-top: 100px;
-}
-.mask .time{
-    font-size: 80px;
-    margin-top: 54px;
-    /*-webkit-transition-duration: 1s;*/
-    /*-webkit-transition: font-size;*/
-    /*transition: font-size;*/
-    /*-webkit-transition-timing-function: linear;*/
+    top: -302px;
+    height:195px;
+    padding-top: 100px;
+    line-height: 32px;
+    -webkit-transition: font-size 3s,
+        background-color 3s linear,
+        line-height 3s,
+        padding-top 3s,
+        color 3s,
+        text-shadow 3s;
 }
 
-/*.mask .time{*/
-    /*font-size: 80px;*/
-    /*margin-top: 1px;*/
-/*}*/
+.mask .thanks:hover{
+    -webkit-transition: font-size 3s,
+        background-color 3s linear,
+        line-height 3s,
+        padding-top 3s,
+        color 3s,
+        text-shadow 3s;
+    font-size: 2px;
+    background-color: transparent;
+    line-height:2px;
+    padding-top: 130px;
+    color: transparent;
+    text-shadow: 1px 1px 1px transparent;
+}
+
+.formularz .monit{
+    text-align: right;
+    color: white;
+}

@@ -4,16 +4,12 @@
 
 $(document).ready(
     function() {
-
-        $(".mask").css('display','none');
         $('.monit').hide();
         $('input[type=submit]').attr('disabled', 'disabled');
         //Powyżej blokowanie przycisku submit
-
         var regImie = /^[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśźż]{2,}$/;
         var regPoczta = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         var regTel = /^\+?\d?\d? ?\d{9}/;
-
         $('#formularz1').change(
             function () {
 
@@ -34,7 +30,6 @@ $(document).ready(
 
         $('#formularz2').change(
             function () {
-
                 var evalPoczta = $('#formularz2').val().match(regPoczta);
                 if (evalPoczta == null) {
                     $('#formularz2').next().show(500);
@@ -64,36 +59,5 @@ $(document).ready(
                 }
             }
         );
-
-        $("input[type=submit]").click(
-            function () {
-                //$(this).delay(5000);
-                $('body').css({
-                    opacity: 0.2,
-                    background: '#F4EDA5',
-
-                });
-                //var text='Dziękujemy za wysłanie nam informacji';
-                //$('.message').html(text);
-
-            }
-        );
-
-        $("form").submit(function() {
-            $(".mask").css('display','block');
-            var timer = 5;
-            $('.time').html(timer);
-            setInterval(function() {
-                if(timer > 0) {
-                    //$('.odliczanie').addClass('time');
-                    $('.time').html(--timer).show(1000);
-                }
-                else{
-
-                }
-
-            }, 1000);
-
-        });
     });
 
