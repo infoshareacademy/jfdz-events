@@ -67,7 +67,6 @@
 
 }
 @keyframes wyjscie {
-    /*50% {opacity: 0.5}*/
     100% {opacity: 1.0;}
 }
 
@@ -144,6 +143,7 @@
 }
 
 /*prawa strona*/
+
 #gora .right .foto2 {
     background-image: url(../images/money2.jpg);
     margin-left: 12px;
