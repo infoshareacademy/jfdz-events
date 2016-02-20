@@ -64,36 +64,5 @@ $(document).ready(
                 }
             }
         );
-
-        //$("input[type=submit]").click(
-        //    function () {
-        //        //$(this).delay(5000);
-        //        $('body').css({
-        //            opacity: 0.2,
-        //            background: '#F4EDA5',
-        //
-        //        });
-        //        //var text='Dziękujemy za wysłanie nam informacji';
-        //        //$('.message').html(text);
-        //
-        //    }
-        //);
-
-        //$("form").submit(function() {
-        //    $(".mask").css('display','block');
-        //    var timer = 5;
-        //    $('.time').html(timer);
-        //    setInterval(function() {
-        //        if(timer > 0) {
-        //            //$('.odliczanie').addClass('time');
-        //            $('.time').html(--timer).show(1000);
-        //        }
-        //        else{
-        //
-        //        }
-        //
-        //    }, 1000);
-        //
-        //});
     });
 
