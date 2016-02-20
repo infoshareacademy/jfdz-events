@@ -10,7 +10,6 @@
     height:300px;
     text-align:center;
     padding:15px;
-    /*background-color:rgb(255, 255, 255);*/
     border-radius: 5px;
     font-family: 'Inder', sans-serif;
 }
@@ -99,8 +98,6 @@
     position: relative;
     border-radius: 50%;
     background-repeat: no-repeat;
-    /*border:1px solid #333;*/
-    /*box-shadow:inset 0 2px 2px rgba(0,0,0,0.3);*/
     display:inline-block;
     background-color: #fff;
 }
@@ -145,14 +142,12 @@
 }
 
 .formularz .form-line .cBox {
-
     text-align: left;
     position: relative;
     width:400px !important;
 }
 
 .mask .thanks{
-    /*z-index: 10000;*/
     background-color: #E7713F;
     position: relative;
     font-size: x-large;
