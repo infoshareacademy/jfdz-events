@@ -35,27 +35,24 @@
     padding-right: 2%;
 }
 
-#gora .right .tytul{
+ .tytul{
     margin-right: 50px;
     color:#AD093A;
+     font-size: 25px;
+     text-align: center;
+}
+@keyframes wyjscie {
+    100% {opacity: 1.0;}
 }
 
-#gora .left .tytul{
-    margin-right: 50px;
-    color:#AD093A;
+.clear{
+    clear: both;
 }
-
-#dol .right .tytul{
-    margin-right: 50px;
-    color:#AD093A;
-}
-#dol .left .tytul{
-    margin-right: 50px;
-    color:#AD093A;
-}
-
 
 /*lewa strona*/
+
+/*CO*/
+
 #gora .left .foto{
     background-image: url(../images/wystawa.jpg);
     margin-left: 12px;
@@ -67,9 +64,7 @@
     animation: wyjscie 5s  ;
     animation-fill-mode: forwards;
 }
-@keyframes wyjscie {
-    100% {opacity: 1.0;}
-}
+
 
 #gora .left .foto div {
     font-size: 20px;
@@ -229,12 +224,5 @@
     color:#AD093A;
 }
 
-.tytul{
-    font-size: 25px;
-    text-align: center;
-}
 
-.clear{
-    clear: both;
-}
 
