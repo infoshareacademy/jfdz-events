@@ -1,7 +1,6 @@
 /**
  * Created by hania_c on 21.02.16.
  */
-$(document).on('scroll',onScroll);
 
 
 $(document).ready(function() {
