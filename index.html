@@ -29,33 +29,15 @@
     <link href='http://fonts.googleapis.com/css?family=Inder&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <title>Co, gdzie, kiedy - trójmiasto</title>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript">
 
-            $(document).ready(function(){
-                $('a[href^="#"]').click(function(event) {
-                    event.preventDefault();
-
-                    var target = this.hash,
-                            $target = $(target);
-
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top
-                    }, 900, 'swing', function () {
-                        window.location.hash = target;
-                    });
-                });
-            });
-    </script>
 </head>
 <body>
-
 <nav class="naglowek-menu">
     <ul>
         <li><a href="#naglowek-strony" style="text-decoration: none">STRONA GŁÓWNA</a></li>
         <li><a href="#gora" style="text-decoration: none">KATEGORIE</a></li>
         <li><a href="#formularz" style="text-decoration: none">KONTAKT</a></li>
     </ul>
-
 </nav>
 <header id="naglowek-strony">
 
@@ -65,11 +47,11 @@
 
 </header>
 
-<div class="par">
-    <div class="par_layer par_back"></div>
+<div class="par" id="gora">
+    <!--<div class="par_layer par_back"></div>-->
 <main class="par_layer">
     <div id="funkcja">
-        <div id="gora">
+        <div class="gora">
             <div class="right">
                 <p class="tytul">Za friko</p>
 
@@ -153,16 +135,16 @@
             </div>
         </form>
 
-        <div class="formularz mask">
-            <div class="thanks">
-                Dziękujemy za zainteresowanie
-                <br>
-                i
-                <br>
-                przesłanie nam informacji
-            </div>
-            <div class="time"></div>
-        </div>
+        <!--<div class="formularz mask">-->
+            <!--<div class="thanks">-->
+                <!--Dziękujemy za zainteresowanie-->
+                <!--<br>-->
+                <!--i-->
+                <!--<br>-->
+                <!--przesłanie nam informacji-->
+            <!--</div>-->
+            <!--<div class="time"></div>-->
+        <!--</div>-->
 
     </div>
 
@@ -187,5 +169,6 @@
         })
     });
 </script>
+<script src="script/menu_polozenie.js"></script>
 </body>
 </html>

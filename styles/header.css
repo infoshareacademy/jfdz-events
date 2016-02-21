@@ -5,37 +5,45 @@ body {
     font-size: medium;
     font-family: bandy, sans-serif;
     background-color: #2C163B;
+
+    background-size: cover;
 }
 
-.par {
-    /*background-image: url(../images/party2.jpg);*/
-    /*background-size: cover;*/
+/*.par {*/
+
     /*background-position: 50%;*/
     /*background-attachment: fixed;*/
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
+
+    /*perspective: 1px;*/
+    /*height: 100vh;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto;*/
+/*}*/
 
 .par_layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-main {
-    transform: translateZ(0);
-    position: fixed;
-}
-
-.par_back {
+    /*background: url(../images/party2.jpg);*/
     background-image: url(../images/party2.jpg);
+    /*position: fixed;*/
     background-size: cover;
-    transform: translateZ(-1px) scale(2);
+    width: auto;
+    height: 885px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
 }
+
+/*main {*/
+    /*transform: translateZ(0);*/
+    /*position: fixed;*/
+/*}*/
+
+/*.par_back {*/
+    /*background-image: url(../images/party2.jpg);*/
+    /*background-size: cover;*/
+    /*!*transform: translateZ(-1px) scale(2);*!*/
+/*}*/
 
 header {
     background-color: #E76F3B;
@@ -45,11 +53,14 @@ header {
     position: relative;
 }
 
-.naglowek-menu {
-    width: auto;
-    height: 50px;
-    background-color: #E76F3B;
-}
+/*.naglowek-menu {*/
+    /*width: auto;*/
+    /*height: 50px;*/
+    /*background-color: #E76F3B;*/
+/*}*/
+
+
+
 
 .naglowek-menu a {
     color: black;
@@ -68,6 +79,7 @@ header {
     z-index: 1;
     background-color: #E76F3B;
     line-height: 50px;
+    box-shadow: 2px 2px 10px black;
 }
 
 .naglowek-menu ul li {
@@ -122,3 +134,8 @@ header {
 @keyframes wyjscie {
     100% {opacity: 1.0;}
 }
+
+.aktywny {
+    background-color: aqua;
+}
+
