@@ -29,23 +29,7 @@
     <link href='http://fonts.googleapis.com/css?family=Inder&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <title>Co, gdzie, kiedy - trójmiasto</title>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript">
 
-            $(document).ready(function(){
-                $('a[href^="#"]').click(function(event) {
-                    event.preventDefault();
-
-                    var target = this.hash,
-                            $target = $(target);
-
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top
-                    }, 900, 'swing', function () {
-                        window.location.hash = target;
-                    });
-                });
-            });
-    </script>
 </head>
 <body>
 
@@ -69,7 +53,7 @@
     <div class="par_layer par_back"></div>
 <main class="par_layer">
     <div id="funkcja">
-        <div >
+        <div class="gora">
             <div class="right">
                 <p class="tytul">Za friko</p>
 
