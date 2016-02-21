@@ -12,6 +12,12 @@
     padding:15px;
     border-radius: 5px;
     font-family: 'Inder', sans-serif;
+    opacity: 0.0;
+    animation: wyjscie 5s  ;
+    animation-fill-mode: forwards;
+}
+@keyframes wyjscie {
+    100% {opacity: 1.0;}
 }
 
 /*Elementy pola zawierającego formularz*/
