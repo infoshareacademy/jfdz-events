@@ -115,7 +115,7 @@ header {
     font-family: 'Inder', sans-serif;
     font-weight: lighter;
     opacity: 0.0;
-    animation: wyjscie 5s  ;
+    a+nimation: wyjscie 5s  ;
     animation-fill-mode: forwards;
 }
 
