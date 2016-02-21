@@ -224,5 +224,35 @@
     color:#AD093A;
 }
 
+.pomniejszeFunkcjonalnosci{
+    width:1207px;
+}
+
+.ikonyFunMale{
+    width: 135px;
+    height: 174px;
+    margin-right: 6px;
+
+}
+
+.pomniejszeFunkcjonalnosci div:last-child{
+    margin-right:0px;
+    width:134px;
+}
+
+.ikonyFunMale img{
+    width: 100px;
+    margin-top: 37px;
+    height: 100px;
+    margin-left: -42px;
+}
+
+.par{
+    height:1063px;
+}
+
+
+
+
 
 
