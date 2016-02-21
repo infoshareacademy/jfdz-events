@@ -5,7 +5,7 @@ body {
     font-size: medium;
     font-family: bandy, sans-serif;
     background-color: #2C163B;
-    background-image: url(../images/party2.jpg);
+
     background-size: cover;
 }
 
@@ -20,13 +20,19 @@ body {
     /*overflow-y: auto;*/
 /*}*/
 
-/*.par_layer {*/
+.par_layer {
+    /*background: url(../images/party2.jpg);*/
+    background-image: url(../images/party2.jpg);
+    /*position: fixed;*/
+    background-size: cover;
+    width: auto;
+    height: 885px;
     /*position: absolute;*/
     /*top: 0;*/
     /*right: 0;*/
     /*bottom: 0;*/
     /*left: 0;*/
-/*}*/
+}
 
 /*main {*/
     /*transform: translateZ(0);*/
