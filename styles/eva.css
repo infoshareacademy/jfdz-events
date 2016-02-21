@@ -53,7 +53,7 @@
 
 /*CO*/
 
-#gora .left .foto{
+.gora .left .foto{
     background-image: url(../images/wystawa.jpg);
     margin-left: 12px;
     width: 500px;
@@ -66,7 +66,7 @@
 }
 
 
-#gora .left .foto div {
+.gora .left .foto div {
     font-size: 20px;
     color:#F4EDA5;
     height: 35px;
@@ -81,13 +81,13 @@
     padding-top: 10px;
 }
 
-#gora .left .foto div p {
+.gora .left .foto div p {
     margin-left: 10px;
     margin-right: 10px;
     font-family: 'Inder', sans-serif;
 }
 
-#gora .left .foto:hover div {
+.gora .left .foto:hover div {
     background-color:  #F4EDA5;
     transition-duration: 1s;
     height: 120px;
