@@ -32,6 +32,10 @@
 
 /*##########################################################
 ####################Pola formularza#########################*/
+.formularz form{
+    width: 720px;
+    margin-left: 74px;
+}
 .formularz .form-line{
     margin: 5px 165px 5px 145px;
 }

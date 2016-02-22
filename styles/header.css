@@ -9,8 +9,8 @@ body {
     background-size: cover;
 }
 
-/*.par {*/
-
+.par {
+    height: 1063px;
     /*background-position: 50%;*/
     /*background-attachment: fixed;*/
 
@@ -18,7 +18,7 @@ body {
     /*height: 100vh;*/
     /*overflow-x: hidden;*/
     /*overflow-y: auto;*/
-/*}*/
+}
 
 .par_layer {
     /*background: url(../images/party2.jpg);*/
@@ -26,7 +26,7 @@ body {
     /*position: fixed;*/
     background-size: cover;
     width: auto;
-    height: 885px;
+    height: 1068px;
     /*position: absolute;*/
     /*top: 0;*/
     /*right: 0;*/
