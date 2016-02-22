@@ -9,8 +9,9 @@ body {
 .par_layer {
     background-image: url(../images/party2.jpg);
     background-size: cover;
-    width: auto;
-    height: 885px;
+    background-attachment: fixed;
+    /*width: 1200px;*/
+    /*height: 885px;*/
     /*position: absolute;*/
     /*top: 0;*/
     /*right: 0;*/
