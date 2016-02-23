@@ -154,8 +154,8 @@
     margin: 0 auto;
     background-color: bisque;
 }
+
 .mask{
-    /*margin-left: 0px;*/
     background-color: #E7713F;
     width: 550px;
     font-size: x-large;
@@ -166,23 +166,3 @@
     padding-top: 100px;
     line-height: 32px;
 }
-
-/*.mask .thanks:hover{*/
-    /*-webkit-transition: font-size 3s,*/
-        /*background-color 3s linear,*/
-        /*line-height 3s,*/
-        /*padding-top 3s,*/
-        /*color 3s,*/
-        /*text-shadow 3s;*/
-    /*font-size: 2px;*/
-    /*background-color: transparent;*/
-    /*line-height:2px;*/
-    /*padding-top: 130px;*/
-    /*color: transparent;*/
-    /*text-shadow: 1px 1px 1px transparent;*/
-/*}*/
-
-/*.formularz .monit{*/
-    /*text-align: right;*/
-    /*color: white;*/
-/*}*/
