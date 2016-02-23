@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Inder&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <title>Co, gdzie, kiedy - trójmiasto</title>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="script/jquery-2.1.4.min.js"></script>
 
 </head>
 <body>
@@ -109,61 +109,63 @@
             </div>
         </div>
     </div>
-
+    <div class="clear"></div>
 </main>
 
 </div>
 <footer>
+    <div class="oknoZaslaniania">
 
-    <div id="formularz" class="formularz">
-
-        <form action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
-
-            <div class="form-line">
+        <div class="mask">
+            <div class="thanks">
+                Dziękujemy za zainteresowanie
                 <br>
-                <input type="text" name="imie" id="formularz1" placeholder="Imię" class="form-input-text pole-formularz-imie">
-                <div class="monit">
-                    Musisz poprawnie wypełnić to pole.
-                </div>
-            </div>
-            <div class="form-line">
+                i
                 <br>
-                <input type="email" name="email" data-clear-btn="true" id="formularz2" placeholder="E-mail" class="form-input-text  pole-formularz-mail">
-                <div class="monit">
-                    Musisz poprawnie wypełnić to pole.
-                </div>
+                przesłanie nam informacji
             </div>
-            <div class="form-line">
-                <br>
-                <input type="tel" name="phone" id="formularz3" placeholder="Telefon" class="form-input-text  pole-formularz-tel">
-                <div class="monit">
-                    Musisz poprawnie wypełnić to pole.
-                </div>
-            </div>
-            <div class="form-line cbox">
-                <br>
-                <input type="checkbox" name="agre" id="cbox1" class="" value="Zgoda na">
-                <div class="text">
-                    <label for="cbox1" class="cBoxLabel">Wyrażam zgodę na działania marketingowe</label>
-                </div>
-            </div>
-            <div class="form-wyslij-pole">
-                <input type="hidden" name="receiver" value="witek_gesse@poczta.onet.pl">
-                <input type="submit" onclick="" value="Tędy ślij, swoje zainteresowanie!" class="form-wyslij">
-            </div>
-        </form>
-
-        <!--<div class="formularz mask">-->
-            <!--<div class="thanks">-->
-                <!--Dziękujemy za zainteresowanie-->
-                <!--<br>-->
-                <!--i-->
-                <!--<br>-->
-                <!--przesłanie nam informacji-->
-            <!--</div>-->
             <!--<div class="time"></div>-->
-        <!--</div>-->
+        </div>
 
+        <div id="formularz" class="formularz">
+
+            <form action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
+
+                <div class="form-line">
+                    <br>
+                    <input type="text" name="imie" id="formularz1" placeholder="Imię" class="form-input-text pole-formularz-imie">
+                    <div class="monit">
+                        Musisz poprawnie wypełnić to pole.
+                    </div>
+                </div>
+                <div class="form-line">
+                    <br>
+                    <input type="email" name="email" data-clear-btn="true" id="formularz2" placeholder="E-mail" class="form-input-text  pole-formularz-mail">
+                    <div class="monit">
+                        Musisz poprawnie wypełnić to pole.
+                    </div>
+                </div>
+                <div class="form-line">
+                    <br>
+                    <input type="tel" name="phone" id="formularz3" placeholder="Telefon" class="form-input-text  pole-formularz-tel">
+                    <div class="monit">
+                        Musisz poprawnie wypełnić to pole.
+                    </div>
+                </div>
+                <div class="form-line cbox zgoda">
+                    <br>
+                    <input type="checkbox" name="agre" id="cbox1" class="" value="Zgoda na">
+                    <div class="text">
+                        <label for="cbox1" class="cBoxLabel">Wyrażam zgodę na działania marketingowe</label>
+                    </div>
+                </div>
+                <div class="form-wyslij-pole">
+                    <input type="hidden" name="receiver" value="witek_gesse@poczta.onet.pl">
+                    <input type="submit" onclick="" value="Tędy ślij, swoje zainteresowanie!" class="form-wyslij">
+                </div>
+            </form>
+
+        </div>
     </div>
 
     <div style="height:50px">
@@ -179,14 +181,6 @@
 </footer>
 
 <script src="script/walidacjaForm.js"></script>
-<script>
-    $(function () {
-        $(':checkbox').each(function () {
-            $(this).wrap('<span class="input-styled "></span>');
-            $(this).after('<span></span>');
-        })
-    });
-</script>
 <script src="script/menu_polozenie.js"></script>
 </body>
 </html>

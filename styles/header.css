@@ -8,8 +8,10 @@ body {
 
 .par_layer {
     background-image: url(../images/party2.jpg);
+    width: 1080px;
     background-size: 120%;
     background-attachment: fixed;
+    height: 720px;
 }
 
 header {
@@ -34,7 +36,7 @@ header {
     text-align: center;
     position: fixed;
     width: auto;
-    height: 50px;
+    height: 60px;
     display: inline-block;
     vertical-align: middle;
     left: 0px;
@@ -53,7 +55,7 @@ header {
     width: 250px;
     background-color: #AD093A;
     border-radius: 15px;
-    font-family: Bandy;
+    font-family: Bandy Arial;
     font-weight: bold;
     line-height: 30px;
     color: black;
@@ -78,7 +80,7 @@ header {
 #naglowek-strony .tytul-duzy {
     height: 220px;
     font-size: 150px;
-    font-family: Bandy;
+    font-family: Bandy Arial;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.3);
     text-align: center;

@@ -59,5 +59,9 @@ $(document).ready(
                 }
             }
         );
+        $(':checkbox').each(function () {
+            $(this).wrap('<span class="input-styled"></span>');
+            $(this).after('<span></span>');
+        })
     });
 
