@@ -28,6 +28,7 @@ header {
     width: 250px;
     border-radius: 15px;
     line-height: 30px;
+    box-shadow: 2px 2px 10px black;
 }
 
 .naglowek-menu ul {
@@ -42,7 +43,7 @@ header {
     z-index: 1;
     background-color: #E76F3B;
     line-height: 50px;
-    box-shadow: 2px 2px 10px black;
+    /*box-shadow: 2px 2px 10px black;*/
 }
 
 .naglowek-menu ul li {
