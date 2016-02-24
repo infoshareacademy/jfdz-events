@@ -15,12 +15,10 @@ $(document).ready(
             $('.naglowek-menu a').each (function () {
                 var $aktywnyLink = $(this);
                 var $elementReferencyjny = $($aktywnyLink.attr('href'));
-
                 if ($aktualnapozycjaDokumentu >= $wysokoscDokumentu) {
                     $('.naglowek-menu ul li a').removeClass('aktywny');
                     $('.naglowek-menu ul :nth-child(3) a').addClass('aktywny');
                 }
-
                 else if ($elementReferencyjny.position().top <= $aktualnapozycjaDokumentu +50 && $elementReferencyjny.position().top + $elementReferencyjny.height() > $aktualnapozycjaDokumentu) {
                     $('.naglowek-menu ul li a').removeClass('aktywny');
                     $aktywnyLink.addClass('aktywny');
@@ -41,7 +39,7 @@ $(document).ready(
         }, 900, 'swing', function () {
             window.location.hash = target;
         })
-        })
+        });
 
 
 
