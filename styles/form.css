@@ -5,12 +5,9 @@
 
 /*Kontener formularza*/
 #formularz{
-    margin-left: 300px;
-    margin-right: 300px;
-    height:300px;
+    width:520px;
     text-align:center;
     padding:15px;
-    border-radius: 5px;
     font-family: 'Inder', sans-serif;
     opacity: 0.0;
     animation: wyjscie 5s  ;
@@ -32,12 +29,8 @@
 
 /*##########################################################
 ####################Pola formularza#########################*/
-.formularz form{
-    width: 720px;
-    margin-left: 74px;
-}
 .formularz .form-line{
-    margin: 5px 165px 5px 145px;
+    margin: 5px 85px 5px 45px;
 }
 
 .formularz .opis-pola{
@@ -54,14 +47,12 @@
 .formularz .form-input-text{
     width:100%;
     font-family: 'Inder', sans-serif;
-    background-position: 2px 3px;
-    background-repeat: no-repeat;
+    background: #fff no-repeat 2px 3px;
     padding-left: 40px;
     background-size: 30px 30px;
     border-radius: 25px;
     height: 35px;
     font-size:18px;
-    border: 0px;
 }
 .formularz .pole-formularz-imie{
     background-image: url('../images/imie_ikona.png');
@@ -81,18 +72,16 @@
     margin-bottom: 6px;
     border-radius: 25px;
     font-size: 18px;
-    border: 0px;
     transition-property: background,color,width;
     transition-duration: 1s;
     background: transparent;
     cursor: pointer;
-    margin-left: 15px;
 }
 
 .formularz .form-wyslij:hover,.form-wyslij:focus {
     background: #2C163B;
     color:white;
-    width: 450px;
+    width: 430px;
     outline: none;
 }
 
@@ -107,9 +96,8 @@
     overflow: hidden;
     position: relative;
     border-radius: 50%;
-    background-repeat: no-repeat;
     display:inline-block;
-    background-color: #fff;
+    background: #fff no-repeat;
 }
 
 .input-styled  input {
@@ -120,7 +108,6 @@
     top:0; left:0;
     z-index: 2;
     cursor:pointer;
-    margin: 0px;
 }
 
 .input-styled  input + span {
@@ -156,43 +143,26 @@
     position: relative;
     width:400px !important;
 }
+.zgoda{
+    margin-left: 45px !important;
+    margin-right: 65px !important;
+}
 
-.mask .thanks{
-    /*z-index: 10000;*/
+.oknoZaslaniania{
+    overflow-x: hidden;
+    width: 550px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.mask{
     background-color: #E7713F;
-    position: relative;
+    width: 550px;
     font-size: x-large;
     font-weight: bold;
     text-shadow: 1px 1px 1px white;
     text-align: center;
-    top: -302px;
-    height:195px;
+    height:212px;
     padding-top: 100px;
     line-height: 32px;
-    -webkit-transition: font-size 3s,
-        background-color 3s linear,
-        line-height 3s,
-        padding-top 3s,
-        color 3s,
-        text-shadow 3s;
-}
-
-.mask .thanks:hover{
-    -webkit-transition: font-size 3s,
-        background-color 3s linear,
-        line-height 3s,
-        padding-top 3s,
-        color 3s,
-        text-shadow 3s;
-    font-size: 2px;
-    background-color: transparent;
-    line-height:2px;
-    padding-top: 130px;
-    color: transparent;
-    text-shadow: 1px 1px 1px transparent;
-}
-
-.formularz .monit{
-    text-align: right;
-    color: white;
 }
