@@ -246,3 +246,43 @@
     height: 100px;
     margin-left: -42px;
 }
+
+
+/*powiększanie ikonek małych funkcjonalnosci*/
+.ikonyFunMale img:hover{
+    width: 130px;
+    height: 130px;
+    /*content: 'test';*/
+}
+
+/*#dzieci:hover:after{*/
+    /*width: 130px;*/
+    /*height: 130px;*/
+    /*content: 'dzieci';*/
+/*}*/
+/*#sport:hover:after{*/
+    /*width: 130px;*/
+    /*height: 130px;*/
+    /*content: 'sport';*/
+/*}*/
+/*#kino:hover:after{*/
+    /*width: 130px;*/
+    /*height: 130px;*/
+    /*content: 'kino';*/
+/*}*/
+/*#imprezy:hover:after{*/
+    /*width: 130px;*/
+    /*height: 130px;*/
+    /*content: 'imprezy';*/
+/*}*/
+/*#teatr:hover:after{*/
+    /*width: 130px;*/
+    /*height: 130px;*/
+    /*content: 'teatr';*/
+/*}*/
+/*#karaoke:hover:after{*/
+    /*width: 150px;*/
+    /*height: 150px;*/
+    /*content: 'karaoke';*/
+
+/*}*/
