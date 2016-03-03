@@ -26,6 +26,22 @@ $(document).ready(
             });
             console.log('wys dok' + $wysokoscDokumentu + 'aktual poz' + $aktualnapozycjaDokumentu);
         }
+
+        $(window).scroll(function() {
+            var scrolled=$(window).scrollTop();
+            $('.par_layer').css('background-position', '0 ' + -(scrolled*0.3) + 'px');
+        });
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 30) {
+                $('nav ul').addClass('shrink');
+            } else {
+                $('nav ul').removeClass('shrink');
+            }
+        });
+
+
+
 //Create by Evag
 
     $('a[href^="#"]').click(function(event) {
@@ -43,10 +59,5 @@ $(document).ready(
 
 
 
-$(window).scroll(function() {
-    var scrolled=$(window).scrollTop();
-    $('.par_layer').css('background-position', '0 ' + -(scrolled*0.3) + 'px');
-});
-});
 
-
+    });
