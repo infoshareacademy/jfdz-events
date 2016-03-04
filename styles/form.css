@@ -4,7 +4,8 @@
 }
 
 /*Kontener formularza*/
-#formularz{
+.formularz{
+    float: right;
     width:520px;
     text-align:center;
     padding:15px;
@@ -18,7 +19,7 @@
 }
 
 /*Elementy pola zawierającego formularz*/
-#formularz .fieldset-napis{
+.formularz .fieldset-napis{
     margin-top: 5px;
     border-radius: 5px;
     padding:10px;
@@ -156,6 +157,7 @@
 }
 
 .mask{
+    float: left;
     background-color: #E7713F;
     width: 550px;
     font-size: x-large;
@@ -165,4 +167,23 @@
     height:212px;
     padding-top: 100px;
     line-height: 32px;
+    margin-left: -551px;
+}
+
+@keyframes wjazd {
+    from {
+        margin-left: -551px;
+    }
+    to{
+        margin-left:0px;
+    }
+}
+
+@keyframes zjazd {
+    from {
+        margin-right: 0px;
+    }
+    to{
+        margin-right:-551px;
+    }
 }

@@ -59,13 +59,17 @@ $(document).ready(
                 }
             }
         );
-
-        //Checked checkbox agree
         $(':checkbox').each(function () {
             $(this).wrap('<span class="input-styled"></span>');
             $(this).after('<span></span>');
         });
 
-
-    });
+        $("#target").submit(function(){
+            $('#formularz').animate({
+                marginRight:'-551px'}, 5000);
+            $('.mask').animate({
+                marginLeft:'0px'}, 5000);
+            return false;
+            });
+        });
 
