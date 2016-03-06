@@ -79,17 +79,19 @@ $(document).ready(
         });
 
         //obsługa ciasteczek na naszej stronie
-        var ciastko=document.cookie;
+        var ciastko=$(document.cookie);
         var $heightWindow = $(window).height();
+
+        console.log($heightWindow)
 
         ciastko == '' ? ciastko = "arabica=the best" : console.log(document.cookie);
 
         $('.cookie').css({
-            position:'fixed',
-            backgroundColor: 'white',
-            height:50,
-            marginTop: $heightWindow-50
-
+            backgroundColor: 'rgba(0, 0, 0, 0.3)',
+            position: 'fixed',
+            height: 50,
+            bottom: 0,
+            zIndex: 3
         });
     });
 

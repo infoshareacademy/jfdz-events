@@ -11,7 +11,7 @@ $(document).ready(
         function onScroll() {
             var $wysokoscDokumentu=$(document).height() - $(window).height() - 100;
             var $aktualnapozycjaDokumentu = $(document).scrollTop();
-            console.debug($aktualnapozycjaDokumentu);
+            //console.debug($aktualnapozycjaDokumentu);
             $('.naglowek-menu a').each (function () {
                 var $aktywnyLink = $(this);
                 var $elementReferencyjny = $($aktywnyLink.attr('href'));
