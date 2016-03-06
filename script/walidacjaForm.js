@@ -65,7 +65,7 @@ $(document).ready(
         });
 
         $("#target").submit(function(){
-            $('#formularz').animate({
+            $('.formularz').animate({
                 marginRight:'-551px'}, 5000);
             $('.mask').animate({
                 marginLeft:'0px'}, 5000);
