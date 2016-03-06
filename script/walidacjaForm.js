@@ -3,7 +3,7 @@
  */
 
 $(document).ready(
-    function() {
+    function () {
         $('.monit').hide();
         $('input[type=submit]').attr('disabled', 'disabled');
         //Powyżej blokowanie przycisku submit
@@ -64,12 +64,34 @@ $(document).ready(
             $(this).after('<span></span>');
         });
 
-        $("#target").submit(function(){
-            $('#formularz').animate({
-                marginRight:'-551px'}, 5000);
+        $('.form-wyslij').on('click', function () {
+
+            $('.formularz').animate({
+                marginRight: '-551px'
+            }, 500);
             $('.mask').animate({
-                marginLeft:'0px'}, 5000);
-            return false;
-            });
+                marginLeft: '0px'
+            }, 500);
+
+            $('#target').submit();
+
+            //$.post('http://jfdz.infoshareaca.nazwa.pl/mailer.php', function (data) {
+            //    alert(data);
+            //});
         });
+
+        //obsługa ciasteczek na naszej stronie
+        var $cookie=document.cookie;
+        var $heightWindow = $(window).height();
+
+        $cookie=='' ? $cookie="arabica=the best": document.cookie ;
+
+        $('.cookie').css({
+            position:'fixed',
+            backgroundColor: 'white',
+            height:50,
+            marginTop: $(window).height()-50,
+
+        });
+    });
 
