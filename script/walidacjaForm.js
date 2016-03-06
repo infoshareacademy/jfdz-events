@@ -48,9 +48,7 @@ $(document).ready(
             function () {
                 var evalTel = $('#formularz3').val().match(regTel);
                 if (evalTel == null) {
-                    $('#formularz3').next().show(500);
-                    $('#formularz3').css('background-color', 'red');
-                    $('#formularz3').focus();
+                    $('#formularz3').next().show(500).css('background-color', 'red').focus();
                 }
                 else {
                     $('#formularz3').next().hide(500);
@@ -81,16 +79,16 @@ $(document).ready(
         });
 
         //obsługa ciasteczek na naszej stronie
-        var $cookie=document.cookie;
+        var ciastko=document.cookie;
         var $heightWindow = $(window).height();
 
-        $cookie=='' ? $cookie="arabica=the best": document.cookie ;
+        ciastko == '' ? ciastko = "arabica=the best" : console.log(document.cookie);
 
         $('.cookie').css({
             position:'fixed',
             backgroundColor: 'white',
             height:50,
-            marginTop: $(window).height()-50,
+            marginTop: $heightWindow-50
 
         });
     });
