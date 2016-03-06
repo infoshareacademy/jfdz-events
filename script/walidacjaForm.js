@@ -78,8 +78,20 @@ $(document).ready(
             //$.post('http://jfdz.infoshareaca.nazwa.pl/mailer.php', function (data) {
             //    alert(data);
             //});
-        })
+        });
 
+        //obsługa ciasteczek na naszej stronie
+        var $cookie=document.cookie;
+        var $heightWindow = $(window).height();
 
+        $cookie=='' ? $cookie="arabica=the best": document.cookie ;
+
+        $('.cookie').css({
+            position:'fixed',
+            backgroundColor: 'white',
+            height:50,
+            marginTop: $(window).height()-50,
+
+        });
     });
 
