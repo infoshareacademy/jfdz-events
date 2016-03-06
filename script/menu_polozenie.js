@@ -9,17 +9,39 @@ $(document).ready(
         $(document).on('scroll', onScroll);
 
         function onScroll() {
-            var $pozycjaDokumentu = $(document).scrollTop();
-            console.debug($pozycjaDokumentu);
+            var $wysokoscDokumentu=$(document).height() - $(window).height() - 100;
+            var $aktualnapozycjaDokumentu = $(document).scrollTop();
+            console.debug($aktualnapozycjaDokumentu);
             $('.naglowek-menu a').each (function () {
                 var $aktywnyLink = $(this);
                 var $elementReferencyjny = $($aktywnyLink.attr('href'));
-                if ($elementReferencyjny.position().top <= $pozycjaDokumentu && $elementReferencyjny.position().top + $elementReferencyjny.height() > $pozycjaDokumentu) {
+                if ($aktualnapozycjaDokumentu >= $wysokoscDokumentu) {
+                    $('.naglowek-menu ul li a').removeClass('aktywny');
+                    $('.naglowek-menu ul :nth-child(3) a').addClass('aktywny');
+                }
+                else if ($elementReferencyjny.position().top <= $aktualnapozycjaDokumentu +50 && $elementReferencyjny.position().top + $elementReferencyjny.height() > $aktualnapozycjaDokumentu) {
                     $('.naglowek-menu ul li a').removeClass('aktywny');
                     $aktywnyLink.addClass('aktywny');
                 }
-            })
+            });
+            console.log('wys dok' + $wysokoscDokumentu + 'aktual poz' + $aktualnapozycjaDokumentu);
         }
+
+        $(window).scroll(function() {
+            var scrolled=$(window).scrollTop();
+            $('.par_layer').css('background-position', '0 ' + -(scrolled*0.3) + 'px');
+        });
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 30) {
+                $('nav ul').addClass('shrink');
+            } else {
+                $('nav ul').removeClass('shrink');
+            }
+        });
+
+
+
 //Create by Evag
 
     $('a[href^="#"]').click(function(event) {
@@ -33,14 +55,9 @@ $(document).ready(
         }, 900, 'swing', function () {
             window.location.hash = target;
         })
-        })
+        });
 
 
 
-$(window).scroll(function() {
-    var scrolled=$(window).scrollTop();
-    $('.par_layer').css('background-position', '0 ' + -(scrolled*0.3) + 'px');
-});
-});
 
-
+    });

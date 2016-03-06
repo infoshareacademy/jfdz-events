@@ -1,51 +1,16 @@
 body {
     margin-left: auto;
     margin-right: auto;
-    /*width: 1200px;*/
     font-size: medium;
     font-family: bandy, sans-serif;
     background-color: #2C163B;
-
-    background-size: cover;
 }
-
-/*.par {*/
-
-    /*background-position: 50%;*/
-    /*background-attachment: fixed;*/
-
-    /*perspective: 1px;*/
-    /*height: 100vh;*/
-    /*overflow-x: hidden;*/
-    /*overflow-y: auto;*/
-/*}*/
 
 .par_layer {
-    /*background: url(../images/party2.jpg);*/
     background-image: url(../images/party2.jpg);
-    background-repeat: no-repeat;
-    /*position: fixed;*/
-    background-size: cover;
-    /*width: auto;*/
-    height: 884px;
-    /*position: absolute;*/
+    background-size: 120%;
     background-attachment: fixed;
-    /*top: 0px;*/
-    /*right: 0;*/
-    bottom: 0;
-    /*left: 0;*/
 }
-
-/*main {*/
-    /*transform: translateZ(0);*/
-    /*position: fixed;*/
-/*}*/
-
-/*.par_back {*/
-    /*background-image: url(../images/party2.jpg);*/
-    /*background-size: cover;*/
-    /*!*transform: translateZ(-1px) scale(2);*!*/
-/*}*/
 
 header {
     background-color: #E76F3B;
@@ -55,18 +20,11 @@ header {
     position: relative;
 }
 
-/*.naglowek-menu {*/
-    /*width: auto;*/
-    /*height: 50px;*/
-    /*background-color: #E76F3B;*/
-/*}*/
 
-
-
-
-.naglowek-menu a {
-    color: black;
-    text-decoration: none;
+.naglowek-menu ul.shrink {
+    height: 40px;
+    line-height: 40px;
+    /*background-color: black;*/
 }
 
 .naglowek-menu ul {
@@ -79,23 +37,38 @@ header {
     left: 0px;
     right: 0px;
     z-index: 1;
-    background-color: #E76F3B;
+    /*background-color: #E76F3B;*/
+    background-color: white;
     line-height: 50px;
-    box-shadow: 2px 2px 10px black;
+    /*box-shadow: 2px 2px 10px black;*/
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
 }
 
 .naglowek-menu ul li {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    height: 30px;
+    height: 60%;
     width: 250px;
     background-color: #AD093A;
     border-radius: 15px;
     font-family: Bandy;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 100%;
     color: black;
+}
+
+.naglowek-menu a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+    width: 250px;
+    border-radius: 15px;
+    vertical-align: middle;
+    line-height: 100%;
+    box-shadow: 2px 2px 10px black;
 }
 
 #naglowek-strony .funkcja_obrazek {
@@ -140,4 +113,5 @@ header {
 .aktywny {
     background-color: aqua;
 }
+
 
