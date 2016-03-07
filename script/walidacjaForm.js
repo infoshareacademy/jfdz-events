@@ -76,13 +76,28 @@ $(document).ready(
             //$.post('http://jfdz.infoshareaca.nazwa.pl/mailer.php', function (data) {
             //    alert(data);
             //});
-        });
+        })
+
+        $('.close').on('click', function() {
+
+            $(this).css({
+                boxShadow: '0px 0px 0px',
+                marginTop: 1,
+                marginLeft: 91
+            });
+
+            $('.cookie').animate({
+                marginBottom:-51,
+                //display:'none',
+            },1000);
+        })
+
 
         //obsługa ciasteczek na naszej stronie
         var ciastko=$(document.cookie);
-        var $heightWindow = $(window).height();
-
-        console.log($heightWindow)
+        //var $heightWindow = $(window).height();
+        //
+        //console.log($heightWindow)
 
         ciastko == '' ? ciastko = "arabica=the best" : console.log(document.cookie);
 
@@ -93,5 +108,7 @@ $(document).ready(
             bottom: 0,
             zIndex: 3
         });
+
+
     });
 

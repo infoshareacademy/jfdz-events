@@ -24,7 +24,7 @@ $(document).ready(
                     $aktywnyLink.addClass('aktywny');
                 }
             });
-            console.log('wys dok' + $wysokoscDokumentu + 'aktual poz' + $aktualnapozycjaDokumentu);
+            //console.log('wys dok' + $wysokoscDokumentu + 'aktual poz' + $aktualnapozycjaDokumentu);
         }
 
         $(window).scroll(function() {
