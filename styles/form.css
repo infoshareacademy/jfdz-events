@@ -170,18 +170,6 @@
     margin-left: -551px;
 }
 
-.napis{
-    display: inline-block;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px black;
-    width: 1110px;
-    font-size: 12px;
-    margin: 7px;
-    padding-left: 20px;
-    padding-bottom: 3px;
-    padding-right: 10px;
-}
-
 @keyframes wjazd {
     from {
         margin-left: -551px;

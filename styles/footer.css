@@ -33,6 +33,46 @@ footer{
     width:470px;
 
 }
+
+.cookie{
+    width:100%;
+}
+
+.cookie .napis{
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+    width: 1110px;
+    font-size: 12px;
+    margin: 7px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    background-color: #F4EDA5;
+}
+
+.cookie .close{
+    display: inline-block;
+    cursor:pointer;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 20px;
+    width:250px;
+    text-align:center;
+    margin-left: 90px;
+    background-color: #AD093A;
+
+}
+
+.cookie .close:hover{
+    background-color: #F4EDA5;
+
+}
+
+.cookie .closeImage{
+    height: 30px;
+    margin-bottom: -5px;
+}
+
 .social{
 
 
