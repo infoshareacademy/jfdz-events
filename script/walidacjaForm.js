@@ -20,7 +20,7 @@ $(document).ready(
         $('.monit').hide();
         $('input[type=submit]').attr('disabled', 'disabled');
         //Powyżej blokowanie przycisku submit
-        var regImie = /^[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśźż]{2,}$/;
+        var regImie = /^[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśźż]{3,}$/;
         var regPoczta = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         var regTel = /^\+?\d?\d? ?\d{9}/;
 
