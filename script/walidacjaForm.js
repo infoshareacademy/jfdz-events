@@ -2,6 +2,19 @@
  * Created by witek on 24.01.16.
  */
 
+function validateForm (field,checkFormula) {
+    var evalImie = $(field).val().match(checkFormula);
+    if (evalImie == null) {
+        $(field).next().show(500);
+        $(field).css('background-color', 'red').focus();
+    }
+    else {
+        $(field).next().hide(500);
+        $(field).css('background-color', '');
+        $('input[type=submit]').removeAttr('disabled');
+    }
+}
+
 $(document).ready(
     function () {
         $('.monit').hide();
@@ -10,58 +23,28 @@ $(document).ready(
         var regImie = /^[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśźż]{2,}$/;
         var regPoczta = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         var regTel = /^\+?\d?\d? ?\d{9}/;
-        $('#formularz1').change(
-            function () {
 
-                var evalImie = $('#formularz1').val().match(regImie);
-                if (evalImie == null) {
-                    //alert('Musisz poprawnie wpisać imię!');
-                    $('#formularz1').next().show(500);
-                    $('#formularz1').css('background-color', 'red');
-                    $('#formularz1').focus();
-                }
-                else {
-                    $('#formularz1').next().hide(500);
-                    $('#formularz1').css('background-color', '');
-                    $('input[type=submit]').removeAttr('disabled');
-                }
-            }
-        );
+        $('#formularz1').change(function() {
+            var field = ('#formularz1');
+            validateForm(field, regImie)
+        });
 
-        $('#formularz2').change(
-            function () {
-                var evalPoczta = $('#formularz2').val().match(regPoczta);
-                if (evalPoczta == null) {
-                    $('#formularz2').next().show(500);
-                    $('#formularz2').css('background-color', 'red');
-                    $('#formularz2').focus();
-                }
-                else {
-                    $('#formularz2').next().hide(500);
-                    $('#formularz2').css('background-color', '');
-                    $('input[type=submit]').removeAttr('disabled');
-                }
-            }
-        );
+        $('#formularz2').change(function () {
+            var field = ('#formularz2');
+            validateForm(field, regPoczta)
+        });
 
-        $('#formularz3').change(
-            function () {
-                var evalTel = $('#formularz3').val().match(regTel);
-                if (evalTel == null) {
-                    $('#formularz3').next().show(500).css('background-color', 'red').focus();
-                }
-                else {
-                    $('#formularz3').next().hide(500);
-                    $('#formularz3').css('background-color', '');
-                    $('input[type=submit]').removeAttr('disabled')
-                }
-            }
-        );
+        $('#formularz3').change(function () {
+            var field = ('#formularz3');
+            validateForm(field, regTel)
+        });
+
         $(':checkbox').each(function () {
             $(this).wrap('<span class="input-styled"></span>');
             $(this).after('<span></span>');
         });
 
+        //wysylanie formularza
         $('.form-wyslij').on('click', function () {
 
             $('.formularz').animate({
@@ -76,34 +59,22 @@ $(document).ready(
             //$.post('http://jfdz.infoshareaca.nazwa.pl/mailer.php', function (data) {
             //    alert(data);
             //});
-        })
+        });
+
+        //obsługa ciasteczek na naszej stronie
+        var ciastko=document.cookie;
+        ciastko == '' ? document.cookie = "arabica=the best" : $('.cookie').hide();
 
         $('.close').on('click', function() {
-
             $(this).css({
                 boxShadow: '0px 0px 0px',
                 marginTop: 1,
                 marginLeft: 91
             });
-
             $('.cookie').animate({
-                marginBottom:-51,
+                marginBottom:-51
                 //display:'none',
             },1000);
         })
-
-        //obsługa ciasteczek na naszej stronie
-        var ciastko=document.cookie;
-
-        ciastko == '' ? document.cookie = "arabica=the best" : $('.cookie').hide();
-
-        $('.cookie').css({
-            backgroundColor: 'rgba(0, 0, 0, 0.3)',
-            position: 'fixed',
-            height: 50,
-            bottom: 0,
-            zIndex: 3
-        });
-
     });
 

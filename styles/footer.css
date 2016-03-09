@@ -36,6 +36,11 @@ footer{
 
 .cookie{
     width:100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    z-index: 3
 }
 
 .cookie .napis{
