@@ -46,20 +46,19 @@
 </header>
 
 <div id="gora">
-    <!--<div class="par_layer par_back"></div>-->
-<main class="par_layer">
-    <div id="funkcja">
-        <div class="gora ">
-            <div class="right">
-                <p class="tytul">Za friko</p>
+    <main class="par_layer">
+        <div id="funkcja">
+            <div class="gora">
+                <div class="right">
+                    <p class="tytul">Za friko</p>
 
-                  <div class="foto2 styl3" >
-                    <div class="styl">Koncert, lekcje jogi a może ciekawy wykład?<p class="styl2">Dowiedz sie które imprezy w Twojej ulicy sa
-                        całkiem za darmo.</p></div>
-                  </div>
-            </div>
-            <div class="left ">
-                <p class="tytul">Co</p>
+                      <div class="foto2 styl3">
+                        <div class="styl">Koncert, lekcje jogi a może ciekawy wykład?<p class="styl2">Dowiedz sie które imprezy w Twojej ulicy sa
+                            całkiem za darmo.</p></div>
+                      </div>
+                </div>
+                <div class="left">
+                    <p class="tytul">Co</p>
 
                 <div class="foto styl3">
                     <div class="styl" >Koncert, wystawa a może tańce....<p class="styl2">Zakładka "Co" pozwoli posortować wszystkie wydarzenia
@@ -71,13 +70,13 @@
             <div class="right">
                 <p class="tytul">Kiedy</p>
 
-                <div class="foto3 styl3">
-                    <div class="styl">Dziś, jutro, za rok...<p class="styl2">Dowiedz się o ciekawych imprezach z wyprzedzeniem tak aby niczego nie
-                        przegapić!</p></div>
+                    <div class="foto3 styl3">
+                        <div class="styl">Dziś, jutro, za rok...<p class="styl2">Dowiedz się o ciekawych imprezach z wyprzedzeniem tak aby niczego nie
+                            przegapić!</p></div>
+                    </div>
                 </div>
-            </div>
-            <div class="left">
-                <p class="tytul">Gdzie</p>
+                <div class="left">
+                    <p class="tytul">Gdzie</p>
 
                 <div class="foto4 styl3">
                     <div class="styl">Gdańsk , Gdynia , Sopot....<p class="styl2">Dzięki zakładce "Gdzie"szybko dowiesz się co ciekawego dzieje sie
@@ -125,28 +124,24 @@
 
         <div id="formularz" class="formularz">
 
-        <form id="target" action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
-
+            <form id="target" action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
                 <div class="form-line">
                     <br>
-                    <input type="text" name="imie" id="formularz1" placeholder="Imię"
-                           class="form-input-text pole-formularz-imie">
+                    <input type="text" name="imie" id="formularz1" placeholder="Imię" class="form-input-text pole-formularz-imie">
                     <div class="monit">
                         Musisz poprawnie wypełnić to pole.
                     </div>
                 </div>
                 <div class="form-line">
                     <br>
-                    <input type="email" name="email" data-clear-btn="true" id="formularz2" placeholder="E-mail"
-                           class="form-input-text  pole-formularz-mail">
+                    <input type="email" name="email" data-clear-btn="true" id="formularz2" placeholder="E-mail" class="form-input-text  pole-formularz-mail">
                     <div class="monit">
                         Musisz poprawnie wypełnić to pole.
                     </div>
                 </div>
                 <div class="form-line">
                     <br>
-                    <input type="tel" name="phone" id="formularz3" placeholder="Telefon"
-                           class="form-input-text  pole-formularz-tel">
+                    <input type="tel" name="phone" id="formularz3" placeholder="Telefon" class="form-input-text  pole-formularz-tel">
                     <div class="monit">
                         Musisz poprawnie wypełnić to pole.
                     </div>
@@ -160,10 +155,10 @@
                 </div>
                 <div class="form-wyslij-pole">
                     <input type="hidden" name="receiver" value="witek_gesse@poczta.onet.pl">
-                    <input type="submit" onclick="" value="Tędy ślij, swoje zainteresowanie!" class="form-wyslij">
+                    <input type="submit" value="Tędy ślij, swoje zainteresowanie!" class="form-wyslij">
                 </div>
             </form>
-
+            <div class="clear"></div>
         </div>
     </div>
 
@@ -178,6 +173,19 @@
     </div>
 
 </footer>
+
+<div class="cookie">
+    <p class="napis">
+        Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach
+        statystycznych, reklamowych oraz funkcjonalnych. Dzięki nim możemy indywidualnie
+        dostosować stronę do twoich potrzeb. Każdy może zaakceptować pliki cookies
+        albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą
+        zbierane żadne informacje.
+    </p>
+    <div class="close">
+        <img src="images/cancel.svg" alt="" class="closeImage">
+    </div>
+</div>
 
 <script src="script/walidacjaForm.js"></script>
 <script src="script/menu_polozenie.js"></script>

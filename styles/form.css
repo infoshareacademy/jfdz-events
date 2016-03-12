@@ -18,16 +18,6 @@
     100% {opacity: 1.0;}
 }
 
-/*Elementy pola zawierającego formularz*/
-.formularz .fieldset-napis{
-    margin-top: 5px;
-    border-radius: 5px;
-    padding:10px;
-    border-color: #2C163B;
-    box-shadow:0 0 10px #666;
-    height: 270px;
-}
-
 /*##########################################################
 ####################Pola formularza#########################*/
 .formularz .form-line{
@@ -77,6 +67,7 @@
     transition-duration: 1s;
     background: transparent;
     cursor: pointer;
+    text-align: center;
 }
 
 .formularz .form-wyslij:hover,.form-wyslij:focus {
