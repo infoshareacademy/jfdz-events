@@ -29,7 +29,7 @@ $(document).ready(
 
         $(window).scroll(function() {
             var scrolled=$(window).scrollTop();
-            $('.par_layer').css('background-position', '0 ' + -(scrolled*0.3) + 'px');
+            $('.par_layer').css('background-position', '0 ' + (-scrolled*0.3) + 'px');
         });
 
         $(window).scroll(function() {

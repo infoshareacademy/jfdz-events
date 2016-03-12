@@ -21,7 +21,8 @@ $(document).ready(function() {
         }
     }
 
-    createBoard(daysInMonth(year, month));
+    //daysInMonth(year, month);
+    createBoard(daysInMonth(year, month+1));
 
     console.log(board);
 
