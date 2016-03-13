@@ -38,7 +38,7 @@ $(document).ready(function() {
         $('#gierka').append($kartka);
 
         $('#dzien1').css({
-            marginLeft: (5+ 132.167 * firstDayInMonth)
+            marginLeft: (5+ 112 * firstDayInMonth)
         })
         //if (i === 0) {
         //    kartka.css({

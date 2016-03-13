@@ -1,5 +1,5 @@
 #gierka {
-    width: 929px;
+    width: 784px;
     margin: auto;
 }
 
@@ -7,10 +7,10 @@
     border-radius: 15px;
     margin: 5px;
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border: 1px solid white;
     text-align: center;
-    line-height: 120px;
-    font-size: 60px;
+    line-height: 100px;
+    font-size: 40px;
 }
