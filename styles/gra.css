@@ -1,0 +1,16 @@
+#gierka {
+    width: 929px;
+    margin: auto;
+}
+
+#gierka div {
+    border-radius: 15px;
+    margin: 5px;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 120px;
+    font-size: 60px;
+}

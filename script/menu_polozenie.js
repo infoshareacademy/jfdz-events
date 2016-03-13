@@ -1,6 +1,7 @@
 /**
  * Created by hania_c on 21.02.16.
  */
+//podswietalanie menu
 
 $(document).ready(
 
@@ -26,12 +27,15 @@ $(document).ready(
             });
             //console.log('wys dok' + $wysokoscDokumentu + 'aktual poz' + $aktualnapozycjaDokumentu);
         }
+//efekt paralaksy
 
         $(window).scroll(function() {
             var scrolled=$(window).scrollTop();
-            $('.par_layer').css('background-position', '0 ' + -(scrolled*0.3) + 'px');
+            $('.par_layer').css('background-position', '0 ' + (-scrolled*0.3) + 'px');
         });
 
+
+//zwezajace sie menu
         $(window).scroll(function() {
             if ($(document).scrollTop() > 30) {
                 $('nav ul').addClass('shrink');
