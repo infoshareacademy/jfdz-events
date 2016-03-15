@@ -14,3 +14,29 @@
     line-height: 100px;
     font-size: 40px;
 }
+
+/*ewa*/
+.black {
+    background: #000;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+
+#p1Score {
+    margin: 50px;
+    color: #0c0;
+}
+
+#p2Score {
+    margin: 50px;
+    color: #c00;
+}
+
+.score {
+    font-size: 25px;
+    font-weight: bold;
+}

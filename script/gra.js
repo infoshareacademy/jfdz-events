@@ -48,6 +48,62 @@ $(document).ready(function() {
     };
 
     console.log(board);
-    //$('#gierka').append(board);
+    $('#gierka').append(board);
 
+});
+
+//Ewa
+
+//var PleyerName=prompt("Podaj swoje imie:)");
+//var state = {
+//    playerName: PleyerName,
+//    time: 20,
+//    score: {
+//        player: 0,
+//        cpu: 0
+//    }
+//};
+
+var time = 20;
+
+function makeInteractive(table) {
+    return $(table).on('click', 'div', function (event, isCPU) {
+
+        var pictures = ['red', 'yellow'];
+        var randomnumber = Math.floor(Math.random() * pictures.length);
+
+        if( $(this).text() === (" ")) {
+            $(this).removeClass(pictures.join(' '));
+            $(this).text(null);
+        } else {
+            $(this).toggleClass(pictures[randomnumber]);
+            $(this).text(" ");
+        }
+    });
+}
+
+function startGame() {
+
+    makeInteractive(board);
+
+    console.log(board);
+    //CZĘSTOTLIWOSC KLIKANIA KOMPUTERA
+    // Group intervals to handle time management
+    var cpuActionIntervalId = setInterval(function () {
+        var numberOfCells = board.length;
+        $('div').eq(parseInt(Math.random() * numberOfCells)).trigger('click', true);
+    }, 1000);
+
+
+
+//CZAS LICZY SIE TEZ NA - jak tego nie ma
+    setTimeout(function () {
+        clearInterval(cpuActionIntervalId);
+        clearInterval(clockIntervalId);
+        $('board').off('click');
+    }, time * 1000);
+}
+
+$('#startGameButton').click(function () {
+    startGame();
 });
