@@ -114,3 +114,33 @@ $(document).ready(function() {
         $("#gierka").toggleClass("visibility");
     });
 });
+
+
+//Ewa
+
+function makeInteractive(board) {
+    return $(board).on('click', 'td', function (event, isCPU) {
+
+        var obrazki = ['red', 'yellow','green','pink'];
+        var randomnumber = Math.floor(Math.random() * obrazki.length);
+
+        if (isCPU === true) {
+            state.score.cpu += $(this).hasClass('black') ? -1 : 1;
+        } else {
+            state.score.player += $(this).hasClass('black') ? 1 : 0;
+        }
+
+        displayPlayerScore($p1Score, state);
+        displayCpuScore($p2Score, state);
+
+        if( $(this).text() === (" ")) {
+            $(this).removeClass(obrazki.join(' '));
+            $(this).text(null);
+        } else {
+            $(this).toggleClass(obrazki[randomnumber]);
+            $(this).text(" ");
+        }
+
+        //   $(this).toggleClass('piesek')// w tym miejscuu pokazuje sie to co komputer dodaje
+    });
+}

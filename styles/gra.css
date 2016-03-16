@@ -1,3 +1,4 @@
+
 .visibility {
     display: none;
 }
@@ -53,4 +54,15 @@ a.boxclose{
 #gierka .szare {
     vertical-align: bottom;
     background-color: gray;
+}
+
+/*ewa*/
+.black {
+    background: #000;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
 }
