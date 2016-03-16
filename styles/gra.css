@@ -1,3 +1,4 @@
+
 .visibility {
     display: none;
 }
@@ -24,7 +25,7 @@ a.boxclose{
 }
 
 #gierka {
-    width: 784px;
+    width: 644px;
     margin: auto;
 }
 
@@ -32,12 +33,27 @@ a.boxclose{
     border-radius: 15px;
     margin: 5px;
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: 1px solid white;
     text-align: center;
-    line-height: 100px;
-    font-size: 40px;
+    line-height: 80px;
+    font-size: 30px;
+    background-color: lightgray;
+}
+
+#gierka #miesiac {
+    border: none;
+    display: block;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    line-height: 50px;
+    background-color: transparent;
+}
+#gierka .szare {
+    vertical-align: bottom;
+    background-color: gray;
 }
 
 /*ewa*/
@@ -49,19 +65,4 @@ a.boxclose{
 }
 .yellow{
     background-color: yellow;
-}
-
-#p1Score {
-    margin: 50px;
-    color: #0c0;
-}
-
-#p2Score {
-    margin: 50px;
-    color: #c00;
-}
-
-.score {
-    font-size: 25px;
-    font-weight: bold;
 }
