@@ -88,7 +88,7 @@ $(document).ready(function() {
         $('#gierka').append($kartka);
     }
 
-    for (var i = 0 ; i <= lastDayInMonth ; i++) {
+    for (var i = 0 ; i < lastDayInMonth ; i++) {
         var $kartk = '<div class = "szare">'+ '' +'</div>'
         $('#gierka').append($kartk);
     }
