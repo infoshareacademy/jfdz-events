@@ -6,14 +6,16 @@ var board=[];
 var teraz=new Date();
 var month=teraz.getMonth();
 var year=teraz.getFullYear();
-var day=teraz.getDay();
+//var day=teraz.getDay();
 var firstDayInMonth = (new Date(year, month, 0)).getDay();
-//var firstDayInMonth = 5;
+
+
 
 function daysInMonth(y, m) {
     return new Date(y, m, 0).getDate();
 }
 
+var lastDayInMonth = (new Date(year, month, daysInMonth(year,month+1)-1)).getDay();
 
 $(document).ready(function() {
 
@@ -27,83 +29,88 @@ $(document).ready(function() {
     //daysInMonth(year, month);
     createBoard(daysInMonth(year, month+1));
 
+    var miesiac
+    switch(month) {
+        case 0:
+            miesiac= 'Styczeń'
+            break;
+        case 1:
+            miesiac= 'Luty'
+            break;
+        case 2:
+            miesiac= 'Marzec'
+            break;
+        case 3:
+            miesiac= 'Kwiecień'
+            break;
+        case 4:
+            miesiac= 'Maj'
+            break;
+        case 5:
+            miesiac= 'Czerwiec'
+            break;
+        case 6:
+            miesiac= 'Liepiec'
+            break;
+        case 7:
+            miesiac= 'Sierpień'
+            break;
+        case 8:
+            miesiac= 'Wrzesień'
+            break;
+        case 9:
+            miesiac= 'Październik'
+            break;
+        case 10:
+            miesiac= 'Listopad'
+            break;
+        case 11:
+            miesiac= 'Grudzień'
+            break;
+    }
+    var $miesiac = '<div id="miesiac">' + miesiac
+    $('#gierka').append($miesiac);
+
+
+    for (var i = 0 ; i < firstDayInMonth ; i++) {
+        var $kartka = '<div class = "szare">'+ '' +'</div>'
+        $('#gierka').append($kartka);
+    }
 
     for (var i = 0 ; i < board.length ; i++) {
-        if ( i === 0 ) {
-            var $kartka = '<div id="dzien1">' + (i+1) + '</div>';
+
+        if (i === 0) {
+            var $kartka = '<div id="dzien1"  class="kartka">' + (i + 1) + '</div>';
         }
         else {
-            var $kartka = '<div>' + (i + 1) + '</div>'
+            var $kartka = '<div class="kartka">' + (i + 1) + '</div>'
         }
         $('#gierka').append($kartka);
+    }
 
-        $('#dzien1').css({
-            marginLeft: (5+ 112 * firstDayInMonth)
-        })
+    for (var i = 0 ; i <= lastDayInMonth ; i++) {
+        var $kartk = '<div class = "szare">'+ '' +'</div>'
+        $('#gierka').append($kartk);
+    }
+
+        //$('#dzien1').css({
+        //    marginLeft: (5+ 112 * firstDayInMonth)
+        //})
         //if (i === 0) {
         //    kartka.css({
         //        marginLeft: 50
         //});
         //}
-    };
+
 
     console.log(board);
-    $('#gierka').append(board);
 
-});
 
-//Ewa
-
-//var PleyerName=prompt("Podaj swoje imie:)");
-//var state = {
-//    playerName: PleyerName,
-//    time: 20,
-//    score: {
-//        player: 0,
-//        cpu: 0
-//    }
-//};
-
-var time = 20;
-
-function makeInteractive(table) {
-    return $(table).on('click', 'div', function (event, isCPU) {
-
-        var pictures = ['red', 'yellow'];
-        var randomnumber = Math.floor(Math.random() * pictures.length);
-
-        if( $(this).text() === (" ")) {
-            $(this).removeClass(pictures.join(' '));
-            $(this).text(null);
-        } else {
-            $(this).toggleClass(pictures[randomnumber]);
-            $(this).text(" ");
-        }
+    $(".funkcja_obrazek").click(function(){
+        $("#gierka").toggleClass("visibility");
     });
-}
 
-function startGame() {
-
-    makeInteractive(board);
-
-    console.log(board);
-    //CZĘSTOTLIWOSC KLIKANIA KOMPUTERA
-    // Group intervals to handle time management
-    var cpuActionIntervalId = setInterval(function () {
-        var numberOfCells = board.length;
-        $('div').eq(parseInt(Math.random() * numberOfCells)).trigger('click', true);
-    }, 1000);
-
-
-
-//CZAS LICZY SIE TEZ NA - jak tego nie ma
-    setTimeout(function () {
-        clearInterval(cpuActionIntervalId);
-        clearInterval(clockIntervalId);
-        $('board').off('click');
-    }, time * 1000);
-}
-
-$('#startGameButton').click(function () {
-    startGame();
+    $('#boxclose').click(function(){
+        $("#gierka").toggleClass("visibility");
+    });
 });
