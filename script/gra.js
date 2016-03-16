@@ -2,7 +2,7 @@
  * Created by hania_c on 06.03.16.
  */
 
-var board=[];
+var plansza=[];
 var teraz=new Date();
 var month=teraz.getMonth();
 var year=teraz.getFullYear();
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     function createBoard(size) {
         for (var x = 0 ; x < size ; x++) {
-            board[x]= { date: new Date(year, month, x+1)};
+            plansza[x]= { date: new Date(year, month, x+1)};
         }
     }
 
@@ -77,7 +77,7 @@ $(document).ready(function() {
         $('#gierka').append($kartka);
     }
 
-    for (var i = 0 ; i < board.length ; i++) {
+    for (var i = 0 ; i < plansza.length ; i++) {
 
         if (i === 0) {
             var $kartka = '<div id="dzien1"  class="kartka">' + (i + 1) + '</div>';
@@ -103,7 +103,7 @@ $(document).ready(function() {
         //}
 
 
-    console.log(board);
+    console.log(plansza);
 
 
     $(".funkcja_obrazek").click(function(){
@@ -118,8 +118,8 @@ $(document).ready(function() {
 
 //Ewa
 
-function makeInteractive(board) {
-    return $(board).on('click', 'td', function (event, isCPU) {
+function makeInteractive(plansza) {
+    return $(plansza).on('click', '.kartka', function (event, isCPU) {
 
         var obrazki = ['red', 'yellow','green','pink'];
         var randomnumber = Math.floor(Math.random() * obrazki.length);
@@ -144,3 +144,64 @@ function makeInteractive(board) {
         //   $(this).toggleClass('piesek')// w tym miejscuu pokazuje sie to co komputer dodaje
     });
 }
+
+var state = {
+    playerName: 'Janusz',
+    time: 20,
+    score: {
+        player: 0,
+        cpu: 0
+    }
+};
+
+var $clock = $('#clock');
+
+function displayClock(node, state) {
+    $(node).text('Time: ' + state.time);
+}
+var clockIntervalId = setInterval(function () {
+    state.time -= 1;
+    displayClock($clock, state);
+}, 1000);
+
+setTimeout(function () {
+    clearInterval(cpuActionIntervalId);
+    clearInterval(clockIntervalId);
+    $('plansza').off('click');
+}, state.time * 1000);
+
+
+
+displayClock($clock, state);
+
+//function startGame(initialState) {
+//
+//    // Group intervals to handle time management
+//    //częstotliwość klikania kompa
+//    var cpuActionIntervalId = setInterval(function () {
+//        //wymiar planszy
+//        //var numberOfCells = $('td').length;
+//        var randomnumber = Math.floor(Math.random() * obrazki.length);
+//        //losuje sobie kratkę i ją KLIKA!!!
+//        //$('td').eq(parseInt(Math.random() * numberOfCells)).trigger('click', true);
+//
+//    }, 1000);
+//
+//    //tykanie zegara
+//    var clockIntervalId = setInterval(function () {
+//        state.time -= 1;
+//        displayClock($clock, state);
+//    }, 1000);
+//
+//
+//    //przestaje klikać po 20 sekundach
+//    setTimeout(function () {
+//        clearInterval(cpuActionIntervalId);
+//        clearInterval(clockIntervalId);
+//        $('table').off('click');
+//    }, state.time * 1000);
+//}
+//
+//$('#startGameButton').click(function () {
+//    startGame(state);
+//});
