@@ -116,10 +116,16 @@ $(document).ready(function () {
 
 //Ewa
 
-    $clock.text('20');
+    var $p1Score = $('#p1Score');
+    var $p2Score = $('#p2Score');
+
+
     $p1Score.text('0');
     $p2Score.text('0');
 
+    function showPlayer(){//pokazuje punkty graczy
+        $("#p1Score").html('Player:'+ state.score.player);
+    }
 
     var state = {
         playerName: 'Janusz',
