@@ -179,7 +179,7 @@ $(document).ready(function () {
     displayClock($clock, state);
 
     function startGame(initialState) {
-        makeInteractive($(plansza));
+        makeInteractive('.kartka');
 
 
         var clockIntervalId = setInterval(function () {
@@ -190,7 +190,7 @@ $(document).ready(function () {
         setTimeout(function () {
             clearInterval(cpuActionIntervalId);
             clearInterval(clockIntervalId);
-            $('plansza').off('click');
+            $('.kartka').off('click');
         }, state.time * 1000);
 
         var cpuActionIntervalId = setInterval(function () {
