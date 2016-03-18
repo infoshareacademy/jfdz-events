@@ -116,32 +116,10 @@ $(document).ready(function () {
 
 //Ewa
 
-//function makeInteractive(plansza) {
-//    return $(plansza).on('click', '.kartka', function (event, isCPU) {
-//
-//        var obrazki = ['red', 'yellow','green','pink'];
-//        var randomnumber = Math.floor(Math.random() * obrazki.length);
-//
-//        if (isCPU === true) {
-//            state.score.cpu += $(this).hasClass('black') ? -1 : 1;
-//        } else {
-//            state.score.player += $(this).hasClass('black') ? 1 : 0;
-//        }
-//
-//        displayPlayerScore($p1Score, state);
-//        displayCpuScore($p2Score, state);
-//
-//        if( $(this).text() === (" ")) {
-//            $(this).removeClass(obrazki.join(' '));
-//            $(this).text(null);
-//        } else {
-//            $(this).toggleClass(obrazki[randomnumber]);
-//            $(this).text(" ");
-//        }
-//
-//        //   $(this).toggleClass('piesek')// w tym miejscuu pokazuje sie to co komputer dodaje
-//    });
-//}
+    $clock.text('20');
+    $p1Score.text('0');
+    $p2Score.text('0');
+
 
     var state = {
         playerName: 'Janusz',
@@ -152,9 +130,11 @@ $(document).ready(function () {
         }
     };
 
-
     function makeInteractive(table) {
         return $(table).on('click', '.kartka', function (event, isCPU) {
+            var obrazki = ['red', 'yellow','green','pink'];//tablica z obrazkami
+            var randomnumber = Math.floor(Math.random() * obrazki.length);//losowo wybiwea obrazeik któy ma dodaz z tablicy 1-4
+
 
             if (isCPU === true) {
                 state.score.cpu += 1;
@@ -165,7 +145,15 @@ $(document).ready(function () {
             //displayPlayerScore($p1Score, state);
             //displayCpuScore($p2Score, state);
 
-            $(this).toggleClass('red');
+            if( $(this).text() === (" ")) {//losowo dadaje do miejsca losowy obrazek
+                $(this).removeClass(obrazki.join(' '));
+                $(this).text(null);
+            } else {
+                $(this).toggleClass(obrazki[randomnumber]);
+                $(this).text(" ");
+            }
+
+            $(this).toggleClass('red');//wtedy bez tego
         });
     }
 
