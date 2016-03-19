@@ -2,7 +2,8 @@
 .visibility {
     display: none;
 }
-#gierka #clock {
+
+#gierka .gra_info {
     width: 140px;
     height: 40px;
     line-height: 40px;
@@ -13,17 +14,8 @@
     color: #AEAEAE;
 }
 
-#gierka #navGame {
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-}
 #gierka #startGameButton {
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
+
     background-color: transparent;
     font-family: Bandy;
 }
@@ -42,11 +34,6 @@ a.boxclose{
     height: 10px;
     line-height: 0px;
     padding: 5px 3px;
-}
-
-.boxclose:before {
-    /*content: "x";*/
-
 }
 
 #gierka {
