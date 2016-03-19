@@ -28,7 +28,7 @@ $(document).ready(function () {
     //daysInMonth(year, month);
     createBoard(daysInMonth(year, month + 1));
 
-    var miesiac
+    var miesiac;
     switch (month) {
         case 0:
             miesiac = 'Styczeń';
@@ -145,7 +145,7 @@ $(document).ready(function () {
 
     var state = {
         playerName: 'Janusz',
-        time: 7,
+        time: 20,
         score: {
             player: 0,
             cpu: 0
@@ -156,16 +156,23 @@ $(document).ready(function () {
     function makeInteractive() {
         return $('#gierka').on('click', '.kartka', function (event, isCPU) {
 
+            var classList = ['red', 'yellow','green','pink'];
             if (isCPU === true) {
-                state.score.cpu += $(this).hasClass('red') ? -1 : 1;
+                state.score.cpu += 1;
+
+                var randomnumber = Math.floor(Math.random() * classList.length);
+
+                $(this).addClass( classList[ randomnumber] );
+
             } else {
                 state.score.player += $(this).hasClass('red') ? 1 : -1;
+                $(this).removeClass(classList.join(' '));
             }
 
             //displayPlayerScore($p1Score, state);
             //displayCpuScore($p2Score, state);
 
-            $(this).toggleClass('red');
+
         });
     }
 
@@ -202,9 +209,7 @@ $(document).ready(function () {
         }, state.time * 1000);
 
 
-    };
-
-
+    }
     $('#startGameButton').click(function () {
         startGame(state);
     });
