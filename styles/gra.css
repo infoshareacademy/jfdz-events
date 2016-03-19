@@ -2,30 +2,37 @@
 .visibility {
     display: none;
 }
-#gierka #clock {
+
+#gierka .gra_info {
     width: 140px;
     height: 40px;
     line-height: 40px;
     font-size: 20px;
+    cursor: pointer;
 }
-
+.kartka {
+    cursor: pointer;
+}
 #gierka #miesiac {
     color: #AEAEAE;
 }
 
-#gierka #navGame {
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-}
 #gierka #startGameButton {
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
+
     background-color: transparent;
     font-family: Bandy;
+}
+.funkcja_obrazek {
+    position: relative;
+}
+.lapka {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 140px;
+    bottom: 0;
+    left: 120px;
+    cursor: pointer;
 }
 
 a.boxclose{
@@ -38,23 +45,24 @@ a.boxclose{
     border-radius: 5px;
     background: #605F61;
     font-size: 31px;
-    /*font-weight: bold;*/
     display: inline-block;
-    height: 4px;
+    height: 10px;
     line-height: 0px;
-    padding: 10px 3px;
-}
-
-.boxclose:before {
-    content: "×";
-
+    padding: 5px 3px;
 }
 
 #gierka {
     width: 646px;
     margin: auto;
 }
-
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 #gierka div {
     border-radius: 15px;
     margin: 5px;
@@ -67,6 +75,7 @@ a.boxclose{
     font-size: 30px;
     background-color: lightgray;
 }
+
 
 #gierka #miesiac {
     border: none;
@@ -83,12 +92,18 @@ a.boxclose{
 }
 
 /*ewa*/
-.black {
+#gierka div.black {
     background: #000;
 }
-.red{
+#gierka div.red{
     background-color: red;
 }
-.yellow{
+#gierka div.yellow{
     background-color: yellow;
+}
+#gierka div.pink{
+    background-color: pink;
+}
+#gierka div.green{
+    background-color: green
 }

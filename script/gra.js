@@ -28,7 +28,7 @@ $(document).ready(function () {
     //daysInMonth(year, month);
     createBoard(daysInMonth(year, month + 1));
 
-    var miesiac
+    var miesiac;
     switch (month) {
         case 0:
             miesiac = 'Styczeń';
@@ -105,7 +105,11 @@ $(document).ready(function () {
     console.log(plansza);
 
 
-    $(".funkcja_obrazek").click(function () {
+    $(".lapka").click(function () {
+
+        var playerName = prompt("Podaj swoje imie");
+        state.playerName = playerName;
+
         $("#gierka").toggleClass("visibility");
     });
 
@@ -144,7 +148,7 @@ $(document).ready(function () {
 //}
 
     var state = {
-        playerName: 'Janusz',
+        playerName:null,
         time: 20,
         score: {
             player: 0,
@@ -152,20 +156,49 @@ $(document).ready(function () {
         }
     };
 
+    // Display player score
+    function displayPlayerScore() {
+        $('#wynik_ty').text(state.playerName + ': ' + state.score.player);
+    }
 
-    function makeInteractive(table) {
-        return $(table).on('click', '.kartka', function (event, isCPU) {
+// Display CPU score
+    function displayCpuScore() {
+        $('#wynik_ja').text('CPU: ' + state.score.cpu);
+    }
 
+    function checkClasses(node) {
+        return $(node).is('.red, .yellow, .green, .pink');
+    }
+
+
+    function makeInteractive() {
+        return $('#gierka').on('click', '.kartka', function (event, isCPU) {
+
+            var classList = ['red', 'yellow','green','pink'];
             if (isCPU === true) {
-                state.score.cpu += 1;
-            } else {
-                state.score.player += $(this).hasClass('red') ? 1 : -1;
+                state.score.cpu += checkClasses(this) ? -1 : 1;
+
+                var randomnumber = Math.floor(Math.random() * classList.length);
+
+                $(this).addClass( classList[ randomnumber] );
+
+            }
+            else {
+                if (checkClasses(this)) {
+                    state.score.player +=2;
+                    $(this).removeClass(classList.join(' '));
+                }
+                else {
+                    //var randomnumber = Math.floor(Math.random() * classList.length);
+                    state.score.player -=1;
+                    //$(this).addClass(classList[ randomnumber]);
+                }
+
             }
 
-            //displayPlayerScore($p1Score, state);
-            //displayCpuScore($p2Score, state);
+            displayPlayerScore();
+            displayCpuScore()
 
-            $(this).toggleClass('red');
         });
     }
 
@@ -179,49 +212,38 @@ $(document).ready(function () {
     displayClock($clock, state);
 
     function startGame(initialState) {
-        makeInteractive($(plansza));
 
+        $('body').append('<iframe id="mjuzik" width="0" height="0" src="https://www.youtube.com/embed/sFvQOc4xS2k?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        //$('body').append('<iframe id="mjuzik" width="0" height="0" src="https://www.youtube.com/embed/wdpDtAjZuWQ?autoplay=1" frameborder="0" allowfullscreen></iframe>')
+        makeInteractive();
 
+//odliczanie czasu
         var clockIntervalId = setInterval(function () {
             state.time -= 1;
             displayClock($clock, state);
         }, 1000);
 
-        setTimeout(function () {
-            clearInterval(cpuActionIntervalId);
-            clearInterval(clockIntervalId);
-            $('plansza').off('click');
-        }, state.time * 1000);
 
+
+//komputer klika
         var cpuActionIntervalId = setInterval(function () {
             var numberOfCells = daysInMonth(year, month + 1);
             $('.kartka').eq(parseInt(Math.random() * numberOfCells)).trigger('click', true);
-        }, 1000);
+        }, 500);
+
+        setTimeout(function () {
+            clearInterval(cpuActionIntervalId);
+            clearInterval(clockIntervalId);
+            $('#gierka').off('click');
+            $('#mjuzik').remove();
+        }, state.time * 1000);
 
 
-    };
-
-
+    }
     $('#startGameButton').click(function () {
         startGame(state);
+        $('#startGameButton').off('click');
     });
-
-
-//function startGame(initialState) {
-//
-
-//
-//    //przestaje klikać po 20 sekundach
-//    setTimeout(function () {
-//        clearInterval(cpuActionIntervalId);
-//        clearInterval(clockIntervalId);
-//        $('table').off('click');
-//    }, state.time * 1000);
-//}
-//
-//$('#startGameButton').click(function () {
-//    startGame(state);
-//});
 
 
 });
