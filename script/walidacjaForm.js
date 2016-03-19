@@ -75,7 +75,7 @@ $(document).ready(
                 marginBottom:-51
                 //display:'none',
             },1000);
-        })
+        });
 
         $('i').click(function(){
 
