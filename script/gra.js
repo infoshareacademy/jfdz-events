@@ -105,7 +105,7 @@ $(document).ready(function () {
     console.log(plansza);
 
 
-    $(".funkcja_obrazek").click(function () {
+    $(".lapka").click(function () {
         $("#gierka").toggleClass("visibility");
     });
 
@@ -162,25 +162,38 @@ $(document).ready(function () {
         $('#wynik_ja').text('CPU: ' + state.score.cpu);
     }
 
+    function checkClasses(node) {
+        return $(node).is('.red, .yellow, .green, .pink');
+    }
+
 
     function makeInteractive() {
         return $('#gierka').on('click', '.kartka', function (event, isCPU) {
 
             var classList = ['red', 'yellow','green','pink'];
             if (isCPU === true) {
-                state.score.cpu += $(this).hasClass('red' || 'yellow', 'pink', 'green') ? 1 : -1;
+                state.score.cpu += checkClasses(this) ? -1 : 1;
 
                 var randomnumber = Math.floor(Math.random() * classList.length);
 
                 $(this).addClass( classList[ randomnumber] );
 
-            } else {
-                state.score.player += $(this).hasClass('red','yellow','green','pink') ? 1 : -1;
-                $(this).removeClass(classList.join(' '));
+            }
+            else {
+                if (checkClasses(this)) {
+                    state.score.player +=2;
+                    $(this).removeClass(classList.join(' '));
+                }
+                else {
+                    //var randomnumber = Math.floor(Math.random() * classList.length);
+                    state.score.player -=1;
+                    //$(this).addClass(classList[ randomnumber]);
+                }
+
             }
 
             displayPlayerScore();
-            displayCpuScore()
+            displayCpuScore();
 
         });
     }

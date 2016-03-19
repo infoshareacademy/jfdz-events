@@ -8,8 +8,11 @@
     height: 40px;
     line-height: 40px;
     font-size: 20px;
+    cursor: pointer;
 }
-
+.kartka {
+    cursor: pointer;
+}
 #gierka #miesiac {
     color: #AEAEAE;
 }
@@ -18,6 +21,18 @@
 
     background-color: transparent;
     font-family: Bandy;
+}
+.funkcja_obrazek {
+    position: relative;
+}
+.lapka {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 140px;
+    bottom: 0;
+    left: 120px;
+    cursor: pointer;
 }
 
 a.boxclose{
@@ -40,7 +55,14 @@ a.boxclose{
     width: 646px;
     margin: auto;
 }
-
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 #gierka div {
     border-radius: 15px;
     margin: 5px;
