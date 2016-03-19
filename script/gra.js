@@ -208,6 +208,9 @@ $(document).ready(function () {
     displayClock($clock, state);
 
     function startGame(initialState) {
+
+        $('body').append('<iframe id="mjuzik" width="0" height="0" src="https://www.youtube.com/embed/sFvQOc4xS2k?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        //$('body').append('<iframe id="mjuzik" width="0" height="0" src="https://www.youtube.com/embed/wdpDtAjZuWQ?autoplay=1" frameborder="0" allowfullscreen></iframe>')
         makeInteractive();
 
 //odliczanie czasu
@@ -228,6 +231,7 @@ $(document).ready(function () {
             clearInterval(cpuActionIntervalId);
             clearInterval(clockIntervalId);
             $('#gierka').off('click');
+            $('#mjuzik').remove();
         }, state.time * 1000);
 
 
