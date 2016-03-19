@@ -106,6 +106,10 @@ $(document).ready(function () {
 
 
     $(".lapka").click(function () {
+
+        var playerName = prompt("Podaj swoje imie");
+        state.playerName = playerName;
+
         $("#gierka").toggleClass("visibility");
     });
 
@@ -144,7 +148,7 @@ $(document).ready(function () {
 //}
 
     var state = {
-        playerName: 'Janusz',
+        playerName:null,
         time: 20,
         score: {
             player: 0,
@@ -193,7 +197,7 @@ $(document).ready(function () {
             }
 
             displayPlayerScore();
-            displayCpuScore();
+            displayCpuScore()
 
         });
     }
