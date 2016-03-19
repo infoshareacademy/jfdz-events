@@ -38,15 +38,14 @@ a.boxclose{
     border-radius: 5px;
     background: #605F61;
     font-size: 31px;
-    /*font-weight: bold;*/
     display: inline-block;
-    height: 4px;
+    height: 10px;
     line-height: 0px;
-    padding: 10px 3px;
+    padding: 5px 3px;
 }
 
 .boxclose:before {
-    content: "×";
+    /*content: "x";*/
 
 }
 
@@ -68,6 +67,7 @@ a.boxclose{
     background-color: lightgray;
 }
 
+
 #gierka #miesiac {
     border: none;
     display: block;
@@ -83,12 +83,12 @@ a.boxclose{
 }
 
 /*ewa*/
-.black {
+#gierka div.black {
     background: #000;
 }
-.red{
+#gierka div.red{
     background-color: red;
 }
-.yellow{
+#gierka div.yellow{
     background-color: yellow;
 }
