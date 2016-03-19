@@ -145,7 +145,7 @@ $(document).ready(function () {
 
     var state = {
         playerName: 'Janusz',
-        time: 20,
+        time: 7,
         score: {
             player: 0,
             cpu: 0
@@ -181,22 +181,25 @@ $(document).ready(function () {
     function startGame(initialState) {
         makeInteractive();
 
-
+//odliczanie czasu
         var clockIntervalId = setInterval(function () {
             state.time -= 1;
             displayClock($clock, state);
         }, 1000);
 
-        setTimeout(function () {
-            clearInterval(cpuActionIntervalId);
-            clearInterval(clockIntervalId);
-            $('plansza').off('click');
-        }, state.time * 1000);
 
+
+//komputer klika
         var cpuActionIntervalId = setInterval(function () {
             var numberOfCells = daysInMonth(year, month + 1);
             $('.kartka').eq(parseInt(Math.random() * numberOfCells)).trigger('click', true);
-        }, 1000);
+        }, 500);
+
+        setTimeout(function () {
+            clearInterval(cpuActionIntervalId);
+            clearInterval(clockIntervalId);
+            $('#gierka').off('click');
+        }, state.time * 1000);
 
 
     };
