@@ -153,8 +153,8 @@ $(document).ready(function () {
     };
 
 
-    function makeInteractive(table) {
-        return $(table).on('click', '.kartka', function (event, isCPU) {
+    function makeInteractive() {
+        return $('#gierka').on('click', '.kartka', function (event, isCPU) {
 
             if (isCPU === true) {
                 state.score.cpu += 1;
@@ -179,7 +179,7 @@ $(document).ready(function () {
     displayClock($clock, state);
 
     function startGame(initialState) {
-        makeInteractive($(plansza));
+        makeInteractive();
 
 
         var clockIntervalId = setInterval(function () {
@@ -205,23 +205,6 @@ $(document).ready(function () {
     $('#startGameButton').click(function () {
         startGame(state);
     });
-
-
-//function startGame(initialState) {
-//
-
-//
-//    //przestaje klikać po 20 sekundach
-//    setTimeout(function () {
-//        clearInterval(cpuActionIntervalId);
-//        clearInterval(clockIntervalId);
-//        $('table').off('click');
-//    }, state.time * 1000);
-//}
-//
-//$('#startGameButton').click(function () {
-//    startGame(state);
-//});
 
 
 });
