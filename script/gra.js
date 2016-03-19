@@ -152,26 +152,35 @@ $(document).ready(function () {
         }
     };
 
+    // Display player score
+    function displayPlayerScore() {
+        $('#wynik_ty').text(state.playerName + ': ' + state.score.player);
+    }
+
+// Display CPU score
+    function displayCpuScore() {
+        $('#wynik_ja').text('CPU: ' + state.score.cpu);
+    }
+
 
     function makeInteractive() {
         return $('#gierka').on('click', '.kartka', function (event, isCPU) {
 
             var classList = ['red', 'yellow','green','pink'];
             if (isCPU === true) {
-                state.score.cpu += 1;
+                state.score.cpu += $(this).hasClass('red' || 'yellow', 'pink', 'green') ? 1 : -1;
 
                 var randomnumber = Math.floor(Math.random() * classList.length);
 
                 $(this).addClass( classList[ randomnumber] );
 
             } else {
-                state.score.player += $(this).hasClass('red') ? 1 : -1;
+                state.score.player += $(this).hasClass('red','yellow','green','pink') ? 1 : -1;
                 $(this).removeClass(classList.join(' '));
             }
 
-            //displayPlayerScore($p1Score, state);
-            //displayCpuScore($p2Score, state);
-
+            displayPlayerScore();
+            displayCpuScore()
 
         });
     }
@@ -212,6 +221,7 @@ $(document).ready(function () {
     }
     $('#startGameButton').click(function () {
         startGame(state);
+        $('#startGameButton').off('click');
     });
 
 
