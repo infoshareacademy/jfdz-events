@@ -107,7 +107,7 @@ $(document).ready(function () {
 
     $(".funkcja_obrazek").click(function () {
 
-        var playerName = prompt("Podaj swoje imie");
+        var playerName = prompt("Podaj swoje imie by zaczac gre");
         state.playerName = playerName;
 
         $("#gierka").toggleClass("visibility");
