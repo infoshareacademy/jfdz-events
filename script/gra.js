@@ -157,7 +157,7 @@ $(document).ready(function () {
         return $('#gierka').on('click', '.kartka', function (event, isCPU) {
 
             if (isCPU === true) {
-                state.score.cpu += 1;
+                state.score.cpu += $(this).hasClass('red') ? -1 : 1;
             } else {
                 state.score.player += $(this).hasClass('red') ? 1 : -1;
             }
