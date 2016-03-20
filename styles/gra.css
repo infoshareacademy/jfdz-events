@@ -7,9 +7,17 @@
     width: 140px;
     height: 40px;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
+
+/*#gierka #wynik_ty{*/
+    /*font-size:15px ;*/
+/*}*/
+
+/*#gierka #wynik_ja{*/
+    /*font-size:15px ;*/
+/*}*/
 .kartka {
     cursor: pointer;
 }
@@ -97,13 +105,19 @@ body{
 }
 #gierka div.red{
     background-color: red;
+    background-image: none;
 }
 #gierka div.yellow{
     background-color: yellow;
+    background-image: none;
 }
 #gierka div.pink{
     background-color: pink;
+    background-image: url(../images/lord.png);
+    background-size: cover;
+    color: transparent;
 }
 #gierka div.green{
-    background-color: green
+    background-color: green;
+    background-image: none;
 }

@@ -107,8 +107,9 @@ $(document).ready(function () {
 
     $(".lapka").click(function () {
 
-        var playerName = prompt("Podaj swoje imie");
+        var playerName = prompt("Podaj swoje imie by zaczac gre");
         state.playerName = playerName;
+        displayPlayerScore();
 
         $("#gierka").toggleClass("visibility");
     });
@@ -120,32 +121,7 @@ $(document).ready(function () {
 
 //Ewa
 
-//function makeInteractive(plansza) {
-//    return $(plansza).on('click', '.kartka', function (event, isCPU) {
-//
-//        var obrazki = ['red', 'yellow','green','pink'];
-//        var randomnumber = Math.floor(Math.random() * obrazki.length);
-//
-//        if (isCPU === true) {
-//            state.score.cpu += $(this).hasClass('black') ? -1 : 1;
-//        } else {
-//            state.score.player += $(this).hasClass('black') ? 1 : 0;
-//        }
-//
-//        displayPlayerScore($p1Score, state);
-//        displayCpuScore($p2Score, state);
-//
-//        if( $(this).text() === (" ")) {
-//            $(this).removeClass(obrazki.join(' '));
-//            $(this).text(null);
-//        } else {
-//            $(this).toggleClass(obrazki[randomnumber]);
-//            $(this).text(" ");
-//        }
-//
-//        //   $(this).toggleClass('piesek')// w tym miejscuu pokazuje sie to co komputer dodaje
-//    });
-//}
+
 
     var state = {
         playerName:null,
@@ -163,7 +139,7 @@ $(document).ready(function () {
 
 // Display CPU score
     function displayCpuScore() {
-        $('#wynik_ja').text('CPU: ' + state.score.cpu);
+        $('#wynik_ja').text('Darth Vader: ' + state.score.cpu);
     }
 
     function checkClasses(node) {
