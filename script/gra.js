@@ -4,9 +4,9 @@
 
 var plansza = [];
 var teraz = new Date();
+//alert(teraz);
 var month = teraz.getMonth();
 var year = teraz.getFullYear();
-//var day=teraz.getDay();
 var firstDayInMonth = (new Date(year, month, 0)).getDay();
 
 
@@ -87,19 +87,10 @@ $(document).ready(function () {
         $('#gierka').append($kartka);
     }
 
-    for (var i = 0; i < lastDayInMonth; i++) {
+    for (var i = 0; i < 6 - lastDayInMonth; i++) {
         var $kartk = '<div class = "szare">' + '' + '</div>';
         $('#gierka').append($kartk);
     }
-
-    //$('#dzien1').css({
-    //    marginLeft: (5+ 112 * firstDayInMonth)
-    //})
-    //if (i === 0) {
-    //    kartka.css({
-    //        marginLeft: 50
-    //});
-    //}
 
 
     console.log(plansza);
@@ -119,12 +110,8 @@ $(document).ready(function () {
     });
 
 
-//Ewa
-
-
-
     var state = {
-        playerName:null,
+        playerName: null,
         time: 20,
         score: {
             player: 0,
@@ -150,23 +137,23 @@ $(document).ready(function () {
     function makeInteractive() {
         return $('#gierka').on('click', '.kartka', function (event, isCPU) {
 
-            var classList = ['red', 'yellow','green','pink'];
+            var classList = ['red', 'yellow', 'green', 'pink'];
             if (isCPU === true) {
                 state.score.cpu += checkClasses(this) ? -1 : 1;
 
                 var randomnumber = Math.floor(Math.random() * classList.length);
 
-                $(this).addClass( classList[ randomnumber] );
+                $(this).addClass(classList[randomnumber]);
 
             }
             else {
                 if (checkClasses(this)) {
-                    state.score.player +=2;
+                    state.score.player += 2;
                     $(this).removeClass(classList.join(' '));
                 }
                 else {
                     //var randomnumber = Math.floor(Math.random() * classList.length);
-                    state.score.player -=1;
+                    state.score.player -= 1;
                     //$(this).addClass(classList[ randomnumber]);
                 }
 
@@ -200,7 +187,6 @@ $(document).ready(function () {
         }, 1000);
 
 
-
 //komputer klika
         var cpuActionIntervalId = setInterval(function () {
             var numberOfCells = daysInMonth(year, month + 1);
@@ -216,6 +202,7 @@ $(document).ready(function () {
 
 
     }
+
     $('#startGameButton').click(function () {
         startGame(state);
         $('#startGameButton').off('click');
