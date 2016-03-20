@@ -105,7 +105,7 @@ $(document).ready(function () {
     console.log(plansza);
 
 
-    $(".funkcja_obrazek").click(function () {
+    $(".lapka").click(function () {
 
         var playerName = prompt("Podaj swoje imie by zaczac gre");
         state.playerName = playerName;
@@ -166,21 +166,34 @@ $(document).ready(function () {
         $('#wynik_ja').text('CPU: ' + state.score.cpu);
     }
 
+    function checkClasses(node) {
+        return $(node).is('.red, .yellow, .green, .pink');
+    }
+
 
     function makeInteractive() {
         return $('#gierka').on('click', '.kartka', function (event, isCPU) {
 
             var classList = ['red', 'yellow','green','pink'];
             if (isCPU === true) {
-                state.score.cpu += $(this).hasClass('red' || 'yellow', 'pink', 'green') ? 1 : -1;
+                state.score.cpu += checkClasses(this) ? -1 : 1;
 
                 var randomnumber = Math.floor(Math.random() * classList.length);
 
                 $(this).addClass( classList[ randomnumber] );
 
-            } else {
-                state.score.player += $(this).hasClass('red','yellow','green','pink') ? 1 : -1;
-                $(this).removeClass(classList.join(' '));
+            }
+            else {
+                if (checkClasses(this)) {
+                    state.score.player +=2;
+                    $(this).removeClass(classList.join(' '));
+                }
+                else {
+                    //var randomnumber = Math.floor(Math.random() * classList.length);
+                    state.score.player -=1;
+                    //$(this).addClass(classList[ randomnumber]);
+                }
+
             }
 
             displayPlayerScore();
@@ -199,6 +212,9 @@ $(document).ready(function () {
     displayClock($clock, state);
 
     function startGame(initialState) {
+
+        $('body').append('<iframe id="mjuzik" width="0" height="0" src="https://www.youtube.com/embed/sFvQOc4xS2k?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        //$('body').append('<iframe id="mjuzik" width="0" height="0" src="https://www.youtube.com/embed/wdpDtAjZuWQ?autoplay=1" frameborder="0" allowfullscreen></iframe>')
         makeInteractive();
 
 //odliczanie czasu
@@ -219,6 +235,7 @@ $(document).ready(function () {
             clearInterval(cpuActionIntervalId);
             clearInterval(clockIntervalId);
             $('#gierka').off('click');
+            $('#mjuzik').remove();
         }, state.time * 1000);
 
 
