@@ -106,10 +106,12 @@ body{
 #gierka div.red{
     background-color: red;
     background-image: none;
+    color: black;
 }
 #gierka div.yellow{
     background-color: yellow;
     background-image: none;
+    color: black;
 }
 #gierka div.pink{
     background-color: pink;
@@ -120,4 +122,6 @@ body{
 #gierka div.green{
     background-color: green;
     background-image: none;
+    color: black;
+
 }
