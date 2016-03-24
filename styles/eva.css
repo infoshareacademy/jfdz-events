@@ -47,7 +47,7 @@
 .styl {
     font-size: 20px;
     color:#F4EDA5;
-    height: 35px;
+    height: 33px;
     width: 500px;
     background-color: #2C163B;
     display: block;
@@ -114,15 +114,33 @@
     width:134px;
 }
 
+
+.ikonyFunMale .podpis {
+    position:relative;
+    text-align: center;
+    margin-left:-15px;
+    color:#AD093A;
+}
+
 .ikonyFunMale img{
     width: 100px;
-    margin-top: 37px;
     height: 100px;
+    margin-top: 37px;
     margin-left: -42px;
 }
 
-.ikonyFunMale:hover img{
+
+
+.ikonyFunMale:hover img {
     width: 130px;
     height: 130px;
+    margin-top:22px;
+    margin-left:-27px;
+    /*content: 'test';*/
     cursor: pointer;
 }
+
+.ikonyFunMale:hover .podpis {
+    display:none;
+}
+

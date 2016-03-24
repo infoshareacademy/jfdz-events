@@ -75,6 +75,17 @@ $(document).ready(
                 marginBottom:-51
                 //display:'none',
             },1000);
+        });
+
+        $('i').click(function(){
+
+            var $klasa=$(this).attr('class');
+            if ($klasa=="fa fa-facebook-square") window.location.href='https://facebook.com/';
+            if ($klasa=="fa fa-google-plus-square") window.location.href='https://plus.google.com/';
+            if ($klasa=="fa fa-linkedin-square") window.location.href='https://linkedin.com/';
+            if ($klasa=="fa fa-twitter-square") window.location.href='https://twitter.com/';
+
         })
+
     });
 
