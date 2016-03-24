@@ -10,7 +10,7 @@ body {
     background-image: url(../images/party2.jpg);
     background-size: 120%;
     background-attachment: fixed;
-    height: 1068px;
+    height: auto;
 }
 
 header {
