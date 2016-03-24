@@ -6,6 +6,12 @@
 .clear{
     clear: both;
 }
+#gora{
+    height: 1000px;
+}
+#dol{
+    height: 1000px;
+}
 
 #funkcja{
     width: 1200px;
@@ -15,7 +21,7 @@
 
 .right{
     height: 437px;
-    width: 537px;
+    width: 1140px;
     float: right;
     background-color:#F4EDA5;
     text-align: center;
@@ -23,11 +29,13 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right:2%;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 .left {
     height: 437px;
-    width: 537px;
+    width: 1140px;
     background-color: #F4EDA5;
     float: left;
     text-align: center;
@@ -35,6 +43,8 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right: 2%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
  .tytul{
