@@ -10,10 +10,25 @@ function validateForm (field,checkFormula) {
     }
     else {
         $(field).next().hide(500);
-        $(field).css('background-color', '');
-        $('input[type=submit]').removeAttr('disabled');
+        $(field).css('background-color', '')
     }
 }
+
+//Zabezpieczenie formularz przed bootami
+var incrementInterval = setInterval('incrementDisplayTime()', 1000);
+
+function incrementDisplayTime()
+{
+    $('form input[type="hidden"][name="formDisplayTime"]').each(function() {
+        //console.log();
+        if ($(this).val()<4) $(this).val(parseInt($(this).val()) + 1);
+        else {
+            $('input[type=submit]').removeAttr('disabled');
+            clearInterval(incrementInterval)
+        }
+    });
+}
+
 
 $(document).ready(
     function () {
@@ -44,21 +59,6 @@ $(document).ready(
             $(this).after('<span></span>');
         });
 
-        var incrementInterval;
-        if (document.readyState === "complete") {
-            // Anonymous function will be executed every second
-            // until clearInterval(incrementInterval) is called
-            incrementInterval = setInterval(function () {
-                var elements = document.getElementsByName('form-display-time');
-                for (var i = 0; i < elements.length; i++) {
-                    elements[i].setAttribute(
-                        'value',
-                        parseInt(elements[i].getAttribute('value')) + 1
-                    );
-                }
-            }, 1000);
-        }
-
         //wysylanie formularza
         $('.form-wyslij').on('click', function () {
 
@@ -69,7 +69,9 @@ $(document).ready(
                 marginLeft: '0px'
             }, 500);
 
-            $('#target').submit();
+            if ($('input[name="formDisplayTime"]').val()>4) {
+                $('#target').submit()
+            }
 
             //$.post('http://jfdz.infoshareaca.nazwa.pl/mailer.php', function (data) {
             //    alert(data);
@@ -92,6 +94,7 @@ $(document).ready(
             },1000);
         });
 
+        //Przekierowanie na strony portali społecznościowych po kliknięciu ich ikon
         $('i').click(function(){
 
             var $klasa=$(this).attr('class');
