@@ -3,14 +3,14 @@ body {
     margin-right: auto;
     font-size: medium;
     font-family: bandy, sans-serif;
-    /*background-color: #2C163B;*/
-    background-color: #E7703D;
+    background-color: #2C163B;
 }
 
 .par_layer {
     background-image: url(../images/party2.jpg);
     background-size: 120%;
     background-attachment: fixed;
+    height: auto;
     height: 1950px;
 }
 
