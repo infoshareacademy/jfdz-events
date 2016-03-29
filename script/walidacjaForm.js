@@ -44,6 +44,21 @@ $(document).ready(
             $(this).after('<span></span>');
         });
 
+        var incrementInterval;
+        if (document.readyState === "complete") {
+            // Anonymous function will be executed every second
+            // until clearInterval(incrementInterval) is called
+            incrementInterval = setInterval(function () {
+                var elements = document.getElementsByName('form-display-time');
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].setAttribute(
+                        'value',
+                        parseInt(elements[i].getAttribute('value')) + 1
+                    );
+                }
+            }, 1000);
+        }
+
         //wysylanie formularza
         $('.form-wyslij').on('click', function () {
 
@@ -68,8 +83,8 @@ $(document).ready(
         $('.close').on('click', function() {
             $(this).css({
                 boxShadow: '0px 0px 0px',
-                marginTop: 1,
-                marginLeft: 91
+                marginTop: 11,
+                marginRight: 23
             });
             $('.cookie').animate({
                 marginBottom:-51

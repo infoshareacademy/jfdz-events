@@ -136,7 +136,7 @@
     width:400px !important;
 }
 .zgoda{
-    margin-left: 45px !important;
+    margin-left: 44px !important;
     margin-right: 65px !important;
 }
 
@@ -176,4 +176,9 @@
     to{
         margin-right:-551px;
     }
+}
+
+.monit {
+    margin-left:200px;
+    font-size:10px;
 }
