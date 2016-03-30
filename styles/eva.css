@@ -7,10 +7,12 @@
     clear: both;
 }
 #gora{
-    height: 1000px;
+    /*height: 1000px;*/
+    height: auto;
 }
 #dol{
-    height: 1000px;
+    /*height: 1000px;*/
+    height: auto;
 }
 
 #funkcja{
@@ -110,17 +112,22 @@
 }
 
 .pomniejszeFunkcjonalnosci{
-    width:1200px;
-    height: 174px;
+    /*width:1200px;*/
+    width:auto;
+    /*height: 245px;*/
+    height: 500px;
+    display: inline-block;
     text-align: center;
 }
 
 .ikonyFunMale{
-    width: 125px;
+    width: 174px;
     height: 174px;
-    margin: 35px 7.5px 25px;
+    margin: 35px 80px 25px;
     border-radius: 50%;
-    background-color: rgba(244, 237, 165, 0.75)
+    background-color: rgba(244, 237, 165, 0.75);
+    text-align: center;
+    display: inline-block;
 }
 
 /*.pomniejszeFunkcjonalnosci div:last-child{*/
@@ -133,7 +140,7 @@
     position:relative;
     text-align: center;
     font-weight: bold;
-    margin-left:-35px;
+    /*margin-left:-35px;*/
     color:#AD093A;
 }
 
@@ -141,7 +148,7 @@
     width: 100px;
     height: 100px;
     margin-top: 37px;
-    margin-left: -42px;
+    /*margin-left: -42px;*/
 }
 
 
@@ -150,7 +157,7 @@
     width: 120px;
     height: 120px;
     margin-top:22px;
-    margin-left:-37px;
+    /*margin-left:-37px;*/
     /*content: 'test';*/
     cursor: pointer;
 }
