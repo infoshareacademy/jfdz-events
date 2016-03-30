@@ -62,6 +62,13 @@ $(document).ready(
         //wysylanie formularza
         $('.form-wyslij').on('click', function () {
 
+            //$.get('http://jfdz.infoshareaca.nazwa.pl/mailer.php', function (data,status) {
+            //    alert('Napis');
+            //    console.log(status);
+            //});
+
+
+
             $('.formularz').animate({
                 marginRight: '-551px'
             }, 500);
@@ -73,9 +80,7 @@ $(document).ready(
                 $('#target').submit()
             }
 
-            //$.post('http://jfdz.infoshareaca.nazwa.pl/mailer.php', function (data) {
-            //    alert(data);
-            //});
+
         });
 
         //obsługa ciasteczek na naszej stronie
@@ -96,14 +101,11 @@ $(document).ready(
 
         //Przekierowanie na strony portali społecznościowych po kliknięciu ich ikon
         $('i').click(function(){
-
             var $klasa=$(this).attr('class');
             if ($klasa=="fa fa-facebook-square") window.location.href='https://facebook.com/';
             if ($klasa=="fa fa-google-plus-square") window.location.href='https://plus.google.com/';
             if ($klasa=="fa fa-linkedin-square") window.location.href='https://linkedin.com/';
             if ($klasa=="fa fa-twitter-square") window.location.href='https://twitter.com/';
-
         })
-
     });
 
