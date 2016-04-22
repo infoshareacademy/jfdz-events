@@ -160,7 +160,11 @@ $(document).ready(function () {
 
             }
             else {
-                if (checkClasses(this)) {
+                if ($(this).hasClass("pink")) {
+                    state.score.player +=4;
+                    $(this).removeClass(classList.join(' '));
+                }
+                else if (checkClasses(this)) {
                     state.score.player +=2;
                     $(this).removeClass(classList.join(' '));
                 }
