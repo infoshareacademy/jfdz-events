@@ -6,6 +6,12 @@
 .clear{
     clear: both;
 }
+#gora{
+    height: 1000px;
+}
+#dol{
+    height: 1000px;
+}
 
 #funkcja{
     width: 1200px;
@@ -15,7 +21,7 @@
 
 .right{
     height: 437px;
-    width: 537px;
+    width: 1140px;
     float: right;
     background-color:#F4EDA5;
     text-align: center;
@@ -23,11 +29,13 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right:2%;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 .left {
     height: 437px;
-    width: 537px;
+    width: 1140px;
     background-color: #F4EDA5;
     float: left;
     text-align: center;
@@ -35,6 +43,8 @@
     margin-top: 5px;
     padding-left: 3%;
     padding-right: 2%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
  .tytul{
@@ -100,25 +110,30 @@
 }
 
 .pomniejszeFunkcjonalnosci{
-    width:1207px;
+    width:1200px;
+    height: 174px;
+    text-align: center;
 }
 
 .ikonyFunMale{
-    width: 135px;
+    width: 125px;
     height: 174px;
-    margin-right: 6px;
+    margin: 35px 7.5px 25px;
+    border-radius: 50%;
+    background-color: rgba(244, 237, 165, 0.75)
 }
 
-.pomniejszeFunkcjonalnosci div:last-child{
-    margin-right:0px;
-    width:134px;
-}
+/*.pomniejszeFunkcjonalnosci div:last-child{*/
+    /*margin-right: 10px;*/
+    /*width: 134px;*/
+/*}*/
 
 
 .ikonyFunMale .podpis {
     position:relative;
     text-align: center;
-    margin-left:-15px;
+    font-weight: bold;
+    margin-left:-35px;
     color:#AD093A;
 }
 
@@ -132,10 +147,10 @@
 
 
 .ikonyFunMale:hover img {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     margin-top:22px;
-    margin-left:-27px;
+    margin-left:-37px;
     /*content: 'test';*/
     cursor: pointer;
 }
